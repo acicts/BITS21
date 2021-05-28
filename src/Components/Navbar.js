@@ -12,13 +12,12 @@ import theme from '../theme';
 
 
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     root: {
-      backgroundColor: theme.palette.primary.main,
-      color: theme.palette.primary.main,
+      backgroundColor: theme.palette.primary.main
     },
     rooty: {
-     
+      color: '#ffffff'
     },
     icons: {
       color: theme.palette.secondary.main
@@ -41,7 +40,6 @@ const useStyles = makeStyles((theme) => ({
         showLabels
         className={classes.root}
       >
-       {/*<MLink component={Link} to='/tasks'/>*/}
         <BottomNavigationAction className={classes.rooty} component={RouterLink} to="/" label="Home" icon={ <HomeIcon className={classes.icons}/> }/>
         <BottomNavigationAction className={classes.rooty} component={RouterLink} to="/leaderboard" label="Leaderboard" icon={ <FormatListNumberedIcon className={classes.icons}/> }/>
         <BottomNavigationAction className={classes.rooty} component={RouterLink} to="/tasks" label="Tasks" icon={ <AssignmentIcon className={classes.icons}/> }/>

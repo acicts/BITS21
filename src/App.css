@@ -1,5 +1,5 @@
 body {
-    background-color: #263238;
+    background-color: #003b68;
     margin: 0;
     padding: 0;
     
@@ -10,7 +10,7 @@ body {
 }
 /*    Universal Styles    */
 .App {
- 
+    color: #00467c;
 }
 
 /*    HOME PAGE    */
