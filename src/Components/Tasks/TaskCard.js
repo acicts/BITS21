@@ -12,6 +12,7 @@ import GestureIcon from '@material-ui/icons/Gesture';
 import FindInPageIcon from '@material-ui/icons/FindInPage';
 import taskDetails from '../../Data/tasks.json'
 import theme from '../../theme'
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -94,7 +95,7 @@ export default function TaskCard() {
         </CardContent>
         
         <div className={classes.controls}>
-        <Button variant="contained" href={tasks.url} className={classes.button}>
+        <Button variant="contained" component={Link} to={`/task/${tasks.id}`} className={classes.button}>
           View
         </Button>
         

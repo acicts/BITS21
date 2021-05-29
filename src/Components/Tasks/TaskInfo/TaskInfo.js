@@ -11,6 +11,7 @@ import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import '../../../App.css'
 import { Container } from '@material-ui/core';
+import { useParams } from 'react-router-dom';
 import taskDetails from '../../../Data/tasks.json'
 
 function TabPanel(props) {
@@ -106,11 +107,18 @@ export default function FullWidthTabs() {
     setValue(index);
   };
 
+  let { id } = useParams();
+
+  var result = taskDetails.filter(obj => {
+    return obj.id === id
+  })
+  const details = result[0]
+
   return (
     <Container maxWidth="xl" className={classes.container}>
     <div className={classes.ss}>
 
-      <Container className="taskname" color="primary"><Typography variant="h4" className={classes.title} color="#ffffff">Web Scraping for Data</Typography></Container>
+      <Container className="taskname" color="primary"><Typography variant="h4" className={classes.title} color="#ffffff">{details.taskName}</Typography></Container>
     
     <Container fixed className={classes.details}>
         
@@ -135,16 +143,8 @@ export default function FullWidthTabs() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}><Typography className={classes.text}>
-        Web scraping is a very popular way of getting information from the internet. Learn what is web scraping and learn to build one yourself. <br></br>
-        <br></br>
-●     Build a web scraper to scrape a website about COVID-19 Statistics and get the current                         
-       worldwide situation (Total deaths, case and cured count) that can be operated by CLI.<br></br>
-       <br></br>
-●     Use any programming language you prefer (We recommend python)<br></br>
-<br></br>
-●     Copying code from any other source is strictly prohibited.<br></br>
-<br></br>
-●     You can get a higher score by adding more features to the code.<br></br> </Typography>
+        {details.description}
+        </Typography>
 <br></br>
         </TabPanel>
        

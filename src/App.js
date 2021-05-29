@@ -25,7 +25,7 @@ export default function App() {
       <Route path="/leaderboard" component={LeaderBoard}/>
       <Route path="/contact" component={Contact}/>
 
-      <Route path="/task" component={Task}/>
+      <Route path='/task/:id' component={Task} />
       </ThemeProvider>
       </Switch>
     </div>
