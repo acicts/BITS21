@@ -5,7 +5,8 @@
     "taskName": "Web development project",
     "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
     "description": "Check out their website and codebase and find an issue.",
-    "catogery": "Code"
+    "catogery": "Code",
+    "url": "./task/1"
   },
   {
     "taskID": "D01",
@@ -13,7 +14,8 @@
     "taskName": "Web development project1",
     "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
     "description": "Check out their website and codebase and find an issue.",
-    "catogery": "Design"
+    "catogery": "Design",
+    "url": "./task/2"
   },
   {
     "taskID": "E01",
@@ -21,6 +23,7 @@
     "taskName": "Web development project2",
     "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
     "description": "Check out their website and codebase and find an issue.",
-    "catogery": "Explore"
+    "catogery": "Explore",
+    "url": "./task/3"
   }
 ]

@@ -6,6 +6,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { Avatar, IconButton } from '@material-ui/core';
+import Tooltip from '@material-ui/core/Tooltip';
 import CodeIcon from '@material-ui/icons/Code';
 import GestureIcon from '@material-ui/icons/Gesture';
 import FindInPageIcon from '@material-ui/icons/FindInPage';
@@ -73,7 +74,9 @@ export default function TaskCard() {
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
             {tasks.taskName}
-            <span className={classes.catogery}><IconButton aria-label={tasks.catogery} color='secondary'>
+            <span className={classes.catogery}>
+            <Tooltip title={tasks.catogery}>
+              <IconButton aria-label={tasks.catogery} color='secondary'>
          {(() => {
         switch (tasks.catogery) {
           case "Code":   return <CodeIcon />;
@@ -81,7 +84,9 @@ export default function TaskCard() {
           case "Explore":  return <FindInPageIcon />;
         }
       })()}
-          </IconButton></span>
+          </IconButton>
+          </Tooltip>
+          </span>
           </Typography>
           <Typography variant="subtitle1"  color={theme.text.secondary.main} className={classes.cat} >
             {tasks.shortDescription}
@@ -89,7 +94,7 @@ export default function TaskCard() {
         </CardContent>
         
         <div className={classes.controls}>
-        <Button variant="contained" href="/task" className={classes.button}>
+        <Button variant="contained" href={tasks.url} className={classes.button}>
           View
         </Button>
         

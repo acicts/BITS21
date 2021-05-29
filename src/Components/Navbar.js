@@ -14,15 +14,18 @@ import theme from '../theme';
 
 const useStyles = makeStyles(() => ({
     root: {
-      backgroundColor: theme.palette.primary.main,
-      color: theme.palette.secondary.main
+      backgroundColor: theme.palette.secondary.main,
+      color: '#000'
     },
     rooty: {
-      color: '#ffffff'
+      color: '#000'
     },
     icons: {
-      color: theme.palette.secondary.main
+      color: theme.palette.primary.main
 
+    },
+    selected: {
+      color: '#fff'
     }
 
   }));
@@ -41,10 +44,10 @@ const useStyles = makeStyles(() => ({
         showLabels
         className={classes.root}
       >
-        <BottomNavigationAction className={classes.rooty} component={RouterLink} to="/" label="Home" icon={ <HomeIcon className={classes.icons}/> }/>
-        <BottomNavigationAction className={classes.rooty} component={RouterLink} to="/leaderboard" label="Leaderboard" icon={ <FormatListNumberedIcon className={classes.icons}/> }/>
-        <BottomNavigationAction className={classes.rooty} component={RouterLink} to="/tasks" label="Tasks" icon={ <AssignmentIcon className={classes.icons}/> }/>
-        <BottomNavigationAction className={classes.rooty} component={RouterLink} to="/contact" label="Contact" icon={ <ContactsIcon className={classes.icons}/> }/>
+        <BottomNavigationAction className={classes.rooty} classes={{selected: classes.selected}} component={RouterLink} to="/" label="Home" icon={ <HomeIcon className={classes.icons}/> }/>
+        <BottomNavigationAction className={classes.rooty} classes={{selected: classes.selected}} component={RouterLink} to="/leaderboard" label="Leaderboard" icon={ <FormatListNumberedIcon className={classes.icons}/> }/>
+        <BottomNavigationAction className={classes.rooty} classes={{selected: classes.selected}} component={RouterLink} to="/tasks" label="Tasks" icon={ <AssignmentIcon className={classes.icons}/> }/>
+        <BottomNavigationAction className={classes.rooty} classes={{selected: classes.selected}} component={RouterLink} to="/contact" label="Contact" icon={ <ContactsIcon className={classes.icons}/> }/>
       </BottomNavigation>
     );
   }
