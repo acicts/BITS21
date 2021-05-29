@@ -6,7 +6,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import data from '../../Data/tasks.json'
+import data from '../../Data/LeaderBoard.json'
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -33,36 +33,6 @@ const StyledTableRow = withStyles((theme) => ({
   },
 }))(TableRow);
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
-
-const rows = [
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Anupama Dissanayake', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-  createData('1', 'Thusal Ranawaka', '09-11', 29, 839),
-];
 
 const useStyles = makeStyles({
   table: {
@@ -91,12 +61,12 @@ export default function CustomizedTables() {
           {data.map((list, index) => (
             <StyledTableRow key={index}>
               <StyledTableCell component="th" scope="row">
-                {list.name}
+                {list.index + 1}
               </StyledTableCell>
               <StyledTableCell align="center">{list.name}</StyledTableCell>
-              <StyledTableCell align="center">{list.fat}</StyledTableCell>
-              <StyledTableCell align="center">{list.carbs}</StyledTableCell>
-              <StyledTableCell align="center">{list.protein}</StyledTableCell>
+              <StyledTableCell align="center">{list.class}</StyledTableCell>
+              <StyledTableCell align="center">{list.tasks}</StyledTableCell>
+              <StyledTableCell align="center">{list.points}</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>
