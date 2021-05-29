@@ -54,3 +54,7 @@ body {
     
 }
 
+.MuiBottomNavigationAction-root.Mui-selected {
+    color: #ffffff;
+    transform: scale(110%);
+}

@@ -7,13 +7,21 @@ import CardActions from '@material-ui/core/CardActions';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
+import { Grid } from '@material-ui/core';
 import catImg from '../../Img/cat.jpg'
 import { GitHub, Instagram } from '@material-ui/icons';
+import theme from '../../theme'
+import OCdata from '../../Data/OC.json'
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
-    marginBottom: '30px'
+    marginBottom: '50px',
+    marginLeft: '50px',
+    marginRight: '50px',
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.primary.contrastText,
+    borderRadius: '15px'
   },
   media: {
     height: 0,
@@ -33,6 +41,11 @@ const useStyles = makeStyles((theme) => ({
     width: '50px',
     height: '50px',
   },
+  OCContainer: {
+    marginTop: '30px',
+    marginRight: '50px',
+  },
+  
 }));
 
 export default function OC() {
@@ -44,25 +57,23 @@ export default function OC() {
   };
 
   return (
-    <Card className={classes.root} elevation='6'>
+    <Grid xl={12} md={12} lg={12} container direction="row" justify="space-around" alignItems="center" className={classes.OCContainer}>
+    {OCdata.map((member, index) => (
+    <Card className={classes.root} elevation='6' key={index}>
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar} src={catImg}/>
         }
-        title="Chamindu Jayanath"
+        title={member.name}
         subheader="BITS OC"
       />
       <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-        Google Code-In 2019 Winner  |
-        BITS 2019 Winner  |
-        Programmer  |
-        Web Developer  |
-        UX Designer
+        <Typography variant="body2"  component="p">
+        {member.description}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="GitHub" color='primary'>
+        <IconButton aria-label="GitHub" color='secondary'>
           <GitHub />
         </IconButton>
         <IconButton aria-label="Instagram" color='secondary'>
@@ -70,5 +81,7 @@ export default function OC() {
         </IconButton>
       </CardActions>
     </Card>
+    ))}
+    </Grid>
   );
 }

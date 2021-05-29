@@ -6,7 +6,7 @@ export default function SimpleContainer() {
 
 const useStyles = makeStyles((theme) => ({
   titleContainer: {
-    background: '#0f7bc7',
+    background: theme.palette.secondary.main,
     color: '#ffffff',
     padding: '50px'
   },
@@ -27,14 +27,7 @@ return (
       </Paper>
     </Grid>
 
-    <Grid xl='4' container direction="row" justify="space-evenly" alignItems="center" className={classes.OCContainer}>
       <OC />
-      <OC />
-      <OC />
-      <OC />
-      <OC />
-      <OC />
-    </Grid>
   </div>
   )
 }

@@ -5,14 +5,14 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import data from '../About/data.json'
 import { Avatar, IconButton } from '@material-ui/core';
 import CodeIcon from '@material-ui/icons/Code';
 import GestureIcon from '@material-ui/icons/Gesture';
 import FindInPageIcon from '@material-ui/icons/FindInPage';
-import taskDetails from '../../data.json'
+import taskDetails from '../../Data/tasks.json'
+import theme from '../../theme'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     display: 'flex',
     width: '600px',
@@ -80,7 +80,7 @@ export default function TaskCard() {
       })()}
           </IconButton></span>
           </Typography>
-          <Typography variant="subtitle1" color="#ff0000" className={classes.cat} >
+          <Typography variant="subtitle1"  color={theme.text.secondary.main} className={classes.cat} >
             {tasks.shortDescription}
           </Typography>
         </CardContent>

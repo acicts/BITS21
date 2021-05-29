@@ -7,6 +7,7 @@ import TaskPage from './Components/Tasks/TaskPage'
 import Home from './Components/Home/Home'
 import LeaderBoard from './Components/Leaderboard/Chart'
 import About from './Components/About/AboutBITS'
+import Task from './Components/Tasks/TaskInfo/TaskInfo'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -24,6 +25,8 @@ export default function App() {
       <Route path="/leaderboard" component={LeaderBoard}/>
       <Route path="/about" component={About}/>
       <Route path="/contact" component={TaskPage}/>
+
+      <Route path="/task" component={Task}/>
       </ThemeProvider>
       </Switch>
     </div>

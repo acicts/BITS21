@@ -14,7 +14,8 @@ import theme from '../theme';
 
 const useStyles = makeStyles(() => ({
     root: {
-      backgroundColor: theme.palette.primary.main
+      backgroundColor: theme.palette.primary.main,
+      color: theme.palette.secondary.main
     },
     rooty: {
       color: '#ffffff'
