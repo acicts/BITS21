@@ -44,7 +44,6 @@ const useStyles = makeStyles(() => ({
         <BottomNavigationAction className={classes.rooty} component={RouterLink} to="/" label="Home" icon={ <HomeIcon className={classes.icons}/> }/>
         <BottomNavigationAction className={classes.rooty} component={RouterLink} to="/leaderboard" label="Leaderboard" icon={ <FormatListNumberedIcon className={classes.icons}/> }/>
         <BottomNavigationAction className={classes.rooty} component={RouterLink} to="/tasks" label="Tasks" icon={ <AssignmentIcon className={classes.icons}/> }/>
-        <BottomNavigationAction className={classes.rooty} component={RouterLink} to="/about" label="About" icon={ <InfoIcon className={classes.icons}/> }/>
         <BottomNavigationAction className={classes.rooty} component={RouterLink} to="/contact" label="Contact" icon={ <ContactsIcon className={classes.icons}/> }/>
       </BottomNavigation>
     );

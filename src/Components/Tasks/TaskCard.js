@@ -21,6 +21,7 @@ const useStyles = makeStyles(() => ({
     marginTop: '20px',
     backgroundColor: theme.palette.primary.main,
     color: '#fff',
+    borderRadius: '15px',
   },
   details: {
     display: 'flex',
@@ -40,6 +41,8 @@ const useStyles = makeStyles(() => ({
   },
 
   button: {
+    marginLeft: '10px',
+    marginBottom: '10px',
     backgroundColor: theme.palette.secondary.main,
     '&:hover': {
       backgroundColor: theme.palette.secondary.main,

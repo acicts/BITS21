@@ -1,6 +1,6 @@
 import { Grid, makeStyles, Paper, Typography, useTheme } from '@material-ui/core';
 import React, { useState, useEffect } from 'react';
-import OC from './OC'
+import OC from '../Contact/OC'
 
 export default function SimpleContainer() {
 
