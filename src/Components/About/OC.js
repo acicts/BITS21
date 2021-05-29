@@ -73,10 +73,10 @@ export default function OC() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="GitHub" color='secondary'>
+        <IconButton aria-label="GitHub" color='secondary' href={member.github}>
           <GitHub />
         </IconButton>
-        <IconButton aria-label="Instagram" color='secondary'>
+        <IconButton aria-label="Instagram" color='secondary' href={member.insta}>
           <Instagram />
         </IconButton>
       </CardActions>
