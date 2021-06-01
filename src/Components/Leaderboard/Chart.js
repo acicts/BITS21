@@ -25,10 +25,10 @@ const StyledTableCell = withStyles((theme) => ({
 const StyledTableRow = withStyles((theme) => ({
   root: {
     '&:nth-of-type(even)': {
-      backgroundColor: '#ffffff',
+      backgroundColor: '#fff',
     },
     '&:nth-of-type(odd)': {
-        backgroundColor: '#fefefe',
+        backgroundColor: '#b9b9b9',
       },
   },
 }))(TableRow);

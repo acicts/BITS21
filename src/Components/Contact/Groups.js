@@ -17,7 +17,7 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    maxWidth: '500px',
     marginBottom: '50px',
     marginLeft: '50px',
     marginRight: '50px',
@@ -93,6 +93,28 @@ export default function OC() {
         size="large"
         className={classes.button}
         startIcon={<WhatsAppIcon />}
+      >
+        Join
+      </Button>
+      </CardActions>
+    </Card>
+    <Card className={classes.root} elevation='6' >
+      <CardHeader
+        title="BITS 2021 WhatsApp Group"
+        subheader="You can join the BITS 2021 WhatsApp group and chat with other participants and get help in if you need any"
+      />
+      <CardContent>
+        <Typography variant="body2"  component="p">
+        Please be respectful to other members of the group and help each other.
+        It will benefit you when it comes to winning BITS 2021 competition
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing>
+      <Button
+        variant="contained"
+        size="large"
+        className={classes.button}
+        startIcon={<i class="fab fa-discord"></i>}
       >
         Join
       </Button>
