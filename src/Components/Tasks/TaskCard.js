@@ -71,8 +71,8 @@ const useStyles = makeStyles(() => ({
     color: '#000',
     transition: '0.5s ease',
     '&:hover': {
-      backgroundColor: '#2d9886',
-      color: '#fff',
+      backgroundColor: '#3ed1b8',
+      boxShadow: '0px 0px 11px 0px rgb(62 209 184), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)',
   },
   
   },
@@ -88,6 +88,9 @@ const useStyles = makeStyles(() => ({
     padding: '50px',
     borderRadius: '15px',
     width: '15%',
+    position: 'sticky',
+    right: '0',
+    top: '0',
     ['@media (max-width:540px)']: {
       position: 'relative',
       width: '65%',
@@ -134,9 +137,9 @@ export default function TaskCard() {
       <FormLabel component="legend">Filter Tasks</FormLabel>
       <RadioGroup className={classes.filterOptions} aria-label="tasks" name="filter" value={value} onChange={handleChange}>
         <FormControlLabel value="All" control={<Radio color='secondary' />} label="All Tasks" />
-        <FormControlLabel value="Code" control={<Radio color='secondary'/>} label="Coding Tasks" />
-        <FormControlLabel value="Design" control={<Radio color='secondary'/>} label="Design Tasks" />
-        <FormControlLabel value="Explore"  control={<Radio color='secondary'/>} label="Explore Tasks" />
+        <FormControlLabel value="Code" control={<Radio color='secondary'/>} label="Coding" />
+        <FormControlLabel value="Design" control={<Radio color='secondary'/>} label="Design" />
+        <FormControlLabel value="Explore"  control={<Radio color='secondary'/>} label="Explore" />
       </RadioGroup>
     </FormControl>
     </div>

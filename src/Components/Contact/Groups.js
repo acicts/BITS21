@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '50px',
     marginLeft: '50px',
     marginRight: '50px',
-    background: 'linear-gradient(329deg, rgb(19 15 62) 0%, rgba(28,56,164,1) 100%)',
+    background: '#183d5d',
     color: theme.palette.primary.contrastText,
     borderRadius: '15px'
   },
@@ -53,12 +53,12 @@ const useStyles = makeStyles((theme) => ({
   button: {
     marginLeft: '10px',
     marginBottom: '10px',
-    background: 'linear-gradient(329deg, rgba(24,77,208,1) 0%, rgba(34,208,215,1) 100%)',
+    background: '#3ed1b8',
     color: '#fefefe',
     transition: '0.5s ease',
     '&:hover': {
-      background: 'linear-gradient(129deg, rgba(24,77,208,1) 0%, rgba(34,208,215,1) 100%)',
-      color: '#FFF',
+      backgroundColor: '#3ed1b8',
+      boxShadow: '0px 0px 11px 0px rgb(62 209 184), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)',
   },
   color:'#00000'
   },

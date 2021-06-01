@@ -38,5 +38,54 @@
     "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
     "description": "Check out their website and codebase and find an issue.",
     "catogery": "Explore"
+  },
+  {
+    "id": "E02",
+    "index": 5,
+    "taskName": "Write an article about AI",
+    "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
+    "description": "Check out their website and codebase and find an issue.",
+    "catogery": "Explore"
+  },
+  {
+    "id": "E03",
+    "index": 6,
+    "taskName": "Write an article about AI",
+    "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
+    "description": "Check out their website and codebase and find an issue.",
+    "catogery": "Explore"
+  },
+  {
+    "id": "E04",
+    "index": 7,
+    "taskName": "Write an article about AI",
+    "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
+    "description": "Check out their website and codebase and find an issue.",
+    "catogery": "Explore"
+  },
+  {
+    "id": "E05",
+    "index": 8,
+    "taskName": "Write an article about AI",
+    "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
+    "description": "Check out their website and codebase and find an issue.",
+    "catogery": "Explore"
+  },
+  {
+    "id": "E06",
+    "index": 9,
+    "taskName": "Write an article about AI",
+    "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
+    "description": "Check out their website and codebase and find an issue.",
+    "catogery": "Explore"
+  },
+  {
+    "id": "E07",
+    "index": 10,
+    "taskName": "Write an article about AI",
+    "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
+    "description": "Check out their website and codebase and find an issue.",
+    "catogery": "Explore"
   }
+
 ]
