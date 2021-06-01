@@ -3,6 +3,7 @@ import Taskcard from './TaskCard'
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import Filter from './Filter'
 
 function TaskPage() {
     const useStyles = makeStyles({
@@ -24,7 +25,6 @@ function TaskPage() {
        
         <div className={classes.background}>
             <Taskcard />
-            
         </div>
       </Container>
         

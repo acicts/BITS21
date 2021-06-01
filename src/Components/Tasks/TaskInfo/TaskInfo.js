@@ -113,6 +113,7 @@ export default function FullWidthTabs() {
     return obj.id === id
   })
   const details = result[0]
+  console.log(result)
 
   return (
     <Container maxWidth="xl" className={classes.container}>

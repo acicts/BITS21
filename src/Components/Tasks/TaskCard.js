@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component, useState }  from 'react';
+import { unmountComponentAtNode, render } from "react-dom";
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -8,11 +9,17 @@ import Button from '@material-ui/core/Button';
 import { Avatar, IconButton } from '@material-ui/core';
 import Tooltip from '@material-ui/core/Tooltip';
 import CodeIcon from '@material-ui/icons/Code';
-import GestureIcon from '@material-ui/icons/Gesture';
+import BrushIcon from '@material-ui/icons/Brush';
 import FindInPageIcon from '@material-ui/icons/FindInPage';
 import taskDetails from '../../Data/tasks.json'
 import theme from '../../theme'
 import { Link } from 'react-router-dom';
+import { render as renderelement } from '@testing-library/react';
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormControl from '@material-ui/core/FormControl';
+import FormLabel from '@material-ui/core/FormLabel';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -21,9 +28,9 @@ const useStyles = makeStyles(() => ({
     height: '200px',
     marginLeft: '100px',
     marginTop: '20px',
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: '#183d5d',
     color: '#fff',
-    borderRadius: '15px',
+    borderRadius: '20px',
   },
   details: {
     display: 'flex',
@@ -45,16 +52,25 @@ const useStyles = makeStyles(() => ({
   button: {
     marginLeft: '10px',
     marginBottom: '10px',
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: '#3178f3',
+    color: '#fff',
+    transition: '0.5s ease',
     '&:hover': {
-      backgroundColor: theme.palette.secondary.main,
-      color: '#FFF'
+      backgroundColor: '#f587dc',
+      color: '#FFF',
   },
-  color:'#00000'
+  
   },
 
   catogery: {
     marginLeft: '230px'
+  },
+  filter: {
+    backgroundColor: '#183d5d',
+    float: 'right',
+    marginRight: '50px',
+    padding: '50px',
+    borderRadius: '25px',
   }
   
 
@@ -63,12 +79,35 @@ const useStyles = makeStyles(() => ({
 export default function TaskCard() {
   const classes = useStyles();
   const theme = useTheme();
+  const [value, setValue] = React.useState('All');
+  const [data, setData] = useState(taskDetails)
 
-  
+  const handleChange = (event) => {
+    
+    setValue(event.target.value);
+     let result = taskDetails
+     setData(result.filter(function(obj, index){
+      return obj.catogery===event.target.value;})) 
+  ;
+  if (event.target.value == "All") {
+    setData(taskDetails) 
+  }
+}
 
   return (
-    <div>
-      {taskDetails.map((tasks, index) => (
+    <div className='eee'>
+      <div className={classes.filter}>
+      <FormControl component="fieldset">
+      <FormLabel component="legend">Filter Tasks</FormLabel>
+      <RadioGroup aria-label="tasks" name="filter" value={value} onChange={handleChange}>
+        <FormControlLabel value="All" control={<Radio />} label="All" />
+        <FormControlLabel value="Code" control={<Radio />} label="Code" />
+        <FormControlLabel value="Design" control={<Radio />} label="Design" />
+        <FormControlLabel value="Explore"  control={<Radio />} label="Explore" />
+      </RadioGroup>
+    </FormControl>
+    </div>
+      {data.map((tasks, index) => (
 
     <Card className={classes.root} color="primary"  key={index}>
       <div className={classes.details}>
@@ -81,7 +120,7 @@ export default function TaskCard() {
          {(() => {
         switch (tasks.catogery) {
           case "Code":   return <CodeIcon />;
-          case "Design": return <GestureIcon />;
+          case "Design": return <BrushIcon />;
           case "Explore":  return <FindInPageIcon />;
         }
       })()}

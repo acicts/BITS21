@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '50px',
     marginLeft: '50px',
     marginRight: '50px',
-    backgroundColor: theme.palette.primary.main,
+    background: 'linear-gradient(329deg, rgb(19 15 62) 0%, rgba(28,56,164,1) 100%)',
     color: theme.palette.primary.contrastText,
     borderRadius: '15px'
   },

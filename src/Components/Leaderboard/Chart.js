@@ -40,6 +40,9 @@ const useStyles = makeStyles({
     marginLeft: '10%',
     marginTop: '5%',
   },
+  body: {
+    color: '#000'
+  }
 });
 
 export default function CustomizedTables() {
@@ -59,14 +62,14 @@ export default function CustomizedTables() {
         </TableHead>
         <TableBody>
           {data.map((list, index) => (
-            <StyledTableRow key={index}>
-              <StyledTableCell component="th" scope="row">
+            <StyledTableRow key={index} >
+              <StyledTableCell component="th" scope="row"  className={classes.body}>
                 {list.index + 1}
               </StyledTableCell>
-              <StyledTableCell align="center">{list.name}</StyledTableCell>
-              <StyledTableCell align="center">{list.class}</StyledTableCell>
-              <StyledTableCell align="center">{list.tasks}</StyledTableCell>
-              <StyledTableCell align="center">{list.points}</StyledTableCell>
+              <StyledTableCell  className={classes.body} align="center">{list.name}</StyledTableCell>
+              <StyledTableCell  className={classes.body} align="center">{list.class}</StyledTableCell>
+              <StyledTableCell  className={classes.body} align="center">{list.tasks}</StyledTableCell>
+              <StyledTableCell  className={classes.body} align="center">{list.points}</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>

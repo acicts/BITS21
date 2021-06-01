@@ -1,9 +1,13 @@
 body {
-    background-color: #363636;
+    background-color: #072540;
+    height: 100%;
     margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 0;
     
 }
+
 
 .PrivateTabIndicator-root-12 {
     background: #a1a1a1;

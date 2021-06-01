@@ -4,26 +4,39 @@
     "index": 0,
     "taskName": "Web development project",
     "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
-    "description": "Web scraping is a very popular way of getting information frjhkjhdj kjfghl fjdh kfdjhg fkjdh gklfjdh jfdh gjfkh kjfh gfjdh gfjdh fkdjhl dfjlkghfdiughreiuhg fjdhg kfjdh dijfghkfj ghuifdghi jdfhgfh jghdfughieurhglk jfhgiufh gidjfhg fdjhg hfdjhgkjdfhg djhfg ldjfhgdfjhg dffjhg klfjdhgjdfh jfdhgkfjdhg",
-    "catogery": "Code",
-    "url": "./task/1"
+    "description": "Web scraping is a very popular way of getting information frjhkjhdj kjfghl fjdh kfdjhg fkjdh gklfjdh jfdh gjfkh kjfh gfjdh gfjdh <a href='www.youtube.com'>fkdjhl dfjlkghfdiughreiuhg fjdhg kfjdh dijfghkfj ghuifdghi jdfhgfh jghdfughieurhglk jfhgiufh gidjfhg fdjhg hfdjhgkjdfhg djhfg ldjfhgdfjhg dffjhg klfjdhgjdfh jfdhgkfjdhg",
+    "catogery": "Code"
+  },
+  {
+    "id": "C02",
+    "index": 1,
+    "taskName": "Web development project",
+    "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
+    "description": "Web scraping is a very popular way of getting information frjhkjhdj kjfghl fjdh kfdjhg fkjdh gklfjdh jfdh gjfkh kjfh gfjdh gfjdh <a href='www.youtube.com'>fkdjhl dfjlkghfdiughreiuhg fjdhg kfjdh dijfghkfj ghuifdghi jdfhgfh jghdfughieurhglk jfhgiufh gidjfhg fdjhg hfdjhgkjdfhg djhfg ldjfhgdfjhg dffjhg klfjdhgjdfh jfdhgkfjdhg",
+    "catogery": "Code"
+  },
+  {
+    "id": "C03",
+    "index": 2,
+    "taskName": "Web development project",
+    "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
+    "description": "Web scraping is a very popular way of getting information frjhkjhdj kjfghl fjdh kfdjhg fkjdh gklfjdh jfdh gjfkh kjfh gfjdh gfjdh <a href='www.youtube.com'>fkdjhl dfjlkghfdiughreiuhg fjdhg kfjdh dijfghkfj ghuifdghi jdfhgfh jghdfughieurhglk jfhgiufh gidjfhg fdjhg hfdjhgkjdfhg djhfg ldjfhgdfjhg dffjhg klfjdhgjdfh jfdhgkfjdhg",
+    "catogery": "Code"
   },
   {
     "id": "D01",
-    "index": 1,
-    "taskName": "Web development project1",
+    "index": 3,
+    "taskName": "Design a poster for BITS",
     "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
     "description": "Check out their website and codebase and find an issue.",
-    "catogery": "Design",
-    "url": "./task/2"
+    "catogery": "Design"
   },
   {
     "id": "E01",
-    "index": 2,
-    "taskName": "Web development project2",
+    "index": 4,
+    "taskName": "Write an article about AI",
     "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
     "description": "Check out their website and codebase and find an issue.",
-    "catogery": "Explore",
-    "url": "./task/3"
+    "catogery": "Explore"
   }
 ]

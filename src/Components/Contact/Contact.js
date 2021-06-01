@@ -1,6 +1,7 @@
 import { Grid, makeStyles, Paper, Typography, useTheme } from '@material-ui/core';
 import React, { useState, useEffect } from 'react';
 import OC from './OC'
+import Groups from './Groups'
 
 export default function SimpleContainer() {
 
@@ -21,6 +22,7 @@ const theme = useTheme()
 return (
   <div>
       <OC />
+      <Groups />
   </div>
   )
 }

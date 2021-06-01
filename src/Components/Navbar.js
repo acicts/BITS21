@@ -14,14 +14,14 @@ import theme from '../theme';
 
 const useStyles = makeStyles(() => ({
     root: {
-      backgroundColor: theme.palette.secondary.main,
-      color: '#000'
+      backgroundColor: '#222372',
+      color: '#fefefe'
     },
     rooty: {
-      color: '#000'
+      color: '#b9b9b9'
     },
     icons: {
-      color: theme.palette.primary.main
+      color: '#527dd6'
 
     },
     selected: {
