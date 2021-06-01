@@ -21,16 +21,17 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 
+
 const useStyles = makeStyles(() => ({
   root: {
     display: 'flex',
     width: '600px',
-    height: '220px',
+    height: '230px',
     marginLeft: '100px',
     marginTop: '20px',
     backgroundColor: '#183d5d',
     color: '#fff',
-    borderRadius: '20px',
+    borderRadius: '15px',
     ['@media (max-width:540px)']: {
       position: 'relative',
       width: '95%',
@@ -47,9 +48,11 @@ const useStyles = makeStyles(() => ({
   details: {
     display: 'flex',
     flexDirection: 'column',
+    padding: '10px'
   },
   content: {
     flex: '1 0 auto',
+    
   },
   cover: {
     width: 151,
@@ -68,21 +71,23 @@ const useStyles = makeStyles(() => ({
     color: '#000',
     transition: '0.5s ease',
     '&:hover': {
-      backgroundColor: '#f587dc',
-      color: '#FFF',
+      backgroundColor: '#2d9886',
+      color: '#fff',
   },
   
   },
 
   catogery: {
-    float: 'right'
+    float: 'right',
+    marginTop: '-10px'
   },
   filter: {
     backgroundColor: '#183d5d',
     float: 'right',
-    marginRight: '50px',
+    marginRight: '20%',
     padding: '50px',
-    borderRadius: '25px',
+    borderRadius: '15px',
+    width: '15%',
     ['@media (max-width:540px)']: {
       position: 'relative',
       width: '65%',
@@ -102,6 +107,7 @@ const useStyles = makeStyles(() => ({
   
 
 }));
+
 
 export default function TaskCard() {
   const classes = useStyles();
@@ -127,10 +133,10 @@ export default function TaskCard() {
       <FormControl component="fieldset">
       <FormLabel component="legend">Filter Tasks</FormLabel>
       <RadioGroup className={classes.filterOptions} aria-label="tasks" name="filter" value={value} onChange={handleChange}>
-        <FormControlLabel value="All" control={<Radio color='secondary' />} label="All" />
-        <FormControlLabel value="Code" control={<Radio color='secondary'/>} label="Code" />
-        <FormControlLabel value="Design" control={<Radio color='secondary'/>} label="Design" />
-        <FormControlLabel value="Explore"  control={<Radio color='secondary'/>} label="Explore" />
+        <FormControlLabel value="All" control={<Radio color='secondary' />} label="All Tasks" />
+        <FormControlLabel value="Code" control={<Radio color='secondary'/>} label="Coding Tasks" />
+        <FormControlLabel value="Design" control={<Radio color='secondary'/>} label="Design Tasks" />
+        <FormControlLabel value="Explore"  control={<Radio color='secondary'/>} label="Explore Tasks" />
       </RadioGroup>
     </FormControl>
     </div>
@@ -158,7 +164,7 @@ export default function TaskCard() {
           <Typography variant="subtitle1"  color='textSecondary' className={classes.cat} >
             {tasks.shortDescription}
           </Typography>
-          <hr color='#17548a'></hr>
+          <hr color='#16548a'></hr>
           <Typography variant='caption'>Task ID: {tasks.id}</Typography>
         </CardContent>
         
@@ -171,6 +177,7 @@ export default function TaskCard() {
       </div>
     </Card>
     ))}
+
     </div>
     
   );
