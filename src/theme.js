@@ -11,16 +11,19 @@ const theme = createMuiTheme({
       contrastText: '#ffffff',
     },
     secondary: {
-      main: '#66ccff',
+      main: '#3ed1b8',
       contrastText: '#ffffff',
     },
+    accent: {
+      main: '#00ff00'
+    }
   },
   text: {
     primary: {
       main: '#ffffff',
     },
     secondary: {
-      main: '#fefefe',
+      main: '#000',
     },
   }
 });

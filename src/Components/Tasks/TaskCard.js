@@ -25,12 +25,24 @@ const useStyles = makeStyles(() => ({
   root: {
     display: 'flex',
     width: '600px',
-    height: '200px',
+    height: '220px',
     marginLeft: '100px',
     marginTop: '20px',
     backgroundColor: '#183d5d',
     color: '#fff',
     borderRadius: '20px',
+    ['@media (max-width:540px)']: {
+      position: 'relative',
+      width: '95%',
+      margin: 'auto',
+      marginTop: '20px',
+    },
+    ['@media (max-width:350px)']: {
+
+      width: '90%',
+      margin: 'auto',
+      marginTop: '20px',
+    }
   },
   details: {
     display: 'flex',
@@ -52,8 +64,8 @@ const useStyles = makeStyles(() => ({
   button: {
     marginLeft: '10px',
     marginBottom: '10px',
-    backgroundColor: '#3178f3',
-    color: '#fff',
+    backgroundColor: '#3ed1b8',
+    color: '#000',
     transition: '0.5s ease',
     '&:hover': {
       backgroundColor: '#f587dc',
@@ -63,7 +75,7 @@ const useStyles = makeStyles(() => ({
   },
 
   catogery: {
-    marginLeft: '230px'
+    float: 'right'
   },
   filter: {
     backgroundColor: '#183d5d',
@@ -71,6 +83,21 @@ const useStyles = makeStyles(() => ({
     marginRight: '50px',
     padding: '50px',
     borderRadius: '25px',
+    ['@media (max-width:540px)']: {
+      position: 'relative',
+      width: '65%',
+      margin: 'auto',
+      marginBottom: '20px',
+      float: 'none',
+
+    }
+  },
+
+  filterOptions: {
+    color: '#fff',
+    ['@media (max-width:540px)']: {
+      flexDirection: 'row',
+    }
   }
   
 
@@ -99,17 +126,17 @@ export default function TaskCard() {
       <div className={classes.filter}>
       <FormControl component="fieldset">
       <FormLabel component="legend">Filter Tasks</FormLabel>
-      <RadioGroup aria-label="tasks" name="filter" value={value} onChange={handleChange}>
-        <FormControlLabel value="All" control={<Radio />} label="All" />
-        <FormControlLabel value="Code" control={<Radio />} label="Code" />
-        <FormControlLabel value="Design" control={<Radio />} label="Design" />
-        <FormControlLabel value="Explore"  control={<Radio />} label="Explore" />
+      <RadioGroup className={classes.filterOptions} aria-label="tasks" name="filter" value={value} onChange={handleChange}>
+        <FormControlLabel value="All" control={<Radio color='secondary' />} label="All" />
+        <FormControlLabel value="Code" control={<Radio color='secondary'/>} label="Code" />
+        <FormControlLabel value="Design" control={<Radio color='secondary'/>} label="Design" />
+        <FormControlLabel value="Explore"  control={<Radio color='secondary'/>} label="Explore" />
       </RadioGroup>
     </FormControl>
     </div>
       {data.map((tasks, index) => (
 
-    <Card className={classes.root} color="primary"  key={index}>
+    <Card className={classes.root} color="primary"  key={index} >
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
@@ -128,14 +155,16 @@ export default function TaskCard() {
           </Tooltip>
           </span>
           </Typography>
-          <Typography variant="subtitle1"  color={theme.text.secondary.main} className={classes.cat} >
+          <Typography variant="subtitle1"  color='textSecondary' className={classes.cat} >
             {tasks.shortDescription}
           </Typography>
+          <hr color='#17548a'></hr>
+          <Typography variant='caption'>Task ID: {tasks.id}</Typography>
         </CardContent>
         
         <div className={classes.controls}>
         <Button variant="contained" component={Link} to={`/task/${tasks.id}`} className={classes.button}>
-          View
+          View Task
         </Button>
         
         </div>

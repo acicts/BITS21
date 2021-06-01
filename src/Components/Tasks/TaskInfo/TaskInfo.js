@@ -49,7 +49,7 @@ function a11yProps(index) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.primary.main,
     width: 500,
   },
 
@@ -59,29 +59,34 @@ const useStyles = makeStyles((theme) => ({
 
   container: {
     padding: '0',
-    backgroundColor: '#e2e2e2',
+    backgroundColor: theme.palette.primary.main,
     height: '100vh',
     padding: '0',
-    color: 'ffffff'
+    color: 'fff',
   },
 
   details: {
     backgroundColor:'#ffffff',
-    width: '810px',
+    width: '70%',
     padding: '0',
     height: 'max-content',
     margin: 'auto',
     marginTop: '230px',
-    color: 'ffffff'
+    color: 'ffffff',
+    ['@media (max-width:540px)']: {
+      position: 'relative',
+      width: '95%',
+      margin: 'auto',
+      marginTop: '230px'
+    },
   },
   appbar: {
     width: '100%',
     backgroundColor: '#0f7bc7'
   },
   title: {
-    width: '500px',
-    marginLeft: '210px',
-    marginBottom: '-200px',
+    width: '75%',
+    margin: 'auto',
     color: '#000000',
   },
 
@@ -90,7 +95,9 @@ const useStyles = makeStyles((theme) => ({
   },
   switcher: {
     color: '#ffffff',
-  
+  }, 
+  taskname: {
+    width: '75%',
   }
 }));
 
@@ -113,7 +120,6 @@ export default function FullWidthTabs() {
     return obj.id === id
   })
   const details = result[0]
-  console.log(result)
 
   return (
     <Container maxWidth="xl" className={classes.container}>
