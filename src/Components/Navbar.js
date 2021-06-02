@@ -11,6 +11,7 @@ import {
   MenuItem,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
+import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import theme from "../theme";
@@ -83,6 +84,12 @@ export default function Nav() {
     mobileView: false,
     drawerOpen: false,
   });
+
+  const [bColor, setBColor] = useState('#000')
+
+  function handleColor() {
+    setBColor('#fff')
+  }
 
   const { mobileView, drawerOpen } = state;
 
@@ -177,21 +184,63 @@ export default function Nav() {
   );
 
   const getMenuButtons = () => {
-    return headersData.map(({ label, href }) => {
+    
       return (
-        <Button
-          {...{
-            key: label,
-            color: "inherit",
-            to: href,
-            component: RouterLink,
-            className: menuButton,
-          }}
+        <div style={{    display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          width: '600px',}}>
+        <NavLink
+        className={menuButton}
+        to="/" exact
+        activeStyle={{
+          fontWeight: "bold",
+          color: "red"
+        }}
         >
-          {label}
-        </Button>
+          Home
+        </NavLink>
+        <NavLink
+        to="/tasks"
+        activeStyle={{
+          fontWeight: "bold",
+          color: "red"
+        }}
+        >
+          Tasks
+        </NavLink>
+        <NavLink
+        to="/onlinetest"
+        activeStyle={{
+          fontWeight: "bold",
+          color: "red"
+        }}
+        >
+          Online Tests
+        </NavLink>
+        <NavLink
+        to="/leaderboard"
+        activeStyle={{
+          fontWeight: "bold",
+          color: "red"
+        }}
+        >
+          LeaderBoard
+        </NavLink>
+        <NavLink
+        to="/contact"
+        activeStyle={{
+          fontWeight: "bold",
+          color: "red"
+        }}
+        >
+          Contact
+        </NavLink>
+        
+        </div>
       );
-    });
+
   };
 
   return (
