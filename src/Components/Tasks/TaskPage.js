@@ -24,7 +24,8 @@ const useStyles = makeStyles((theme) => ({
     padding: '0'
   },
   background: {
-      paddingTop: "20px",
+      paddingTop: "50px",
+      marginTop: '50px'
   },
   backToTop: {
     color: '#000'

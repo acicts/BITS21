@@ -48,11 +48,18 @@ const useStyles = makeStyles(() => ({
   details: {
     display: 'flex',
     flexDirection: 'column',
-    padding: '10px'
+    padding: '10px',
+   
   },
   content: {
     flex: '1 0 auto',
-    
+    marginRight: '-20px',
+    width: '545px',
+    ['@media (max-width:540px)']: {
+      position: 'relative',
+      width: '90%',
+      margin: 'auto',
+    },
   },
   cover: {
     width: 151,
@@ -77,6 +84,10 @@ const useStyles = makeStyles(() => ({
   
   },
 
+  catIcon: {
+    color: '#3ed1b8',
+  },
+
   catogery: {
     float: 'right',
     marginTop: '-10px'
@@ -90,13 +101,14 @@ const useStyles = makeStyles(() => ({
     width: '15%',
     position: 'sticky',
     right: '0',
-    top: '0',
+    top: '100px',
     ['@media (max-width:540px)']: {
       position: 'relative',
       width: '65%',
       margin: 'auto',
       marginBottom: '20px',
       float: 'none',
+      top: '0'
 
     }
   },
@@ -106,6 +118,15 @@ const useStyles = makeStyles(() => ({
     ['@media (max-width:540px)']: {
       flexDirection: 'row',
     }
+  }
+  , codeIcon: {
+    color: '#3ed1b8'
+  }
+  , brushIcon: {
+    color: '#3ed1b8'
+  }
+  , exploreIcon: {
+    color: '#3ed1b8'
   }
   
 
@@ -152,12 +173,12 @@ export default function TaskCard() {
             {tasks.taskName}
             <span className={classes.catogery}>
             <Tooltip title={tasks.catogery}>
-              <IconButton aria-label={tasks.catogery} color='secondary'>
+              <IconButton aria-label={tasks.catogery} className={classes.catIcon}>
          {(() => {
         switch (tasks.catogery) {
-          case "Code":   return <CodeIcon />;
-          case "Design": return <BrushIcon />;
-          case "Explore":  return <FindInPageIcon />;
+          case "Code":   return <CodeIcon className={classes.codeIcon} />;
+          case "Design": return <BrushIcon className={classes.brushIcon} />;
+          case "Explore":  return <FindInPageIcon className={classes.exploreIcon} />;
         }
       })()}
           </IconButton>

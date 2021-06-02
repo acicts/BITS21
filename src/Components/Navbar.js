@@ -1,53 +1,204 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
-import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import HomeIcon from '@material-ui/icons/Home';
-import AssignmentIcon from '@material-ui/icons/Assignment';
-import FormatListNumberedIcon from '@material-ui/icons/FormatListNumbered';
-import InfoIcon from '@material-ui/icons/Info';
-import ContactsIcon from '@material-ui/icons/Contacts';
-import { Link as RouterLink } from 'react-router-dom';
-import theme from '../theme';
 
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  makeStyles,
+  Button,
+  IconButton,
+  Drawer,
+  Link,
+  MenuItem,
+} from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
+import React, { useState, useEffect } from "react";
+import { Link as RouterLink } from "react-router-dom";
+import theme from "../theme";
+import logoGIF from '../Img/logo.gif'
 
+const headersData = [
+  {
+    label: "Home",
+    href: "/",
+  },
+  {
+    label: "Tasks",
+    href: "/tasks",
+  },
+  {
+    label: "LeaderBoard",
+    href: "/leaderboard",
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+  },
+];
 
 const useStyles = makeStyles(() => ({
-    root: {
-      backgroundColor: '#222372',
-      color: '#fefefe'
+  header: {
+    backgroundColor: theme.palette.secondary.main,
+    paddingRight: "79px",
+    paddingLeft: "118px",
+    color: '#183d5d',
+        "@media (max-width: 900px)": {
+      paddingLeft: 0,
     },
-    rooty: {
-      color: '#b9b9b9'
-    },
-    icons: {
-      color: '#527dd6'
+  },
+  logo: {
+    fontFamily: "Work Sans, sans-serif",
+    fontWeight: 600,
+    color: "#183d5d",
+    textAlign: "left",
+  },
+  logoMobile: {
+    
+  },
+  menuButton: {
+    fontFamily: "Open Sans, sans-serif",
+    fontWeight: 700,
+    size: "18px",
+    marginLeft: "38px",
+  },
+  toolbar: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  drawerContainer: {
+    padding: "20px 30px",
+    height: '100%',
+    paddingBottom: '100%',
+    backgroundColor: '#072540',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+  },
+}));
 
-    },
-    selected: {
-      color: '#fff'
-    }
+export default function Nav() {
+  const { header, logo, menuButton, toolbar, drawerContainer, drawer } = useStyles();
 
-  }));
-  
-  export default function Navbar() {
-    const classes = useStyles();
-    const [value, setValue] = React.useState(0);
-  
+  const [state, setState] = useState({
+    mobileView: false,
+    drawerOpen: false,
+  });
+
+  const { mobileView, drawerOpen } = state;
+
+  useEffect(() => {
+    const setResponsiveness = () => {
+      return window.innerWidth < 900
+        ? setState((prevState) => ({ ...prevState, mobileView: true }))
+        : setState((prevState) => ({ ...prevState, mobileView: false }));
+    };
+
+    setResponsiveness();
+
+    window.addEventListener("resize", () => setResponsiveness());
+
+    return () => {
+      window.removeEventListener("resize", () => setResponsiveness());
+    };
+  }, []);
+
+  const displayDesktop = () => {
     return (
-      <BottomNavigation
-        value={value}
-        
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
-        showLabels
-        className={classes.root}
-      >
-        <BottomNavigationAction className={classes.rooty} classes={{selected: classes.selected}} component={RouterLink} to="/" label="Home" icon={ <HomeIcon className={classes.icons}/> }/>
-        <BottomNavigationAction className={classes.rooty} classes={{selected: classes.selected}} component={RouterLink} to="/leaderboard" label="Leaderboard" icon={ <FormatListNumberedIcon className={classes.icons}/> }/>
-        <BottomNavigationAction className={classes.rooty} classes={{selected: classes.selected}} component={RouterLink} to="/tasks" label="Tasks" icon={ <AssignmentIcon className={classes.icons}/> }/>
-        <BottomNavigationAction className={classes.rooty} classes={{selected: classes.selected}} component={RouterLink} to="/contact" label="Contact" icon={ <ContactsIcon className={classes.icons}/> }/>
-      </BottomNavigation>
+      <Toolbar className={toolbar}>
+        {femmecubatorLogo}
+        <div>{getMenuButtons()}</div>
+      </Toolbar>
     );
-  }
+  };
+
+  const displayMobile = () => {
+    const handleDrawerOpen = () =>
+      setState((prevState) => ({ ...prevState, drawerOpen: true }));
+    const handleDrawerClose = () =>
+      setState((prevState) => ({ ...prevState, drawerOpen: false }));
+
+    return (
+      <Toolbar>
+        <IconButton
+          {...{
+            edge: "start",
+            color: "#183d5d",
+            "aria-label": "menu",
+            "aria-haspopup": "true",
+            onClick: handleDrawerOpen,
+          }}
+        >
+          <MenuIcon />
+        </IconButton>
+
+        <Drawer
+          {...{
+            anchor: "left",
+            open: drawerOpen,
+            onClose: handleDrawerClose,
+            onClick: handleDrawerClose
+          }}
+          className={drawer}
+        >
+          
+          <div className={drawerContainer}>
+          <img src={logoGIF} style={{height: '100px'}}></img>
+            {getDrawerChoices()}</div>
+        </Drawer>
+
+        <div>{femmecubatorLogo}</div>
+      </Toolbar>
+    );
+  };
+
+  const getDrawerChoices = () => {
+    return headersData.map(({ label, href }) => {
+      
+    <img src={logoGIF}></img>
+      return (
+        <Link
+          {...{
+            component: RouterLink,
+            to: href,
+            color: "inherit",
+            style: { textDecoration: "none" },
+            key: label,
+          }}
+        > 
+         
+          <MenuItem>{label}</MenuItem>
+        </Link>
+      );
+    });
+  };
+
+  const femmecubatorLogo = (
+    <img src={logoGIF} style={{height: '100px'}}></img>
+  );
+
+  const getMenuButtons = () => {
+    return headersData.map(({ label, href }) => {
+      return (
+        <Button
+          {...{
+            key: label,
+            color: "inherit",
+            to: href,
+            component: RouterLink,
+            className: menuButton,
+          }}
+        >
+          {label}
+        </Button>
+      );
+    });
+  };
+
+  return (
+    <header>
+      <AppBar className={header}>
+        {mobileView ? displayMobile() : displayDesktop()}
+      </AppBar>
+    </header>
+  );
+}

@@ -48,6 +48,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '30px',
     marginRight: '50px',
   },
+  icons: {
+    color: '#3ed1b8'
+  }
   
 }));
 
@@ -75,11 +78,11 @@ export default function OC() {
         {member.description}
         </Typography>
       </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="GitHub" color='secondary' href={member.github}>
+      <CardActions disableSpacing >
+        <IconButton className={classes.icons} aria-label="GitHub" href={member.github}>
           <GitHub />
         </IconButton>
-        <IconButton aria-label="Instagram" color='secondary' href={member.insta}>
+        <IconButton className={classes.icons} aria-label="Instagram" href={member.insta}>
           <Instagram />
         </IconButton>
       </CardActions>
