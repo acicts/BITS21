@@ -63,6 +63,14 @@ const useStyles = makeStyles(() => ({
     textDecoration: 'none',
     color: '#072540'
   },
+  mobileMenuButton: {
+    fontFamily: "Open Sans, sans-serif",
+    fontWeight: 700,
+    size: "18px",
+    marginLeft: "38px",
+    textDecoration: 'none',
+    color: '#fff'
+  },
   toolbar: {
     display: "flex",
     justifyContent: "space-between",
@@ -80,7 +88,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 export default function Nav() {
-  const { header, logo, menuButton, toolbar, drawerContainer, drawer } = useStyles();
+  const { header, logo, menuButton,mobileMenuButton, toolbar, drawerContainer, drawer } = useStyles();
 
   const [state, setState] = useState({
     mobileView: false,
@@ -161,24 +169,80 @@ export default function Nav() {
   };
 
   const getDrawerChoices = () => {
-    return headersData.map(({ label, href }) => {
-      
-    <img src={logoGIF}></img>
       return (
-        <Link
-          {...{
-            component: RouterLink,
-            to: href,
-            color: "inherit",
-            style: { textDecoration: "none" },
-            key: label,
-          }}
-        > 
-         
-          <MenuItem>{label}</MenuItem>
-        </Link>
+        <div style={{    display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          width: '100px',
+          height: '300px'}}>
+        <NavLink
+        className={mobileMenuButton}
+        to="/" exact
+        activeStyle={{
+          fontWeight: "bold",
+          borderBottomStyle: 'solid',
+          borderColor: '#183d5d',
+          borderWidth: 'medium',
+          color: '#005bad',
+        }}
+        >
+          Home
+        </NavLink>
+        <NavLink
+        className={mobileMenuButton}
+        to="/tasks"
+        activeStyle={{
+          fontWeight: "bold",
+          borderBottomStyle: 'solid',
+          borderColor: '#183d5d',
+          borderWidth: 'medium',
+          color: '#005bad',
+        }}
+        >
+          Tasks
+        </NavLink>
+        <NavLink
+        className={mobileMenuButton}
+        to="/onlinetest"
+        activeStyle={{
+          fontWeight: "bold",
+          borderBottomStyle: 'solid',
+          borderColor: '#183d5d',
+          borderWidth: 'medium',
+          color: '#005bad',
+        }}
+        >
+          Online Tests
+        </NavLink>
+        <NavLink
+        className={mobileMenuButton}
+        to="/leaderboard"
+        activeStyle={{
+          fontWeight: "bold",
+          borderBottomStyle: 'solid',
+          borderColor: '#183d5d',
+          borderWidth: 'medium',
+          color: '#005bad',
+        }}
+        >
+          LeaderBoard
+        </NavLink>
+        <NavLink
+        className={mobileMenuButton}
+        to="/contact"
+        activeStyle={{
+          fontWeight: "bold",
+          borderBottomStyle: 'solid',
+          borderColor: '#183d5d',
+          borderWidth: 'medium',
+          color: '#005bad',
+        }}
+        >
+          Contact
+        </NavLink>
+        </div>
       );
-    });
   };
 
   const femmecubatorLogo = (
