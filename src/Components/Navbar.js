@@ -60,6 +60,8 @@ const useStyles = makeStyles(() => ({
     fontWeight: 700,
     size: "18px",
     marginLeft: "38px",
+    textDecoration: 'none',
+    color: '#072540'
   },
   toolbar: {
     display: "flex",
@@ -196,43 +198,62 @@ export default function Nav() {
         to="/" exact
         activeStyle={{
           fontWeight: "bold",
-          color: "red"
+          borderBottomStyle: 'solid',
+          borderColor: '#183d5d',
+          borderWidth: 'medium',
+          color: '#005bad',
         }}
         >
           Home
         </NavLink>
         <NavLink
+        className={menuButton}
         to="/tasks"
         activeStyle={{
           fontWeight: "bold",
-          color: "red"
+          borderBottomStyle: 'solid',
+          borderColor: '#183d5d',
+          borderWidth: 'medium',
+          color: '#005bad',
         }}
         >
           Tasks
         </NavLink>
         <NavLink
+        className={menuButton}
         to="/onlinetest"
         activeStyle={{
           fontWeight: "bold",
-          color: "red"
+          borderBottomStyle: 'solid',
+          borderColor: '#183d5d',
+          borderWidth: 'medium',
+          color: '#005bad',
         }}
         >
           Online Tests
         </NavLink>
         <NavLink
+        className={menuButton}
         to="/leaderboard"
         activeStyle={{
           fontWeight: "bold",
-          color: "red"
+          borderBottomStyle: 'solid',
+          borderColor: '#183d5d',
+          borderWidth: 'medium',
+          color: '#005bad',
         }}
         >
           LeaderBoard
         </NavLink>
         <NavLink
+        className={menuButton}
         to="/contact"
         activeStyle={{
           fontWeight: "bold",
-          color: "red"
+          borderBottomStyle: 'solid',
+          borderColor: '#183d5d',
+          borderWidth: 'medium',
+          color: '#005bad',
         }}
         >
           Contact

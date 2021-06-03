@@ -42,6 +42,9 @@ const useStyles = makeStyles({
   },
   body: {
     color: '#000'
+  },
+  papper: {
+    marginTop: '100px'
   }
 });
 
