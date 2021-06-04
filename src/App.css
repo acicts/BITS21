@@ -89,7 +89,7 @@ body {
     font-size: 8.5rem;
     left: 42%;
     top: 15%;
-    color: #ffffff;
+    color: #3ed1b8;
   }
   
    .err2 {
@@ -113,9 +113,10 @@ body {
   
   a {
     text-decoration: none;
-    color: white;
+    color: #3ed1b8;
   }
   
   a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: '#3ed1b8';
   }
