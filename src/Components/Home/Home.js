@@ -6,7 +6,7 @@ import Header from './Header'
 function Home() {
     const useStyles = makeStyles({
         homeContainer: {
-          marginTop: '100px',
+          
         }
     });
       const classes = useStyles();

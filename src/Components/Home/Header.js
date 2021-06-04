@@ -1,20 +1,27 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid } from '@material-ui/core'; 
+import { Grid, Typography, Button } from '@material-ui/core'; 
 import theme from '../../theme'  
+import {ReactComponent as Logo} from '../../Img/hero.svg';
 
 export default function Header() {
     const useStyles = makeStyles({
         headerContainer: {
-            width: '80%',
+            width: '95%',
             margin: 'auto',
             marginTop: '200px'
         },
 
         hero: {
-            backgroundColor: '#000'
+            padding: '40px',
+            paddingTop: '170px'
         },
         svg: {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-end'
+        },
+        logo: {
 
         }
     });
@@ -23,11 +30,15 @@ export default function Header() {
     return (
         <div>
             <Grid container className={classes.headerContainer}>
-                <Grid item xl={6} lg={6} md={12} sm={12} xs={12} className={classes.hero}>
-                    <h1>Hello</h1>
+                <Grid item  xl={6} lg={6} md={12} sm={12} xs={12} className={classes.hero}>
+                    <Typography variant='h2' gutterBottom="true" align='left' style={{marginBottom: '50px', fontWeight: 'bold'}}>BITS 2021</Typography>
+
+                    <Typography variant='h5'  align='left' style={{marginBottom: '50px'}}><span style={{color: '#3ed1b8'}}>The First-Ever Task-Based Intra-School ICT competition,</span>  organized by the Ananda College ICT Society to provide a platform for our school's students to polish and improve their ICT knowledge in many fields of ICT</Typography>
+
+                    <Button variant='outlined' color='secondary'>Register Now</Button>
                 </Grid>
                 <Grid item xl={6} lg={6} md={12} sm={12} xs={12} className={classes.svg}>
-                    <h1>World</h1>
+                    <Logo className={classes.logo}/>
                 </Grid>
             </Grid>
         </div>

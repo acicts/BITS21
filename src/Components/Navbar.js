@@ -15,7 +15,7 @@ import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import theme from "../theme";
-import logoGIF from '../Img/logo.gif'
+import logoGIF from '../Img/BITS-logo-w.gif'
 
 const headersData = [
   {
@@ -38,14 +38,16 @@ const headersData = [
 
 const useStyles = makeStyles(() => ({
   header: {
-    backgroundColor: theme.palette.secondary.main,
+    transition: '0.5s ease',
+    background: 'transparent',
     paddingRight: "79px",
-    paddingLeft: "118px",
+    paddingLeft: "50px",
     color: '#183d5d',
         "@media (max-width: 900px)": {
       paddingLeft: 0,
     },
   },
+
   logo: {
     fontFamily: "Work Sans, sans-serif",
     fontWeight: 600,
@@ -58,10 +60,10 @@ const useStyles = makeStyles(() => ({
   menuButton: {
     fontFamily: "Open Sans, sans-serif",
     fontWeight: 700,
-    size: "18px",
+    size: "25px",
     marginLeft: "38px",
     textDecoration: 'none',
-    color: '#072540'
+    color: '#fff'
   },
   mobileMenuButton: {
     fontFamily: "Open Sans, sans-serif",
@@ -85,21 +87,42 @@ const useStyles = makeStyles(() => ({
     justifyContent: 'space-evenly',
     alignItems: 'center',
   },
+
+  headerActive: {
+    transition: '0.5s ease',
+    backgroundColor: '#06192e',
+    height: '80px',
+    paddingRight: "79px",
+    paddingLeft: "118px",
+    color: '#183d5d',
+        "@media (max-width: 900px)": {
+      paddingLeft: 0,
+    },
+  }
 }));
 
 export default function Nav() {
-  const { header, logo, menuButton,mobileMenuButton, toolbar, drawerContainer, drawer } = useStyles();
+  const { header, logo, menuButton, headerActive, mobileMenuButton, toolbar, drawerContainer, drawer } = useStyles();
 
   const [state, setState] = useState({
     mobileView: false,
     drawerOpen: false,
   });
 
-  const [bColor, setBColor] = useState('#000')
+  let size = '50px'
+  let bigSize = '100px'
 
-  function handleColor() {
-    setBColor('#fff')
+  const [nav, setNav] = useState(false)
+
+  const changeBackground = () => {
+    if(window.scrollY >= 100) {
+      setNav(true)
+    } else {
+      setNav(false)
+    }
   }
+
+  window.addEventListener('scroll', changeBackground)
 
   const { mobileView, drawerOpen } = state;
 
@@ -246,7 +269,7 @@ export default function Nav() {
   };
 
   const femmecubatorLogo = (
-    <img src={logoGIF} style={{height: '100px'}}></img>
+    <img src={logoGIF} style={{height: "100px"}}></img>
   );
 
   const getMenuButtons = () => {
@@ -262,10 +285,8 @@ export default function Nav() {
         to="/" exact
         activeStyle={{
           fontWeight: "bold",
-          borderBottomStyle: 'solid',
-          borderColor: '#183d5d',
-          borderWidth: 'medium',
-          color: '#005bad',
+          fontSize: '20px',
+          color: '#3ed1b8',
         }}
         >
           Home
@@ -275,10 +296,8 @@ export default function Nav() {
         to="/tasks"
         activeStyle={{
           fontWeight: "bold",
-          borderBottomStyle: 'solid',
-          borderColor: '#183d5d',
-          borderWidth: 'medium',
-          color: '#005bad',
+          fontSize: '20px',
+          color: '#3ed1b8',
         }}
         >
           Tasks
@@ -288,10 +307,8 @@ export default function Nav() {
         to="/onlinetest"
         activeStyle={{
           fontWeight: "bold",
-          borderBottomStyle: 'solid',
-          borderColor: '#183d5d',
-          borderWidth: 'medium',
-          color: '#005bad',
+          fontSize: '20px',
+          color: '#3ed1b8',
         }}
         >
           Online Tests
@@ -301,10 +318,8 @@ export default function Nav() {
         to="/leaderboard"
         activeStyle={{
           fontWeight: "bold",
-          borderBottomStyle: 'solid',
-          borderColor: '#183d5d',
-          borderWidth: 'medium',
-          color: '#005bad',
+          fontSize: '20px',
+          color: '#3ed1b8',
         }}
         >
           LeaderBoard
@@ -314,10 +329,8 @@ export default function Nav() {
         to="/contact"
         activeStyle={{
           fontWeight: "bold",
-          borderBottomStyle: 'solid',
-          borderColor: '#183d5d',
-          borderWidth: 'medium',
-          color: '#005bad',
+          fontSize: '20px',
+          color: '#3ed1b8',
         }}
         >
           Contact
@@ -330,7 +343,7 @@ export default function Nav() {
 
   return (
     <header>
-      <AppBar className={header}>
+      <AppBar className={nav ? headerActive : header}  elevation={0}>
         {mobileView ? displayMobile() : displayDesktop()}
       </AppBar>
     </header>

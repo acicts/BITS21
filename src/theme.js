@@ -18,6 +18,7 @@ const theme = createMuiTheme({
       main: '#00ff00'
     }
   },
+
   text: {
     primary: {
       main: '#ffffff',
@@ -25,6 +26,10 @@ const theme = createMuiTheme({
     secondary: {
       main: '#000',
     },
+  },
+
+  typography: {
+    fontFamily: "'Titillium Web', sans-serif"
   }
 });
 

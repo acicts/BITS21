@@ -9,7 +9,7 @@ import LeaderBoard from './Components/Leaderboard/Chart'
 import Contact from './Components/Contact/Contact'
 import Task from './Components/Tasks/TaskInfo/TaskInfo'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
+import NotFound from './Components/NotFound'
 
 export default function App() {
 
@@ -18,16 +18,20 @@ export default function App() {
     
     <div>
     <Nav />
-      <Switch>
       <ThemeProvider theme={Theme}>
+      <Switch>
       <Route exact path="/" component={Home}/>
       <Route path="/tasks" component={TaskPage}/>
       <Route path="/leaderboard" component={LeaderBoard}/>
       <Route path="/contact" component={Contact}/>
 
       <Route path='/task/:id' component={Task} />
-      </ThemeProvider>
+
+      <Route  path='*'> <NotFound /> </Route>
+      <Route  path='*/*'> <NotFound /> </Route>
       </Switch>
+      </ThemeProvider>
+      
     </div>
     
     </Router>
