@@ -1,58 +1,19 @@
 import React, { useState } from 'react'
-import Typewriter from 'typewriter-effect';
 import { Paper, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { motion } from "framer-motion"
+import Header from './Header'
 
 function Home() {
     const useStyles = makeStyles({
-        introduction: {
-          color: '#001B2E',
-          marginLeft: '-50%',
-          marginRight: '-22%',
-          textAlign: 'center',
-        },
-        background: {
-          background: 'linear-gradient(70deg, rgba(24,89,226,1) 11%, rgba(0,241,255,1) 100%)',
-          paddingBottom: '30px',
-          zIndex: '-1'
-        },
-        home: {
-          background: 'linear-gradient(70deg, rgba(24,89,226,1) 11%, rgba(0,241,255,1) 100%)',
-          height: 'ma',
-          zIndex: '1'
+        homeContainer: {
+          marginTop: '100px',
         }
-
-        
-      });
+    });
       const classes = useStyles();
     return (
-        <div className={classes.home}>
-          <Paper className={classes.background} elevation='0'>
-        <div className='title'>
-        <motion.div
-      initial={{y:1500}}
-    animate={{y:0}}
-    transition={{ duration: 2 }}
-    > 
-            <Typewriter
-  options={{
-    strings: ['BiT', 'BITS 2021'],
-    pauseFor: '100ms',
-    autoStart: true,
-    loop: true,
-  }}
-/>
-
-            <Typography variant="h6" component="h4" className={classes.introduction}>
-            BITS, The First-Ever Task-Based Intra-School ICT competition, organized by the Ananda College ICT Society to provide a platform for our school's students to polish and improve their ICT knowledge in many fields of ICT
-            </Typography>
-            </motion.div>
-        </div>
-        </Paper>
-        </div>
-
-    
+      <div className={classes.homeContainer}>
+        <Header />
+      </div>
     )
 }
 
