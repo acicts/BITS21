@@ -9,7 +9,13 @@ export default function Header() {
         headerContainer: {
             width: '95%',
             margin: 'auto',
-            marginTop: '200px'
+            marginTop: '10%',
+            [theme.breakpoints.down('md')]: {
+                marginTop: '5%'
+            },
+            [theme.breakpoints.down('xs')]: {
+                marginTop: '0'
+            },
         },
 
         hero: {
@@ -19,10 +25,17 @@ export default function Header() {
         svg: {
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'flex-end'
+            alignItems: 'flex-end',
+            [theme.breakpoints.down('lg')]: {
+                alignItems: 'center',
+            },
         },
         logo: {
-
+            [theme.breakpoints.down('lg')]: {
+                width: '100%',
+            height: 'auto'
+            },
+            
         }
     });
     const classes = useStyles();
@@ -38,7 +51,8 @@ export default function Header() {
                     <Button variant='outlined' color='secondary'>Register Now</Button>
                 </Grid>
                 <Grid item xl={6} lg={6} md={12} sm={12} xs={12} className={classes.svg}>
-                    <Logo className={classes.logo}/>
+                    <div className={classes.svgContainer}><Logo className={classes.logo}/></div>
+                    
                 </Grid>
             </Grid>
         </div>
