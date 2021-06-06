@@ -32,13 +32,12 @@ const useStyles = makeStyles((theme) => ({
     width: '50px',
     height: '50px',
   },
-  subheader: {
 
-  },
   OCContainer: {
     marginTop: '30px',
     marginRight: '50px',
   },
+  
   button: {
     marginLeft: '10px',
     marginBottom: '10px',
