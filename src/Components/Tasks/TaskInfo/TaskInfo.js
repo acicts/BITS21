@@ -61,7 +61,6 @@ const useStyles = makeStyles((theme) => ({
     padding: '0',
     backgroundColor: theme.palette.primary.main,
     height: '100vh',
-    padding: '0',
     color: 'fff',
   },
 
@@ -73,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     marginTop: '230px',
     color: 'ffffff',
-    ['@media (max-width:540px)']: {
+    [theme.breakpoints.down('xs')]: {
       position: 'relative',
       width: '95%',
       margin: 'auto',

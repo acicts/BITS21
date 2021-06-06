@@ -5,14 +5,8 @@ import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
-import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
-import catImg from '../../Img/cat.jpg'
-import { GitHub, Instagram } from '@material-ui/icons';
-import theme from '../../theme'
-import OCdata from '../../Data/OC.json'
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 const useStyles = makeStyles((theme) => ({
@@ -26,23 +20,14 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '15px',
     [theme.breakpoints.down('xs')]: {
       marginLeft: '10px',
-    marginRight: '10px',
+      marginRight: '10px',
   },
   },
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
-  expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
-  },
-  expandOpen: {
-    transform: 'rotate(180deg)',
-  },
+  
   avatar: {
     width: '50px',
     height: '50px',
@@ -58,7 +43,6 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: '10px',
     marginBottom: '10px',
     background: '#3ed1b8',
-    color: '#fefefe',
     transition: '0.5s ease',
     '&:hover': {
       backgroundColor: '#3ed1b8',
@@ -72,11 +56,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function OC() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
 
   return (
     <Grid xl={12} md={12} lg={12} container direction="row" justify="space-around" alignItems="center" className={classes.OCContainer}>

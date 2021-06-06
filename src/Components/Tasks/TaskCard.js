@@ -1,12 +1,10 @@
-import React, { Component, useState }  from 'react';
-import { unmountComponentAtNode, render } from "react-dom";
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import React, { useState }  from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import { Avatar, IconButton } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 import Tooltip from '@material-ui/core/Tooltip';
 import CodeIcon from '@material-ui/icons/Code';
 import BrushIcon from '@material-ui/icons/Brush';
@@ -14,7 +12,6 @@ import FindInPageIcon from '@material-ui/icons/FindInPage';
 import taskDetails from '../../Data/tasks.json'
 import theme from '../../theme'
 import { Link } from 'react-router-dom';
-import { render as renderelement } from '@testing-library/react';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -149,7 +146,6 @@ const useStyles = makeStyles(() => ({
 
 export default function TaskCard() {
   const classes = useStyles();
-  const theme = useTheme();
   const [value, setValue] = React.useState('All');
   const [data, setData] = useState(taskDetails)
 
@@ -160,7 +156,7 @@ export default function TaskCard() {
      setData(result.filter(function(obj, index){
       return obj.catogery===event.target.value;})) 
   ;
-  if (event.target.value == "All") {
+  if (event.target.value === "All") {
     setData(taskDetails) 
   }
 }
@@ -189,7 +185,9 @@ export default function TaskCard() {
             <Tooltip title={tasks.catogery}>
               <IconButton aria-label={tasks.catogery} className={classes.catIcon}>
          {(() => {
+           // eslint-disable-next-line
         switch (tasks.catogery) {
+          
           case "Code":   return <CodeIcon className={classes.codeIcon} />;
           case "Design": return <BrushIcon className={classes.brushIcon} />;
           case "Explore":  return <FindInPageIcon className={classes.exploreIcon} />;

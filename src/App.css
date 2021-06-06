@@ -8,62 +8,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 0;
-    
-}
-
-
-.PrivateTabIndicator-root-12 {
-    background: #a1a1a1;
-}
-
-.App {
-    color: #00467c;
-}
-
-/*    HOME PAGE    */
-.title {
-    color: #001B2E;
-    font-size: 1000%;
-    margin-top: 15%;
-    margin-left: 32%;
-    margin-right: 15%;
-}
-
-.home {
-    
-}
-
-.anim {
-    margin: 0;
-  position: absolute;
-  top: 80%;
-  
-  left: 50%;
-}
-
-
-/*    TASK PAGE    */
-.details {
-    width: 80%;
-    margin: auto;
-    
-}
-
-.add {
-    color: rgb(102, 199, 167);
-}
-
-
-.taskname {
-   
-    margin-top: 100px;
-    margin-bottom: -200px;
-    
-}
-
-.MuiBottomNavigationAction-root.Mui-selected {
-    color: #ffffff;
-    transform: scale(110%);
 }
 
 .mainbox {
@@ -73,50 +17,50 @@ body {
     margin-top: 250px;
     width: 600px;
     position: relative;
-  }
+}
   
-    .err {
-      color: #ffffff;
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 11rem;
-      position:absolute;
-      left: 20%;
-      top: 8%;
-    }
+.err {
+  color: #ffffff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 11rem;
+  position:absolute;
+  left: 20%;
+  top: 8%;
+}
   
-  .far {
-    position: absolute;
-    font-size: 8.5rem;
-    left: 42%;
-    top: 15%;
-    color: #3ed1b8;
-  }
+.far {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 42%;
+  top: 15%;
+  color: #3ed1b8;
+}   
   
-   .err2 {
-      color: #ffffff;
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 11rem;
-      position:absolute;
-      left: 68%;
-      top: 8%;
-    }
+.err2 {
+  color: #ffffff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 11rem;
+  position:absolute;
+  left: 68%;
+  top: 8%;
+}
   
-  .msg {
-      text-align: center;
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 1.6rem;
-      position:absolute;
-      left: 16%;
-      top: 45%;
-      width: 75%;
-    }
-  
-  a {
-    text-decoration: none;
-    color: #3ed1b8;
-  }
-  
-  a:hover {
-    text-decoration: none;
-    color: '#3ed1b8';
-  }
+.msg {
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.6rem;
+  position:absolute;
+  left: 16%;
+  top: 45%;
+  width: 75%;
+}
+
+a {
+text-decoration: none;
+color: #3ed1b8;
+}
+
+a:hover {
+text-decoration: none;
+color: '#3ed1b8';
+}

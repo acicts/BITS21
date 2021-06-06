@@ -13,7 +13,7 @@ import { GitHub, Instagram } from '@material-ui/icons';
 import theme from '../../theme'
 import OCdata from '../../Data/OC.json'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     maxWidth: 345,
     marginBottom: '50px',
@@ -27,27 +27,12 @@ const useStyles = makeStyles((theme) => ({
     marginRight: '10px',
   },
   },
-  media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
-  },
-  expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
-  },
-  expandOpen: {
-    transform: 'rotate(180deg)',
-  },
+
   avatar: {
     width: '50px',
     height: '50px',
   },
-  subheader: {
 
-  },
   OCContainer: {
     marginTop: '150px',
     marginRight: '50px',
@@ -61,11 +46,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function OC() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
 
   return (
     <Grid xl={12} md={12} lg={12} container direction="row" justify="space-around" alignItems="center" className={classes.OCContainer}>

@@ -2,39 +2,14 @@
 import {
   AppBar,
   Toolbar,
-  Typography,
   makeStyles,
-  Button,
   IconButton,
   Drawer,
-  Link,
-  MenuItem,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from "react";
-import { Link as RouterLink } from "react-router-dom";
-import theme from "../theme";
 import logoGIF from '../Img/BITS-logo-w.gif'
-
-const headersData = [
-  {
-    label: "Home",
-    href: "/",
-  },
-  {
-    label: "Tasks",
-    href: "/tasks",
-  },
-  {
-    label: "LeaderBoard",
-    href: "/leaderboard",
-  },
-  {
-    label: "Contact",
-    href: "/contact",
-  },
-];
 
 const useStyles = makeStyles(() => ({
   header: {
@@ -106,7 +81,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 export default function Nav() {
-  const { header, logo, menuButton, menu, headerActive, mobileMenuButton, toolbar, drawerContainer, drawer } = useStyles();
+  const { header, menuButton, menu, headerActive, mobileMenuButton, toolbar, drawerContainer, drawer } = useStyles();
 
   const [state, setState] = useState({
     mobileView: false,
@@ -183,7 +158,7 @@ export default function Nav() {
         >
           
           <div className={drawerContainer}>
-          <img src={logoGIF} style={{height: '100px'}}></img>
+          <img src={logoGIF} alt="logo" style={{height: '100px'}}></img>
             {getDrawerChoices()}</div>
         </Drawer>
 
@@ -270,7 +245,7 @@ export default function Nav() {
   };
 
   const femmecubatorLogo = (
-    <img src={logoGIF} style={{height: "100px"}}></img>
+    <img src={logoGIF} alt="logo" style={{height: "100px"}}></img>
   );
 
   const getMenuButtons = () => {
