@@ -21,7 +21,11 @@ const useStyles = makeStyles((theme) => ({
     marginRight: '50px',
     background: '#183d5d',
     color: theme.palette.primary.contrastText,
-    borderRadius: '15px'
+    borderRadius: '15px',
+    [theme.breakpoints.down('xs')]: {
+      marginLeft: '10px',
+    marginRight: '10px',
+  },
   },
   media: {
     height: 0,
@@ -45,8 +49,9 @@ const useStyles = makeStyles((theme) => ({
 
   },
   OCContainer: {
-    marginTop: '30px',
+    marginTop: '150px',
     marginRight: '50px',
+ 
   },
   icons: {
     color: '#3ed1b8'
