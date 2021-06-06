@@ -98,19 +98,20 @@ const useStyles = makeStyles(() => ({
         "@media (max-width: 900px)": {
       paddingLeft: 0,
     },
+  },
+
+  menu: {
+    color: '#3ed1b8'
   }
 }));
 
 export default function Nav() {
-  const { header, logo, menuButton, headerActive, mobileMenuButton, toolbar, drawerContainer, drawer } = useStyles();
+  const { header, logo, menuButton, menu, headerActive, mobileMenuButton, toolbar, drawerContainer, drawer } = useStyles();
 
   const [state, setState] = useState({
     mobileView: false,
     drawerOpen: false,
   });
-
-  let size = '50px'
-  let bigSize = '100px'
 
   const [nav, setNav] = useState(false)
 
@@ -162,13 +163,13 @@ export default function Nav() {
         <IconButton
           {...{
             edge: "start",
-            color: "#183d5d",
+            color: "#fff",
             "aria-label": "menu",
             "aria-haspopup": "true",
             onClick: handleDrawerOpen,
           }}
         >
-          <MenuIcon />
+          <MenuIcon className={menu} />
         </IconButton>
 
         <Drawer

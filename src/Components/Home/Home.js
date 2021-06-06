@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import { Paper, Typography } from '@material-ui/core';
+import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Header from './Header'
+import theme from '../../theme'  
 
-function Home() {
+function Home(theme) {
     const useStyles = makeStyles({
         homeContainer: {
           
