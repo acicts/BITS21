@@ -32,18 +32,20 @@ const useStyles = makeStyles(() => ({
     backgroundColor: '#183d5d',
     color: '#fff',
     borderRadius: '15px',
-    ['@media (max-width:540px)']: {
+    [theme.breakpoints.down('sm')]: {
       position: 'relative',
-      width: '95%',
+      width: '600px',
       margin: 'auto',
       marginTop: '20px',
     },
-    ['@media (max-width:350px)']: {
-
+    [theme.breakpoints.down('xs')]: {
+      position: 'relative',
       width: '90%',
       margin: 'auto',
       marginTop: '20px',
-    }
+      height: 'max-content'
+    },
+
   },
   details: {
     display: 'flex',
@@ -55,7 +57,7 @@ const useStyles = makeStyles(() => ({
     flex: '1 0 auto',
     marginRight: '-20px',
     width: '545px',
-    ['@media (max-width:540px)']: {
+    [theme.breakpoints.down('xs')]: {
       position: 'relative',
       width: '90%',
       margin: 'auto',
@@ -102,20 +104,32 @@ const useStyles = makeStyles(() => ({
     position: 'sticky',
     right: '0',
     top: '100px',
-    ['@media (max-width:540px)']: {
+    [theme.breakpoints.down('md')]: {
+      position: 'relative',
+      width: '500px',
+      margin: 'auto',
+      marginLeft: '100px',
+      marginBottom: '20px',
+      float: 'none',
+      top: '0',
+    },
+    [theme.breakpoints.down('sm')]: {
+      position: 'relative',
+      width: '500px',
+      margin: 'auto',
+      marginBottom: '20px',
+    },
+    [theme.breakpoints.down('xs')]: {
       position: 'relative',
       width: '65%',
       margin: 'auto',
       marginBottom: '20px',
-      float: 'none',
-      top: '0'
-
     }
   },
 
   filterOptions: {
     color: '#fff',
-    ['@media (max-width:540px)']: {
+    [theme.breakpoints.down('md')]: {
       flexDirection: 'row',
     }
   }
