@@ -7,6 +7,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import data from '../../Data/LeaderBoard.json'
+import theme from '../../theme';
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -39,6 +40,12 @@ const useStyles = makeStyles({
     width: '80%',
     marginLeft: '10%',
     marginTop: '5%',
+    [theme.breakpoints.down('xs')]: {
+      position: 'relative',
+      width: '95%',
+      margin: 'auto',
+      marginTop: '50px',
+  },
   },
   body: {
     color: '#000'
