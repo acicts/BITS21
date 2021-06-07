@@ -64,3 +64,32 @@ a:hover {
 text-decoration: none;
 color: '#3ed1b8';
 }
+
+
+@media screen and (max-width: 650px) {
+  .mainbox {
+    margin: auto;
+    background: transparent;
+    height: 100%;
+    margin-top: 120px;
+    width: 95%;
+  }
+  .msg {
+    top: 200px;
+  }
+  .far {
+    top: 30px;
+    left: 34%;
+  }
+  .err {
+    font-size: 150px;
+    left: 10%;
+  }
+  .err2 {
+    font-size: 150px;
+    right: 10%;
+  }
+  .far {
+    font-size: 120px;
+  }
+}
