@@ -7,8 +7,6 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
 import '../../../App.css'
 import { Container } from '@material-ui/core';
 import { useParams } from 'react-router-dom';
@@ -49,8 +47,6 @@ function a11yProps(index) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: theme.palette.primary.main,
-    width: 500,
   },
 
   ss: {
@@ -59,19 +55,19 @@ const useStyles = makeStyles((theme) => ({
 
   container: {
     padding: '0',
-    backgroundColor: theme.palette.primary.main,
     height: '100vh',
-    color: 'fff',
+    color: '#fff',
   },
 
   details: {
-    backgroundColor:'#ffffff',
+    backgroundColor:'#183d5d',
+    maxWidth: '800px',
     width: '70%',
     padding: '0',
     height: 'max-content',
     margin: 'auto',
-    marginTop: '230px',
-    color: 'ffffff',
+    marginTop: '20px',
+    color: '#fff',
     [theme.breakpoints.down('xs')]: {
       position: 'relative',
       width: '95%',
@@ -81,22 +77,25 @@ const useStyles = makeStyles((theme) => ({
   },
   appbar: {
     width: '100%',
-    backgroundColor: '#0f7bc7'
+    backgroundColor: '#06192e'
   },
   title: {
-    width: '75%',
+    width: '85%',
     margin: 'auto',
-    color: '#000000',
+    color: '#fff',
+    fontStyle: 'bold',
+    marginTop: '200px',
+    maxWidth: '800px',
   },
 
   text: {
-    color: '#000000'
+    color: '#fff'
   },
   switcher: {
-    color: '#ffffff',
+    color: '#3ed1b8',
   }, 
   taskname: {
-    width: '75%',
+    width: '70%',
   }
 }));
 
@@ -121,7 +120,7 @@ export default function FullWidthTabs() {
   const details = result[0]
 
   return (
-    <Container maxWidth="xl" className={classes.container}>
+    <Container className={classes.container}>
     <div className={classes.ss}>
 
       <Container className="taskname" color="primary"><Typography variant="h4" className={classes.title} color="#ffffff">{details.taskName}</Typography></Container>
@@ -160,9 +159,6 @@ and hit the “SUBMIT” button and your task will be reviewed by the mentors in
 and you will get a confirmation email.</Typography>
 <br></br>
 <br></br>
-<Fab color="primary" aria-label="add" align="right">
-        <AddIcon className="add"/>
-      </Fab>
 
       <iframe src={details.submit} width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </TabPanel>
