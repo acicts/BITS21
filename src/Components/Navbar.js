@@ -1,4 +1,3 @@
-
 import {
   AppBar,
   Toolbar,
@@ -33,7 +32,7 @@ const useStyles = makeStyles(() => ({
     
   },
   menuButton: {
-    fontFamily: "Open Sans, sans-serif",
+    fontFamily: "Titillium Web, sans-serif",
     fontWeight: 700,
     size: "25px",
     marginLeft: "38px",
@@ -41,7 +40,7 @@ const useStyles = makeStyles(() => ({
     color: '#fff'
   },
   mobileMenuButton: {
-    fontFamily: "Open Sans, sans-serif",
+    fontFamily: "Titillium Web, sans-serif",
     fontWeight: 700,
     size: "18px",
     marginLeft: "38px",
@@ -53,14 +52,12 @@ const useStyles = makeStyles(() => ({
     justifyContent: "space-between",
   },
   drawerContainer: {
-    padding: "20px 30px",
+    width: '200px',
     height: '100%',
-    paddingBottom: '100%',
     backgroundColor: '#072540',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-evenly',
-    alignItems: 'center',
   },
 
   headerActive: {
@@ -158,7 +155,7 @@ export default function Nav() {
         >
           
           <div className={drawerContainer}>
-          <img src={logoGIF} alt="logo" style={{height: '100px'}}></img>
+          <img src={logoGIF} alt="logo" style={{height: '100px', width: '100px', marginLeft: 'auto', marginRight: 'auto'}}></img>
             {getDrawerChoices()}</div>
         </Drawer>
 
@@ -172,18 +169,13 @@ export default function Nav() {
         <div style={{    display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          alignItems: 'center',
-          width: '100px',
-          height: '300px'}}>
+          height: '200px'}}>
         <NavLink
         className={mobileMenuButton}
         to="/" exact
         activeStyle={{
           fontWeight: "bold",
-          borderBottomStyle: 'solid',
-          borderColor: '#183d5d',
-          borderWidth: 'medium',
-          color: '#005bad',
+          color: '#3ed1b8',
         }}
         >
           Home
@@ -193,10 +185,7 @@ export default function Nav() {
         to="/tasks"
         activeStyle={{
           fontWeight: "bold",
-          borderBottomStyle: 'solid',
-          borderColor: '#183d5d',
-          borderWidth: 'medium',
-          color: '#005bad',
+          color: '#3ed1b8',
         }}
         >
           Tasks
@@ -206,10 +195,7 @@ export default function Nav() {
         to="/onlinetest"
         activeStyle={{
           fontWeight: "bold",
-          borderBottomStyle: 'solid',
-          borderColor: '#183d5d',
-          borderWidth: 'medium',
-          color: '#005bad',
+          color: '#3ed1b8',
         }}
         >
           Online Tests
@@ -219,10 +205,7 @@ export default function Nav() {
         to="/leaderboard"
         activeStyle={{
           fontWeight: "bold",
-          borderBottomStyle: 'solid',
-          borderColor: '#183d5d',
-          borderWidth: 'medium',
-          color: '#005bad',
+          color: '#3ed1b8',
         }}
         >
           LeaderBoard
@@ -232,10 +215,7 @@ export default function Nav() {
         to="/contact"
         activeStyle={{
           fontWeight: "bold",
-          borderBottomStyle: 'solid',
-          borderColor: '#183d5d',
-          borderWidth: 'medium',
-          color: '#005bad',
+          color: '#3ed1b8',
         }}
         >
           Contact
