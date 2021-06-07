@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 import Theme from './theme'
 import './App.css'
@@ -8,14 +8,25 @@ import Home from './Components/Home/Home'
 import LeaderBoard from './Components/Leaderboard/Chart'
 import Contact from './Components/Contact/Contact'
 import Task from './Components/Tasks/TaskInfo/TaskInfo'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, useLocation, withRouter } from 'react-router-dom';
 import NotFound from './Components/NotFound'
+
+
+function _ScrollToTop(props) {
+  const { pathname } = useLocation();
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, [pathname]);
+  return props.children
+}
+
+const ScrollToTop = withRouter(_ScrollToTop)
 
 export default function App() {
 
   return (
     <Router>
-    
+    <ScrollToTop>
     <div>
     <Nav />
       <ThemeProvider theme={Theme}>
@@ -33,7 +44,7 @@ export default function App() {
       </ThemeProvider>
       
     </div>
-    
+    </ScrollToTop>
     </Router>
   );
 }
