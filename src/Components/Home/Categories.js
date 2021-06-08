@@ -34,7 +34,7 @@ backgroundSize: 'cover',
   zIndex: '1',
   '&:hover': {
     animation: 'unset',
-    marginTop: '18vh',
+    marginTop: '1vh',
     transform: 'perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)'
   },
     
