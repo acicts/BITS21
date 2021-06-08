@@ -68,7 +68,7 @@ backgroundSize: 'cover',
             <Grid xl={12} md={12} lg={12} container direction="row" justify="space-around" alignItems="center" className={classes.categoryCard}>
 
               <Grid Item xl={12}  lg={12} >
-              <Typography variant='h1'  align='center' style={{marginTop: '10%', paddingBottom: '50px'}}>Do what <span style={{color: '#3ed1b8'}}> YOU LOVE</span></Typography>
+              <Typography variant='h1'  align='center' style={{marginTop: '12%', paddingBottom: '50px'}}>Do what <span style={{color: '#3ed1b8'}}> YOU LOVE</span></Typography>
               </Grid>
      <Grid item className={classes.cont}>
     <Card className={classes.root}  elevation='3'>

@@ -10,7 +10,7 @@ function Home() {
           
         },
         cats:{
-          marginTop: '100px'
+          marginTop: '0px'
         }
     });
       const classes = useStyles();
