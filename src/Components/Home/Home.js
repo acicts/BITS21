@@ -14,7 +14,8 @@ function Home() {
     return (
       <div className={classes.homeContainer}>
         <Header />
-        <Categories />
+        <div id="catt"><Categories  /></div>
+        
       </div>
     )
 }
