@@ -11,7 +11,6 @@ function Categories() {
     const useStyles = makeStyles({
         catContainer: {
           maxWidth: '1400px',
-          height: '1000px',
           margin: 'auto',
         },
 
@@ -21,7 +20,7 @@ function Categories() {
           marginBottom: '50px',
           marginLeft: '50px',
           marginRight: '50px',
-          backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='325' height='400' preserveAspectRatio='none' viewBox='0 0 325 400'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1049%26quot%3b)' fill='none'%3e%3crect width='325' height='400' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M 0%2c86 C 11%2c133.8 33%2c316.2 55%2c325 C 77%2c333.8 88%2c121.4 110%2c130 C 132%2c138.6 143%2c383.8 165%2c368 C 187%2c352.2 198%2c79.8 220%2c51 C 242%2c22.2 254%2c208.6 275%2c224 C 296%2c239.4 315%2c147.2 325%2c128L325 400L0 400z' fill='rgba(24%2c 61%2c 93%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1049'%3e%3crect width='325' height='400' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e")`,
+          backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='325' height='400' preserveAspectRatio='none' viewBox='0 0 325 400'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='325' height='400' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M 0%2c291 C 21.8%2c268.4 65.4%2c188.4 109%2c178 C 152.6%2c167.6 174.8%2c248.2 218%2c239 C 261.2%2c229.8 303.6%2c153.4 325%2c132L325 400L0 400z' fill='rgba(24%2c 61%2c 93%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='325' height='400' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e")`,
 backgroundAttachment: 'inherit',
 backgroundSize: 'cover',
           color: theme.palette.primary.contrastText,
@@ -57,9 +56,9 @@ backgroundSize: 'cover',
       width: '250px',
       },
 
-      categoryCard: {
-        height: '900px'
-      },
+      cont: {
+        height: '600px'
+      }
     });
 
       const classes = useStyles();
@@ -68,10 +67,10 @@ backgroundSize: 'cover',
           
             <Grid xl={12} md={12} lg={12} container direction="row" justify="space-around" alignItems="center" className={classes.categoryCard}>
 
-              <Grid Item xl={12}>
-              <Typography variant='h1'  align='center' style={{marginTop: '10%'}}>Do what <span style={{color: '#3ed1b8'}}> YOU LOVE</span></Typography>
+              <Grid Item xl={12}  lg={12} >
+              <Typography variant='h1'  align='center' style={{marginTop: '10%', paddingBottom: '50px'}}>Do what <span style={{color: '#3ed1b8'}}> YOU LOVE</span></Typography>
               </Grid>
-     
+     <Grid item className={classes.cont}>
     <Card className={classes.root}  elevation='3'>
       <CardHeader
         title="CODE"
@@ -80,11 +79,13 @@ backgroundSize: 'cover',
       />
       <CardContent className={classes.subContent}>
         <Typography variant="h6" className={classes.subText}>
-        Code the shit out of your computer and build google, android, iOS and an electric car!!!
+        Learn to talk to you computer and make amazing websites, games, apps and many more that everyone can use by the power of programming
         </Typography>
       </CardContent>
     </Card>
+    </Grid>
 
+    <Grid item className={classes.cont}>
     <Card className={classes.root}  elevation='3'>
       <CardHeader
         title="Design"
@@ -93,11 +94,13 @@ backgroundSize: 'cover',
       />
       <CardContent className={classes.subContent}>
         <Typography variant="h6" className={classes.subText}>
-        Code the shit out of your computer and build google, android, iOS and an electric car!!!
+        Be creative and create mesmerizing digital art, vector graphics, 3D models, animations, videos and much more
         </Typography>
       </CardContent>
     </Card>
+    </Grid>
 
+    <Grid item className={classes.cont}>
     <Card className={classes.root}  elevation='3'>
       <CardHeader
         title="Explore"
@@ -110,6 +113,7 @@ backgroundSize: 'cover',
         </Typography>
       </CardContent>
     </Card>
+    </Grid>
     </Grid>
         </div>
     )

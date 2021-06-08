@@ -8,13 +8,16 @@ function Home() {
     const useStyles = makeStyles({
         homeContainer: {
           
+        },
+        cats:{
+          marginTop: '100px'
         }
     });
       const classes = useStyles();
     return (
       <div className={classes.homeContainer}>
         <Header />
-        <div id="catt"><Categories  /></div>
+        <div id="catt" className={classes.cats}><Categories  /></div>
         
       </div>
     )
