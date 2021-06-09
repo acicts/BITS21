@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
       position: 'relative',
       width: '95%',
       margin: 'auto',
-      marginTop: '230px'
+      marginTop: '20px'
     },
   },
   appbar: {
@@ -96,6 +96,11 @@ const useStyles = makeStyles((theme) => ({
   }, 
   taskname: {
     width: '70%',
+  },
+  form: {
+    position: 'relative',
+    width: '98%',
+    height: '600px',
   }
 }));
 
@@ -160,7 +165,7 @@ and you will get a confirmation email.</Typography>
 <br></br>
 <br></br>
 
-      <iframe src={details.submit} width="640" height="378" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <iframe src={details.submit} className={classes.form}>Loading…</iframe>
         </TabPanel>
       </SwipeableViews>
 
