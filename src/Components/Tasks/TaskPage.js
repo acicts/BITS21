@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import Taskcard from './TaskCard'
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -8,6 +8,9 @@ import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Zoom from '@material-ui/core/Zoom';
 import Toolbar from '@material-ui/core/Toolbar';
+import Aos from 'aos';
+import "aos/dist/aos.css"
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -69,15 +72,21 @@ ScrollTop.propTypes = {
 
 
 function TaskPage(props) {
+
+      useEffect(() => {
+        Aos.init({ duration:200 })
+      }, [])
     
       const classes = useStyles();
     return (
-      <React.Fragment>
+      <div>
 
         <Container maxWidth="xl" className={classes.container} >
        <Toolbar id="back-to-top-anchor" />
         <div className={classes.background}>
-            <Taskcard />
+          <div>
+            <Taskcard  />
+            </div>
         </div>
         
       </Container>
@@ -87,7 +96,8 @@ function TaskPage(props) {
         <KeyboardArrowUpIcon />
       </Fab>
     </ScrollTop>
-</React.Fragment>
+    </div>
+
     )
 }
 

@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React, { useState, useEffect }  from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -17,6 +17,8 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 
 const useStyles = makeStyles(() => ({
@@ -149,6 +151,10 @@ export default function TaskCard() {
   const [value, setValue] = React.useState('All');
   const [data, setData] = useState(taskDetails)
 
+  useEffect(() => {
+    Aos.init({ duration:200 })
+  }, [])
+
   const handleChange = (event) => {
     
     setValue(event.target.value);
@@ -176,7 +182,7 @@ export default function TaskCard() {
     </div>
       {data.map((tasks, index) => (
 
-    <Card className={classes.root} color="primary"  key={index} >
+    <Card className={classes.root} color="primary"  key={index}  data-aos="fade-right" >
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
