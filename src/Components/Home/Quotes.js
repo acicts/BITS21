@@ -21,7 +21,7 @@ function Quotes() {
 
             <div className={classes.quoteContainer}>
                 <Typography align='right' variant='h4'> <span style={{color: '#3ed1b8', fontSize: '50px'}}>“</span> I think BITS will have a great impact on the students who like computers <span style={{color: '#3ed1b8', fontSize: '50px'}}>”</span> </Typography>
-                <Typography align='right' variant='h6' style={{marginRight: '30px'}}>~ Chamuthu Edirisuriya</Typography>
+                <Typography align='right' variant='h6' style={{marginRight: '30px'}}>~ Hasala heiyanthuduwa</Typography>
                 <Typography align='right' variant='h6' style={{marginRight: '45px', color: '#ffffffb3'}}>President of ACICTS</Typography>
             </div>
 
