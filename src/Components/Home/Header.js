@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Typography, Button } from '@material-ui/core'; 
 import theme from '../../theme'  
 import {ReactComponent as Logo} from '../../Img/hero.svg';
+import { motion } from "framer-motion"
+
 
 export default function Header() {
     const useStyles = makeStyles({
@@ -53,7 +55,10 @@ export default function Header() {
                     <Button variant='contained' href='#catt' color='secondary' style={{color: '#000', marginLeft: '20px'}}>More Info</Button>
                 </Grid>
                 <Grid item xl={6} lg={6} md={12} sm={12} xs={12} className={classes.svg}>
-                    <div className={classes.svgContainer}><Logo className={classes.logo}/></div>
+
+                <div className={classes.svgContainer}><Logo className={classes.logo}/></div> 
+
+                    
                     
                 </Grid>
             </Grid>
