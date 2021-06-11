@@ -152,7 +152,7 @@ export default function TaskCard() {
   const [data, setData] = useState(taskDetails)
 
   useEffect(() => {
-    Aos.init({ duration:200 })
+    Aos.init({ duration:500 })
   }, [])
 
   const handleChange = (event) => {
@@ -169,7 +169,7 @@ export default function TaskCard() {
 
   return (
     <div className='eee'>
-      <div className={classes.filter}>
+      <div className={classes.filter}  data-aos="fade-left">
       <FormControl component="fieldset">
       <FormLabel component="legend">Filter Tasks</FormLabel>
       <RadioGroup className={classes.filterOptions} aria-label="tasks" name="filter" value={value} onChange={handleChange}>
