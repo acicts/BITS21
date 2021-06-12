@@ -11,7 +11,7 @@ import theme from '../../theme';
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
-    backgroundColor: '#0f7bc7',
+    backgroundColor: '#0f7ac777',
     color: theme.palette.common.white,
   },
   body: {
@@ -26,10 +26,10 @@ const StyledTableCell = withStyles((theme) => ({
 const StyledTableRow = withStyles((theme) => ({
   root: {
     '&:nth-of-type(even)': {
-      backgroundColor: '#fff',
+      backgroundColor: '#223c56d1',
     },
     '&:nth-of-type(odd)': {
-        backgroundColor: '#b9b9b9',
+        backgroundColor: '#223c56d1',
       },
   },
 }))(TableRow);
@@ -48,7 +48,8 @@ const useStyles = makeStyles({
   },
   },
   body: {
-    color: '#000'
+    color: '#fff',
+    borderBottom: '1px solid rgb(12 76 126)',
   },
   papper: {
     marginTop: '100px'
@@ -63,7 +64,7 @@ export default function CustomizedTables() {
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Rank</StyledTableCell>
+            <StyledTableCell style={{color: '#3ed1b8'}}>Rank</StyledTableCell>
             <StyledTableCell align="center">Name</StyledTableCell>
             <StyledTableCell align="center">Class</StyledTableCell>
             <StyledTableCell align="center">No. Of Tasks Accepted</StyledTableCell>
@@ -73,7 +74,7 @@ export default function CustomizedTables() {
         <TableBody>
           {data.map((list, index) => (
             <StyledTableRow key={index} >
-              <StyledTableCell component="th" scope="row"  className={classes.body}>
+              <StyledTableCell component="th" scope="row" style={{color: '#3ed1b8', fontWeight: 'bold'}} className={classes.body}>
                 {list.index + 1}
               </StyledTableCell>
               <StyledTableCell  className={classes.body} align="center">{list.name}</StyledTableCell>
