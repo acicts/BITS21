@@ -174,7 +174,7 @@ export default function TaskCard() {
         </CardContent>
         
         <div className={classes.controls}>
-        <Button variant="contained" component={Link} to={tests.link} className={classes.button}>
+        <Button variant="contained" component={Link} href={tests.link} className={classes.button}>
           Start Test
         </Button>
         
