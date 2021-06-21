@@ -29,7 +29,8 @@ const useStyles = makeStyles((theme) => ({
   },
   backToTop: {
     color: '#000'
-  }
+  },
+  
   
 }));
 function ScrollTop(props) {
@@ -79,7 +80,7 @@ function TaskPage(props) {
     
       const classes = useStyles();
     return (
-      <div>
+      <div className={classes.taskContainer}>
 
         <Container maxWidth="xl" className={classes.container} >
        <Toolbar id="back-to-top-anchor" />

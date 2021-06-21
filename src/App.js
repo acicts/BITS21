@@ -3,6 +3,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import Theme from './theme'
 import './App.css'
 import Nav from './Components/Navbar'
+import Footer from './Components/Footer'
 import TaskPage from './Components/Tasks/TaskPage'
 import Home from './Components/Home/Home'
 import LeaderBoard from './Components/Leaderboard/Chart'
@@ -41,9 +42,11 @@ export default function App() {
       <Route  path='*'> <NotFound /> </Route>
       <Route  path='*/*'> <NotFound /> </Route>
       </Switch>
+      <Footer />
       </ThemeProvider>
-      
+    
     </div>
+    
     </ScrollToTop>
     </Router>
   );
