@@ -28,9 +28,10 @@ const useStyles = makeStyles(() => ({
     height: '230px',
     marginLeft: '100px',
     marginTop: '20px',
-    backgroundColor: '#183d5d',
+    backgroundColor: '#183d5db0',
     color: '#fff',
     borderRadius: '15px',
+    backdropFilter: 'blur(10px)',
     [theme.breakpoints.down('sm')]: {
       position: 'relative',
       width: '600px',
@@ -94,7 +95,8 @@ const useStyles = makeStyles(() => ({
     marginTop: '-10px'
   },
   filter: {
-    backgroundColor: '#183d5d',
+    backgroundColor: '#183d5db0',
+    backdropFilter: 'blur(10px)',
     float: 'right',
     marginRight: '20%',
     padding: '50px',
