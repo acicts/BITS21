@@ -27,12 +27,12 @@ const StyledTableCell = withStyles((theme) => ({
 const StyledTableRow = withStyles((theme) => ({
   root: {
     '&:nth-of-type(even)': {
-      backgroundColor: '#183d5db0',
-    backdropFilter: 'blur(10px)',
+      backgroundColor: '#183d5de8',
+    
     },
     '&:nth-of-type(odd)': {
-      backgroundColor: '#183d5db0',
-      backdropFilter: 'blur(10px)',
+      backgroundColor: '#183d5dc0',
+      
       },
   },
 }))(TableRow);
@@ -53,12 +53,14 @@ const useStyles = makeStyles({
   body: {
     color: '#fff',
     borderBottom: '1px solid rgb(12 76 126)',
+    zIndex: '1'
   },
   papper: {
     marginTop: '100px'
   },
   tBody: {
-    borderSpacing: '0'
+    borderSpacing: '0px',
+    borderCollapse: 'separate',
   }
 });
 
