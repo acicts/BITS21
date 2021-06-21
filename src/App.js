@@ -4,6 +4,7 @@ import Theme from './theme'
 import './App.css'
 import Nav from './Components/Navbar'
 import Footer from './Components/Footer'
+import OnlineTest from './Components/OnlineTest/TestPage'
 import TaskPage from './Components/Tasks/TaskPage'
 import Home from './Components/Home/Home'
 import LeaderBoard from './Components/Leaderboard/Chart'
@@ -34,6 +35,7 @@ export default function App() {
       <Switch>
       <Route exact path="/" component={Home}/>
       <Route path="/tasks" component={TaskPage}/>
+      <Route path="/onlinetest" component={OnlineTest}/>
       <Route path="/leaderboard" component={LeaderBoard}/>
       <Route path="/contact" component={Contact}/>
 
