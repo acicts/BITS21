@@ -42,7 +42,6 @@ export default function App() {
       <Route  path='*'> <NotFound /> </Route>
       <Route  path='*/*'> <NotFound /> </Route>
       </Switch>
-      <Footer />
       </ThemeProvider>
     
     </div>
