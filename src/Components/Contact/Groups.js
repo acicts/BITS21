@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '50px',
     marginLeft: '50px',
     marginRight: '50px',
-    background: '#183d5d',
+    backgroundColor: '#183d5db0',
+    backdropFilter: 'blur(10px)',
     color: theme.palette.primary.contrastText,
     borderRadius: '15px',
     [theme.breakpoints.down('xs')]: {
