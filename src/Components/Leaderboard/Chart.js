@@ -11,7 +11,8 @@ import theme from '../../theme';
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
-    backgroundColor: '#0f7ac777',
+    backgroundColor: '#06192eb0',
+    backdropFilter: 'blur(10px)',
     color: theme.palette.common.white,
   },
   body: {
@@ -26,10 +27,12 @@ const StyledTableCell = withStyles((theme) => ({
 const StyledTableRow = withStyles((theme) => ({
   root: {
     '&:nth-of-type(even)': {
-      backgroundColor: '#223c56d1',
+      backgroundColor: '#183d5db0',
+    backdropFilter: 'blur(10px)',
     },
     '&:nth-of-type(odd)': {
-        backgroundColor: '#223c56d1',
+      backgroundColor: '#183d5db0',
+      backdropFilter: 'blur(10px)',
       },
   },
 }))(TableRow);
@@ -53,6 +56,9 @@ const useStyles = makeStyles({
   },
   papper: {
     marginTop: '100px'
+  },
+  tBody: {
+    borderSpacing: '0'
   }
 });
 
@@ -71,7 +77,7 @@ export default function CustomizedTables() {
             <StyledTableCell align="center">Points</StyledTableCell>
           </TableRow>
         </TableHead>
-        <TableBody>
+        <TableBody className={classes.tBody}>
           {data.map((list, index) => (
             <StyledTableRow key={index} >
               <StyledTableCell component="th" scope="row" style={{color: '#3ed1b8', fontWeight: 'bold'}} className={classes.body}>
