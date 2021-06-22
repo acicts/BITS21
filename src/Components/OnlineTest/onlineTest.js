@@ -1,22 +1,11 @@
-import React, { useState, useEffect }  from 'react';
+import React, { useEffect }  from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import { IconButton } from '@material-ui/core';
-import Tooltip from '@material-ui/core/Tooltip';
-import CodeIcon from '@material-ui/icons/Code';
-import BrushIcon from '@material-ui/icons/Brush';
-import FindInPageIcon from '@material-ui/icons/FindInPage';
 import Tests from '../../Data/onlineTest.json'
 import theme from '../../theme'
-import { Link } from 'react-router-dom';
-import Radio from '@material-ui/core/Radio';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
 import Aos from 'aos';
 import "aos/dist/aos.css"
 
@@ -174,7 +163,7 @@ export default function TaskCard() {
         </CardContent>
         
         <div className={classes.controls}>
-        <Button variant="contained" component={Link} href={tests.link} className={classes.button}>
+        <Button variant="contained" href={tests.link} className={classes.button}>
           Start Test
         </Button>
         
