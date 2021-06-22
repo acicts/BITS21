@@ -15,34 +15,4 @@
 <clipPath id="clip0">
 <rect width="1365" height="1024" fill="white"/>
 </clipPath>
-
-            @keyframes float1 {
-                0%{transform: translate(0, 0)}
-                50%{transform: translate(-10px, 0)}
-                100%{transform: translate(0, 0)}
-            }
-
-            .triangle-float1 {
-                animation: float1 5s infinite;
-            }
-
-            @keyframes float2 {
-                0%{transform: translate(0, 0)}
-                50%{transform: translate(-5px, -5px)}
-                100%{transform: translate(0, 0)}
-            }
-
-            .triangle-float2 {
-                animation: float2 4s infinite;
-            }
-
-            @keyframes float3 {
-                0%{transform: translate(0, 0)}
-                50%{transform: translate(0, -10px)}
-                100%{transform: translate(0, 0)}
-            }
-
-            .triangle-float3 {
-                animation: float3 6s infinite;
-            }
     </defs></svg>
