@@ -1,16 +1,23 @@
 import { GitHub, Instagram } from "@material-ui/icons";
 import React from "react";
+import OCdata from "../../Data/OC.json";
 
-const FooterContact = ({ name, gh, ig }) => {
+const FooterContact = () => {
   return (
     <div className="footer-contact">
-      <span>{name}</span>
-      <a href={`https://github.com/${gh}`}>
-        <GitHub />
-      </a>
-      <a href={`https://instagram.com/${ig}`}>
-        <Instagram />
-      </a>
+      {OCdata.map((member, _) => {
+        return (
+          <React.Fragment>
+            <span>{member.name}</span>
+            <a href={member.github}>
+              <GitHub />
+            </a>
+            <a href={member.insta}>
+              <Instagram />
+            </a>
+          </React.Fragment>
+        );
+      })}
     </div>
   );
 };

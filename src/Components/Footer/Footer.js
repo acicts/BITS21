@@ -32,12 +32,7 @@ const Footer = () => {
             <Link to="/contact">Contact</Link>
           </span>
         </div>
-        <div className="footer-contact">
-          <FooterContact name="Chamindu Jayanath" gh="chamindujs" ig="" />
-          <FooterContact name="Manula Thejan" gh="" ig="" />
-          <FooterContact name="Chamutu Edirisuriya" gh="" ig="" />
-          <FooterContact name="Gothira" gh="" ig="" />
-        </div>
+        <FooterContact />
         <span id="copyrights">copyright reserved. ACICT BITS © 2020 </span>
       </div>
     </div>
