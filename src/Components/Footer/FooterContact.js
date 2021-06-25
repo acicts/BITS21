@@ -7,7 +7,7 @@ const FooterContact = () => {
     <div className="footer-contact">
       {OCdata.map((member, _) => {
         return (
-          <React.Fragment>
+          <div className="footer-contact">
             <span>{member.name}</span>
             <a href={member.github}>
               <GitHub />
@@ -15,7 +15,7 @@ const FooterContact = () => {
             <a href={member.insta}>
               <Instagram />
             </a>
-          </React.Fragment>
+          </div>
         );
       })}
     </div>
