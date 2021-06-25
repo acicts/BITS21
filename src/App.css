@@ -150,6 +150,35 @@ span#copyrights {
 .footer-contact svg:first-child {
   margin-right: 9px;
 }
+
+@media screen and (max-width: 850px) {
+  .footer {
+    height: 600px;
+    margin: 0;
+  }
+
+  .footer-nav {
+  }
+  .footer .content {
+    grid-template-columns: 1fr;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 40px;
+    column-gap: 0;
+  }
+  .footer .content > div {
+    margin: auto;
+    grid-column: 1/2;
+  }
+  .footer-contact {
+    text-align: left;
+  }
+  span#copyrights {
+    margin-top: auto;
+  }
+}
 @media screen and (max-width: 650px) {
   .mainbox {
     margin: auto;
@@ -158,8 +187,9 @@ span#copyrights {
     margin-top: 120px;
     width: 95%;
   }
-  .footer {
-    height: 400px;
+  .footer-contact span {
+    width: fit-content;
+    min-width: 160px;
   }
   .msg {
     top: 200px;
