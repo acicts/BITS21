@@ -4,7 +4,7 @@ import FooterContact from "./FooterContact";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer>
       <div className="content">
         <div className="about">
           <span className="question">What is ACICT BITS?</span>
@@ -16,26 +16,16 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-nav">
-          <span>
-            <Link to="/">Home</Link>
-          </span>
-          <span>
-            <Link to="/tasks">Tasks</Link>
-          </span>
-          <span>
-            <Link to="/online-tests">Online Tests</Link>
-          </span>
-          <span>
-            <Link to="/leaderboard">LeaderBoard</Link>
-          </span>
-          <span>
-            <Link to="/contact">Contact</Link>
-          </span>
+          <Link to="/">Home</Link>
+          <Link to="/tasks">Tasks</Link>
+          <Link to="/online-tests">Online Tests</Link>
+          <Link to="/leaderboard">LeaderBoard</Link>
+          <Link to="/contact">Contact</Link>
         </div>
         <FooterContact />
         <span id="copyrights">copyright reserved. ACICT BITS © 2020 </span>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -90,16 +90,14 @@ a:hover {
   color: "#3ed1b8";
 }
 
-.footer {
+footer {
   height: 230px;
   background-color: #082946;
   display: flex;
-  justify-content: center;
-  align-items: center;
   box-sizing: border-box;
   padding: 15px 60px;
 }
-.footer .content {
+footer .content {
   display: block;
   margin: auto;
   display: grid;
@@ -110,7 +108,7 @@ a:hover {
   justify-content: space-around;
   max-height: inherit;
 }
-.footer .about {
+footer .about {
   margin: auto;
   max-width: 500px;
 }
@@ -123,12 +121,10 @@ span.question {
   flex-direction: column;
 }
 
-.footer-nav span {
+.footer-nav a {
   display: block;
   font-size: 15px;
   margin: 7px 0;
-}
-.footer-nav a {
   color: #03c0a0;
 }
 
@@ -157,7 +153,7 @@ span#copyrights {
 }
 
 @media screen and (max-width: 850px) {
-  .footer {
+  footer {
     height: 560px;
     margin: 0;
   }
@@ -166,10 +162,10 @@ span#copyrights {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .footer-nav span {
+  .footer-nav a {
     padding: 10px;
   }
-  .footer .content {
+  footer .content {
     grid-template-columns: 1fr;
     width: 100%;
     align-items: center;
@@ -178,7 +174,7 @@ span#copyrights {
     row-gap: 40px;
     column-gap: 0;
   }
-  .footer .content > div {
+  footer .content > div {
     margin: auto;
     grid-column: 1/2;
   }
