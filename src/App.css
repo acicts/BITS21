@@ -118,6 +118,11 @@ span.question {
   font-size: 15px;
 }
 
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-nav span {
   display: block;
   font-size: 15px;
@@ -135,7 +140,7 @@ p.answer {
 .footer-contact span {
   font-size: 15px;
   color: #c2c2c2;
-  margin: 9px;
+  margin: 9px 0;
   /* white-space: nowrap; */
   width: 200px;
   display: inline-block;
@@ -153,11 +158,16 @@ span#copyrights {
 
 @media screen and (max-width: 850px) {
   .footer {
-    height: 600px;
+    height: 560px;
     margin: 0;
   }
 
   .footer-nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .footer-nav span {
+    padding: 10px;
   }
   .footer .content {
     grid-template-columns: 1fr;
@@ -188,8 +198,11 @@ span#copyrights {
     width: 95%;
   }
   .footer-contact span {
-    width: fit-content;
     min-width: 160px;
+  }
+  .footer-nav {
+    max-width: 300px;
+    flex-wrap: wrap;
   }
   .msg {
     top: 200px;
