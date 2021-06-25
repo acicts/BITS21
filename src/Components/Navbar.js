@@ -6,18 +6,18 @@ import {
   Drawer,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import logoGIF from '../Img/BITS-logo-w.gif'
+import logoGIF from "../Img/BITS-logo-w.gif";
 
 const useStyles = makeStyles(() => ({
   header: {
-    transition: '0.5s ease',
-    background: 'transparent',
+    transition: "0.5s ease",
+    background: "transparent",
     paddingRight: "79px",
     paddingLeft: "50px",
-    color: '#183d5d',
-        "@media (max-width: 900px)": {
+    color: "#183d5d",
+    "@media (max-width: 900px)": {
       paddingLeft: 0,
     },
   },
@@ -28,74 +28,81 @@ const useStyles = makeStyles(() => ({
     color: "#183d5d",
     textAlign: "left",
   },
-  logoMobile: {
-    
-  },
+  logoMobile: {},
   menuButton: {
     fontFamily: "Titillium Web, sans-serif",
     fontWeight: 700,
     size: "25px",
     marginLeft: "38px",
-    textDecoration: 'none',
-    color: '#fff'
+    textDecoration: "none",
+    color: "#fff",
   },
   mobileMenuButton: {
     fontFamily: "Titillium Web, sans-serif",
     fontWeight: 700,
     size: "18px",
     marginLeft: "38px",
-    textDecoration: 'none',
-    color: '#fff'
+    textDecoration: "none",
+    color: "#fff",
   },
   toolbar: {
     display: "flex",
     justifyContent: "space-between",
   },
   drawerContainer: {
-    width: '200px',
-    height: '100%',
-    backgroundColor: '#072540',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-evenly',
+    width: "200px",
+    height: "100%",
+    backgroundColor: "#072540",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-evenly",
   },
 
   headerActive: {
-    transition: '0.5s ease',
-    backgroundColor: '#06192e',
-    height: '80px',
+    transition: "0.5s ease",
+    backgroundColor: "#06192e",
+    height: "80px",
     paddingRight: "79px",
     paddingLeft: "118px",
-    color: '#183d5d',
-        "@media (max-width: 900px)": {
+    color: "#183d5d",
+    "@media (max-width: 900px)": {
       paddingLeft: 0,
     },
   },
 
   menu: {
-    color: '#3ed1b8'
-  }
+    color: "#3ed1b8",
+  },
 }));
 
 export default function Nav() {
-  const { header, menuButton, menu, headerActive, mobileMenuButton, toolbar, drawerContainer, drawer } = useStyles();
+  const {
+    header,
+    menuButton,
+    menu,
+    headerActive,
+    mobileMenuButton,
+    toolbar,
+    drawerContainer,
+    drawer,
+  } = useStyles();
 
   const [state, setState] = useState({
     mobileView: false,
     drawerOpen: false,
   });
 
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(false);
 
   const changeBackground = () => {
-    if(window.scrollY >= 100) {
-      setNav(true)
+    if (window.scrollY >= 100) {
+      setNav(true);
     } else {
-      setNav(false)
+      setNav(false);
     }
-  }
+  };
 
-  window.addEventListener('scroll', changeBackground)
+  window.addEventListener("scroll", changeBackground);
 
   const { mobileView, drawerOpen } = state;
 
@@ -149,14 +156,23 @@ export default function Nav() {
             anchor: "left",
             open: drawerOpen,
             onClose: handleDrawerClose,
-            onClick: handleDrawerClose
+            onClick: handleDrawerClose,
           }}
           className={drawer}
         >
-          
           <div className={drawerContainer}>
-          <img src={logoGIF} alt="logo" style={{height: '100px', width: '100px', marginLeft: 'auto', marginRight: 'auto'}}></img>
-            {getDrawerChoices()}</div>
+            <img
+              src={logoGIF}
+              alt="logo"
+              style={{
+                height: "100px",
+                width: "100px",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            ></img>
+            {getDrawerChoices()}
+          </div>
         </Drawer>
 
         <div>{femmecubatorLogo}</div>
@@ -165,141 +181,148 @@ export default function Nav() {
   };
 
   const getDrawerChoices = () => {
-      return (
-        <div style={{    display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          height: '200px'}}>
-        <NavLink
-        className={mobileMenuButton}
-        to="/" exact
-        activeStyle={{
-          fontWeight: "bold",
-          color: '#3ed1b8',
+    return (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          height: "200px",
         }}
+      >
+        <NavLink
+          className={mobileMenuButton}
+          to="/"
+          exact
+          activeStyle={{
+            fontWeight: "bold",
+            color: "#3ed1b8",
+          }}
         >
           Home
         </NavLink>
         <NavLink
-        className={mobileMenuButton}
-        to="/tasks"
-        activeStyle={{
-          fontWeight: "bold",
-          color: '#3ed1b8',
-        }}
+          className={mobileMenuButton}
+          to="/tasks"
+          activeStyle={{
+            fontWeight: "bold",
+            color: "#3ed1b8",
+          }}
         >
           Tasks
         </NavLink>
         <NavLink
-        className={mobileMenuButton}
-        to="/onlinetest"
-        activeStyle={{
-          fontWeight: "bold",
-          color: '#3ed1b8',
-        }}
+          className={mobileMenuButton}
+          to="/onlinetest"
+          activeStyle={{
+            fontWeight: "bold",
+            color: "#3ed1b8",
+          }}
         >
           Online Tests
         </NavLink>
         <NavLink
-        className={mobileMenuButton}
-        to="/leaderboard"
-        activeStyle={{
-          fontWeight: "bold",
-          color: '#3ed1b8',
-        }}
+          className={mobileMenuButton}
+          to="/leaderboard"
+          activeStyle={{
+            fontWeight: "bold",
+            color: "#3ed1b8",
+          }}
         >
           LeaderBoard
         </NavLink>
         <NavLink
-        className={mobileMenuButton}
-        to="/contact"
-        activeStyle={{
-          fontWeight: "bold",
-          color: '#3ed1b8',
-        }}
+          className={mobileMenuButton}
+          to="/contact"
+          activeStyle={{
+            fontWeight: "bold",
+            color: "#3ed1b8",
+          }}
         >
           Contact
         </NavLink>
-        </div>
-      );
+      </div>
+    );
   };
 
   const femmecubatorLogo = (
-    <img src={logoGIF} alt="logo" style={{height: "100px"}}></img>
+    <img src={logoGIF} alt="logo" style={{ height: "100px" }}></img>
   );
 
   const getMenuButtons = () => {
-    
-      return (
-        <div style={{    display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          width: '600px',}}>
-        <NavLink
-        className={menuButton}
-        to="/" exact
-        activeStyle={{
-          fontWeight: "bold",
-          fontSize: '20px',
-          color: '#3ed1b8',
+    return (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: "600px",
         }}
+      >
+        <NavLink
+          className={menuButton}
+          to="/"
+          exact
+          activeStyle={{
+            fontWeight: "bold",
+            fontSize: "20px",
+            color: "#3ed1b8",
+          }}
         >
           Home
         </NavLink>
         <NavLink
-        className={menuButton}
-        to="/tasks"
-        activeStyle={{
-          fontWeight: "bold",
-          fontSize: '20px',
-          color: '#3ed1b8',
-        }}
+          className={menuButton}
+          to="/tasks"
+          activeStyle={{
+            fontWeight: "bold",
+            fontSize: "20px",
+            color: "#3ed1b8",
+          }}
         >
           Tasks
         </NavLink>
         <NavLink
-        className={menuButton}
-        to="/onlinetest"
-        activeStyle={{
-          fontWeight: "bold",
-          fontSize: '20px',
-          color: '#3ed1b8',
-        }}
+          className={menuButton}
+          to="/onlinetest"
+          activeStyle={{
+            fontWeight: "bold",
+            fontSize: "20px",
+            color: "#3ed1b8",
+          }}
         >
           Online Tests
         </NavLink>
         <NavLink
-        className={menuButton}
-        to="/leaderboard"
-        activeStyle={{
-          fontWeight: "bold",
-          fontSize: '20px',
-          color: '#3ed1b8',
-        }}
+          className={menuButton}
+          to="/leaderboard"
+          activeStyle={{
+            fontWeight: "bold",
+            fontSize: "20px",
+            color: "#3ed1b8",
+          }}
         >
           LeaderBoard
         </NavLink>
         <NavLink
-        className={menuButton}
-        to="/contact"
-        activeStyle={{
-          fontWeight: "bold",
-          fontSize: '20px',
-          color: '#3ed1b8',
-        }}
+          className={menuButton}
+          to="/contact"
+          activeStyle={{
+            fontWeight: "bold",
+            fontSize: "20px",
+            color: "#3ed1b8",
+          }}
         >
           Contact
         </NavLink>
-        
-        </div>
-      );
-
+      </div>
+    );
   };
 
   return (
     <header>
-      <AppBar className={nav ? headerActive : header}  elevation={0}>
+      <AppBar className={nav ? headerActive : header} elevation={0}>
         {mobileView ? displayMobile() : displayDesktop()}
       </AppBar>
     </header>
