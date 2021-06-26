@@ -126,12 +126,12 @@ span.question {
   display: block;
   font-size: 15px;
   margin: 7px 0;
-  color: #03c0a0;
+  color: rgb(255, 255, 255);
 }
 
 p.answer {
   /* max-width: 500px; */
-  color: #a0a0a0;
+  color: #ffffff;
 }
 
 .footer-contact span {
@@ -185,6 +185,14 @@ span#copyrights {
   span#copyrights {
     margin-top: auto;
   }
+}
+
+.menuButton {
+  font-weight: 500;
+  font-size: "20px";
+  margin-left: "38px";
+  text-decoration: "none";
+  color: "#fff";
 }
 @media screen and (max-width: 650px) {
   .mainbox {
