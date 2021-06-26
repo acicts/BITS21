@@ -1,4 +1,4 @@
-import { GitHub, Instagram } from "@material-ui/icons";
+import { GitHub, Instagramn, YouTube, Facebook } from "@material-ui/icons";
 import React from "react";
 import OCdata from "../../Data/OC.json";
 
@@ -27,13 +27,7 @@ const FooterContact = () => {
               <GitHub />
             </a>
           </div>
-
-          <div className="footer-contact">
-            <span>ACICTS</span>
-            <a href='#'>
-              <GitHub />
-            </a>
-          </div>
+          
       
     </div>
   );
