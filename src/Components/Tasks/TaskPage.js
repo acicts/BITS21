@@ -1,37 +1,33 @@
-import {React, useEffect} from 'react'
-import Taskcard from './TaskCard'
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import PropTypes from 'prop-types';
-import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import Fab from '@material-ui/core/Fab';
-import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
-import Zoom from '@material-ui/core/Zoom';
-import Toolbar from '@material-ui/core/Toolbar';
-import Aos from 'aos';
-import "aos/dist/aos.css"
-
-
+import { React, useEffect } from "react";
+import Taskcard from "./TaskCard";
+import { makeStyles } from "@material-ui/core/styles";
+import Container from "@material-ui/core/Container";
+import PropTypes from "prop-types";
+import useScrollTrigger from "@material-ui/core/useScrollTrigger";
+import Fab from "@material-ui/core/Fab";
+import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+import Zoom from "@material-ui/core/Zoom";
+import Toolbar from "@material-ui/core/Toolbar";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    position: 'fixed',
+    position: "fixed",
     bottom: theme.spacing(2),
     right: theme.spacing(2),
   },
   container: {
-    padding: '0',
-    height: '100vh',
+    padding: "0",
+    height: "100vh",
   },
   background: {
-      paddingTop: "50px",
-      marginTop: '50px'
+    paddingTop: "50px",
+    marginTop: "50px",
   },
   backToTop: {
-    color: '#000'
+    color: "#000",
   },
-  
-  
 }));
 function ScrollTop(props) {
   const { children, window } = props;
@@ -46,10 +42,12 @@ function ScrollTop(props) {
   });
 
   const handleClick = (event) => {
-    const anchor = (event.target.ownerDocument || document).querySelector('#back-to-top-anchor');
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      "#back-to-top-anchor"
+    );
 
     if (anchor) {
-      anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      anchor.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
 
@@ -71,35 +69,35 @@ ScrollTop.propTypes = {
   window: PropTypes.func,
 };
 
-
 function TaskPage(props) {
+  useEffect(() => {
+    Aos.init({ duration: 200 });
+  }, []);
 
-      useEffect(() => {
-        Aos.init({ duration:200 })
-      }, [])
-    
-      const classes = useStyles();
-    return (
-      <div className={classes.taskContainer}>
-
-        <Container maxWidth="xl" className={classes.container} >
-       <Toolbar id="back-to-top-anchor" />
+  const classes = useStyles();
+  return (
+    <div className={classes.taskContainer}>
+      <Container maxWidth="xl" className={classes.container}>
+        <Toolbar id="back-to-top-anchor" />
         <div className={classes.background}>
           <div>
-            <Taskcard  />
-            </div>
+            <Taskcard />
+          </div>
         </div>
-        
       </Container>
-      
-      <ScrollTop {...props}>
-      <Fab color="secondary" className={classes.backToTop} size="small" aria-label="scroll back to top">
-        <KeyboardArrowUpIcon />
-      </Fab>
-    </ScrollTop>
-    </div>
 
-    )
+      <ScrollTop {...props}>
+        <Fab
+          color="secondary"
+          className={classes.backToTop}
+          size="small"
+          aria-label="scroll back to top"
+        >
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
+    </div>
+  );
 }
 
-export default TaskPage
+export default TaskPage;

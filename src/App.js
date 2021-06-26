@@ -29,7 +29,7 @@ function _ScrollToTop(props) {
 
 const ScrollToTop = withRouter(_ScrollToTop);
 
-export default function App() {
+export default function App({ location }) {
   return (
     <Router>
       <ScrollToTop>
@@ -52,8 +52,8 @@ export default function App() {
                 <NotFound />
               </Route>
             </Switch>
+            <Footer />
           </ThemeProvider>
-          <Footer />
         </div>
       </ScrollToTop>
     </Router>
