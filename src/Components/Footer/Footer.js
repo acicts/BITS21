@@ -25,7 +25,7 @@ const Footer = () => {
             <Link to="/contact">Contact</Link>
           </div>
           <FooterContact />
-          <span id="copyrights">copyright reserved. ACICT BITS © 2020 </span>
+          <span id="copyrights">copyright reserved. ACICT BITS © 2021 </span>
         </div>
       </footer>
     )
