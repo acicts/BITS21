@@ -14,7 +14,7 @@ body {
   color: #ffffff;
   height: 100%;
   margin: 0;
-
+  font-family: 'Titillium Web', sans-serif;
   background-size: cover;
   background-attachment: fixed;
   padding: 0;
@@ -91,8 +91,8 @@ a:hover {
 }
 
 footer {
-  height: 230px;
-  background-color: #082946;
+  height: 250px;
+  background-color: #06192e;
   display: flex;
   box-sizing: border-box;
   padding: 15px 60px;
@@ -102,14 +102,15 @@ footer .content {
   margin: auto;
   display: grid;
   width: 80%;
-  grid-template-columns: 7fr 2fr 4fr;
+  grid-template-columns: 7fr 2fr 2.5fr;
   column-gap: 50px;
   row-gap: 15px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   max-height: inherit;
 }
 footer .about {
   margin: auto;
+  margin-top: 10px;
   max-width: 500px;
 }
 span.question {
@@ -134,11 +135,11 @@ p.answer {
 }
 
 .footer-contact span {
-  font-size: 15px;
-  color: #c2c2c2;
+  font-size: 16px;
+  color: #ffffff;
   margin: 9px 0;
   /* white-space: nowrap; */
-  width: 200px;
+  width: 100px;
   display: inline-block;
 }
 
