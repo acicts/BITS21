@@ -1,6 +1,7 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import FooterContact from "./FooterContact";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const location = useLocation();
@@ -9,20 +10,67 @@ const Footer = () => {
       <footer>
         <div className="content">
           <div className="about">
-            <span className="question">What is ACICT BITS?</span>
             <p className="answer">
-              ACICT BITS is for young anandians who wants to put thier skills to
-              test, compete and show thier abilities. most importantly, bits is
-              a community and a place to share what u know. learn what u didn’t
-              know before.
+            BITS is The First-Ever Task-Based Intra-School ICT competition, organized by the Ananda College ICT Society to provide a platform for our school's students to polish and improve their ICT knowledge in many fields of ICT
             </p>
           </div>
           <div className="footer-nav">
-            <Link to="/">Home</Link>
-            <Link to="/tasks">Tasks</Link>
-            <Link to="/online-tests">Online Tests</Link>
-            <Link to="/leaderboard">LeaderBoard</Link>
-            <Link to="/contact">Contact</Link>
+          <NavLink
+          className="menuButton"
+          to="/"
+          exact
+          activeStyle={{
+            fontWeight: "bold",
+            fontSize: "20px",
+            color: "#3ed1b8",
+          }}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          className="menuButton"
+          to="/tasks"
+          activeStyle={{
+            fontWeight: "bold",
+            fontSize: "20px",
+            color: "#3ed1b8",
+          }}
+        >
+          Tasks
+        </NavLink>
+        <NavLink
+          className="menuButton"
+          to="/onlinetest"
+          activeStyle={{
+            fontWeight: "bold",
+            fontSize: "20px",
+            color: "#3ed1b8",
+          }}
+        >
+          Online Tests
+        </NavLink>
+        <NavLink
+          className="menuButton"
+          to="/leaderboard"
+          activeStyle={{
+            fontWeight: "bold",
+            fontSize: "20px",
+            color: "#3ed1b8",
+          }}
+        >
+          LeaderBoard
+        </NavLink>
+        <NavLink
+          className="menuButton"
+          to="/contact"
+          activeStyle={{
+            fontWeight: "bold",
+            fontSize: "20px",
+            color: "#3ed1b8",
+          }}
+        >
+          Contact
+        </NavLink>
           </div>
           <FooterContact />
           <span id="copyrights">copyright reserved. ACICT BITS © 2021 </span>
