@@ -41,6 +41,20 @@ backgroundSize: 'cover',
           [theme.breakpoints.down('xs')]: {
             marginLeft: '10px',
             marginRight: '10px',
+            width: '300px',
+            transformOrigin: 'none',
+  transition: "none",
+  animationName: 'animate',
+  animationDuration: 'none',
+  animationIterationCount: 'none',
+  transform: 'none',
+  marginBottom: '-100px',
+  zIndex: '1',
+  '&:hover': {
+    animation: 'none',
+    marginTop: '0',
+    transform: 'none'
+  },
         },
       },
 
@@ -57,7 +71,8 @@ backgroundSize: 'cover',
       },
 
       cont: {
-        height: '600px'
+        height: '600px',
+        marginBottom: '-100px',
       }
     });
 
@@ -68,7 +83,7 @@ backgroundSize: 'cover',
             <Grid xl={12} md={12} lg={12} container direction="row" justify="space-around" alignItems="center" className={classes.categoryCard}>
 
               <Grid Item xl={12}  lg={12} >
-              <Typography variant='h1'  align='center' style={{marginTop: '12%', paddingBottom: '50px'}}>Do what <span style={{color: '#3ed1b8'}}> YOU LOVE</span></Typography>
+              <Typography variant='h2'  align='center' style={{marginTop: '12%', paddingBottom: '50px'}}>Do what <span style={{color: '#3ed1b8'}}> YOU LOVE</span></Typography>
               </Grid>
      <Grid item className={classes.cont}>
     <Card className={classes.root}  elevation='3'>
