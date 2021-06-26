@@ -5,19 +5,36 @@ import OCdata from "../../Data/OC.json";
 const FooterContact = () => {
   return (
     <div className="footer-contact">
-      {OCdata.map((member, _) => {
-        return (
+      
+       
           <div className="footer-contact">
-            <span>{member.name}</span>
-            <a href={member.github}>
+            <span>ACICTS</span>
+            <a href='#'>
               <GitHub />
             </a>
-            <a href={member.insta}>
-              <Instagram />
+          </div>
+
+          <div className="footer-contact">
+            <span>ACICTS</span>
+            <a href='#'>
+              <GitHub />
             </a>
           </div>
-        );
-      })}
+
+          <div className="footer-contact">
+            <span>ACICTS</span>
+            <a href='#'>
+              <GitHub />
+            </a>
+          </div>
+
+          <div className="footer-contact">
+            <span>ACICTS</span>
+            <a href='#'>
+              <GitHub />
+            </a>
+          </div>
+      
     </div>
   );
 };
