@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -9,16 +9,16 @@ html {
 }
 
 body {
-    background-color: #183d5d;
-    background-image: url('./Img/bg.svg');
-    color: #ffffff;
-    height: 100%;
-    margin: 0;
-    
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 0;
-    overflow-x: hidden;
+  background-color: #183d5d;
+  background-image: url("./Img/bg.svg");
+  color: #ffffff;
+  height: 100%;
+  margin: 0;
+
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -32,65 +32,159 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #37b19c; 
+  background: #37b19c;
 }
 
 .mainbox {
-    margin: auto;
-    background: transparent;
-    height: 600px;
-    margin-top: 250px;
-    width: 600px;
-    position: relative;
+  margin: auto;
+  background: transparent;
+  height: 600px;
+  margin-top: 250px;
+  width: 600px;
+  position: relative;
 }
-  
+
 .err {
   color: #ffffff;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 11rem;
-  position:absolute;
+  position: absolute;
   left: 20%;
   top: 8%;
 }
-  
+
 .far {
   position: absolute;
   font-size: 8.5rem;
   left: 42%;
   top: 15%;
   color: #3ed1b8;
-}   
-  
+}
+
 .err2 {
   color: #ffffff;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 11rem;
-  position:absolute;
+  position: absolute;
   left: 68%;
   top: 8%;
 }
-  
+
 .msg {
   text-align: center;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.6rem;
-  position:absolute;
+  position: absolute;
   left: 16%;
   top: 45%;
   width: 75%;
 }
 
 a {
-text-decoration: none;
-color: #3ed1b8;
+  text-decoration: none;
+  color: #3ed1b8;
 }
 
 a:hover {
-text-decoration: none;
-color: '#3ed1b8';
+  text-decoration: none;
+  color: "#3ed1b8";
 }
 
+footer {
+  height: 230px;
+  background-color: #082946;
+  display: flex;
+  box-sizing: border-box;
+  padding: 15px 60px;
+}
+footer .content {
+  display: block;
+  margin: auto;
+  display: grid;
+  width: 80%;
+  grid-template-columns: 7fr 2fr 4fr;
+  column-gap: 50px;
+  row-gap: 15px;
+  justify-content: space-around;
+  max-height: inherit;
+}
+footer .about {
+  margin: auto;
+  max-width: 500px;
+}
+span.question {
+  font-size: 15px;
+}
 
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav a {
+  display: block;
+  font-size: 15px;
+  margin: 7px 0;
+  color: #03c0a0;
+}
+
+p.answer {
+  /* max-width: 500px; */
+  color: #a0a0a0;
+}
+
+.footer-contact span {
+  font-size: 15px;
+  color: #c2c2c2;
+  margin: 9px 0;
+  /* white-space: nowrap; */
+  width: 200px;
+  display: inline-block;
+}
+
+span#copyrights {
+  grid-column: 1/4;
+  justify-self: center;
+  color: #969696;
+}
+
+.footer-contact svg:first-child {
+  margin-right: 9px;
+}
+
+@media screen and (max-width: 850px) {
+  footer {
+    height: 560px;
+    margin: 0;
+  }
+
+  .footer-nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .footer-nav a {
+    padding: 10px;
+  }
+  footer .content {
+    grid-template-columns: 1fr;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 40px;
+    column-gap: 0;
+  }
+  footer .content > div {
+    margin: auto;
+    grid-column: 1/2;
+  }
+  .footer-contact {
+    text-align: left;
+  }
+  span#copyrights {
+    margin-top: auto;
+  }
+}
 @media screen and (max-width: 650px) {
   .mainbox {
     margin: auto;
@@ -98,6 +192,13 @@ color: '#3ed1b8';
     height: 100%;
     margin-top: 120px;
     width: 95%;
+  }
+  .footer-contact span {
+    min-width: 160px;
+  }
+  .footer-nav {
+    max-width: 300px;
+    flex-wrap: wrap;
   }
   .msg {
     top: 200px;
@@ -118,4 +219,3 @@ color: '#3ed1b8';
     font-size: 120px;
   }
 }
-
