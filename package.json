@@ -12,7 +12,7 @@
     "animejs": "^3.2.1",
     "aos": "^2.3.4",
     "chart.js": "^3.3.2",
-    "firebase": "^8.3.1",
+    "firebase": "^8.7.0",
     "framer-motion": "^4.1.17",
     "react": "^17.0.1",
     "react-chartjs-2": "^3.0.3",

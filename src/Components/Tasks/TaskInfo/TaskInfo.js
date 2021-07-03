@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Button } from '@material-ui/core';
 import SwipeableViews from 'react-swipeable-views';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -60,11 +61,13 @@ const useStyles = makeStyles((theme) => ({
   },
 
   details: {
-    backgroundColor:'#183d5d',
+    background: 'linear-gradient(144deg, #275d8ccf, #21466766)',
+    backdropFilter: 'blur(10px)',
     maxWidth: '800px',
+    borderRadius: '20px',
     width: '70%',
     padding: '0',
-    height: 'max-content',
+    height: '500px',
     margin: 'auto',
     marginTop: '20px',
     color: '#fff',
@@ -77,11 +80,17 @@ const useStyles = makeStyles((theme) => ({
   },
   appbar: {
     width: '100%',
-    backgroundColor: '#06192e'
+    backgroundColor: '#06192e',
+    borderTopLeftRadius: '20px',
+    borderTopRightRadius: '20px',
+    borderBottomLeftRadius: '0px',
+    borderBottomRightRadius: '0px',
+
   },
   title: {
     width: '85%',
     margin: 'auto',
+    marginLeft: '90px',
     color: '#fff',
     fontStyle: 'bold',
     marginTop: '200px',
@@ -126,9 +135,12 @@ export default function FullWidthTabs() {
 
   return (
     <Container className={classes.container}>
+      
     <div className={classes.ss}>
 
-      <Container className="taskname" color="primary"><Typography variant="h4" className={classes.title} color="#ffffff">{details.taskName}</Typography></Container>
+      <Container className="taskname" color="primary">
+      
+        <Typography variant="h4" className={classes.title} color="#ffffff"><Button variant='outlined' style={{marginRight: '50px'}}>Go Back</Button>{details.taskName}</Typography></Container>
     
     <Container fixed className={classes.details}>
         
@@ -165,7 +177,7 @@ and you will get a confirmation email.</Typography>
 <br></br>
 <br></br>
 
-      <iframe src={details.submit} className={classes.form}>Loading…</iframe>
+      <iframe src={details.submit} className={classes.form} backgroundColor="#000">Loading…</iframe>
         </TabPanel>
       </SwipeableViews>
 
