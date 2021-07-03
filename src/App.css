@@ -21,9 +21,18 @@ body {
   overflow-x: hidden;
 }
 
+iframe {
+  border: none;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   background: #154b86;
+}
+
+
+.m2 .freebirdFormviewerViewResponseConfirmContentContainer {
+  background-color: #3ed1b8;
 }
 
 ::-webkit-scrollbar-thumb {
