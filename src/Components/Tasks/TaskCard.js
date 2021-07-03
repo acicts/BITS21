@@ -28,7 +28,7 @@ const useStyles = makeStyles(() => ({
     height: '230px',
     marginLeft: '100px',
     marginTop: '20px',
-    backgroundColor: '#183d5db0',
+    background: 'linear-gradient(144deg, #275d8ccf, #21466766)',
     color: '#fff',
     borderRadius: '15px',
     backdropFilter: 'blur(10px)',
@@ -95,7 +95,7 @@ const useStyles = makeStyles(() => ({
     marginTop: '-10px'
   },
   filter: {
-    backgroundColor: '#183d5db0',
+    background: 'linear-gradient(144deg, #275d8ccf, #21466766)',
     backdropFilter: 'blur(10px)',
     float: 'right',
     marginRight: '20%',
