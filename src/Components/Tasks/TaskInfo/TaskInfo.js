@@ -12,6 +12,7 @@ import '../../../App.css'
 import { Container } from '@material-ui/core';
 import { useParams } from 'react-router-dom';
 import taskDetails from '../../../Data/tasks.json'
+import { Group } from '@material-ui/icons';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -98,7 +99,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   text: {
-    color: '#fff'
+    color: '#fff',
+    marginBottom: '20px',
   },
   switcher: {
     color: '#3ed1b8',
@@ -140,7 +142,7 @@ export default function FullWidthTabs() {
 
       <Container className="taskname" color="primary">
       
-        <Typography variant="h4" className={classes.title} color="#ffffff"><Button variant='outlined' style={{marginRight: '50px'}}>Go Back</Button>{details.taskName}</Typography></Container>
+        <Typography variant="h4" className={classes.title} color="#ffffff"><Button href="/tasks" color="secondary" variant='outlined' style={{marginRight: '50px'}}>Go Back</Button>{details.taskName}</Typography></Container>
     
     <Container fixed className={classes.details}>
         
@@ -167,6 +169,15 @@ export default function FullWidthTabs() {
         <TabPanel value={value} index={0} dir={theme.direction}><Typography className={classes.text}>
         {details.description}
         </Typography>
+        <ul style={{ color: '#fefefe', marrginTop: '90px'}}>
+          { details.point1 !== "" && <li>{details.point1}</li> }
+          { details.point2 !== "" && <li>{details.point2}</li> }
+          { details.point3 !== "" && <li>{details.point3}</li> }
+          { details.point4 !== "" && <li>{details.point4}</li> }
+          { details.point5 !== "" && <li>{details.point5}</li> }
+          { details.point6 !== "" && <li>{details.point6}</li> }
+          { details.point7 !== "" && <li>{details.point7}</li> }
+        </ul>
 <br></br>
         </TabPanel>
        

@@ -4,9 +4,18 @@
     "index": 0,
     "taskName": "Web development project",
     "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
-    "description": "Web scraping is a very popular way of getting information frjhkjhdj kjfghl fjdh kfdjhg fkjdh gklfjdh jfdh gjfkh kjfh gfjdh gfjdh <a href='www.youtube.com'>fkdjhl dfjlkghfdiughreiuhg fjdhg kfjdh dijfghkfj ghuifdghi jdfhgfh jghdfughieurhglk jfhgiufh gidjfhg fdjhg hfdjhgkjdfhg djhfg ldjfhgdfjhg dffjhg klfjdhgjdfh jfdhgkfjdhg",
+    "description": "Contrary to popular belief,                                                                                                                                                          Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. \n Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.",
     "catogery": "Code",
-    "submit": "https://docs.google.com/forms/d/e/1FAIpQLSfs37-yGfBOA2vNVJVU9r0RgqUsASF-o6hg2rxM83fbzKy_bw/viewform?embedded=true"
+    "submit": "https://docs.google.com/forms/d/e/1FAIpQLSfs37-yGfBOA2vNVJVU9r0RgqUsASF-o6hg2rxM83fbzKy_bw/viewform?embedded=true",
+    "point1": "It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years oldjd",
+    "point2": "It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old",
+    "point3": "It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old",
+    "point4": "It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old",
+    "point5": "It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old",
+    "point6": "",
+    "point7": ""
+  
+
   },
   {
     "id": "C02",
@@ -14,7 +23,14 @@
     "taskName": "Web development project",
     "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
     "description": "Web scraping is a very popular way of getting information frjhkjhdj kjfghl fjdh kfdjhg fkjdh gklfjdh jfdh gjfkh kjfh gfjdh gfjdh <a href='www.youtube.com'>fkdjhl dfjlkghfdiughreiuhg fjdhg kfjdh dijfghkfj ghuifdghi jdfhgfh jghdfughieurhglk jfhgiufh gidjfhg fdjhg hfdjhgkjdfhg djhfg ldjfhgdfjhg dffjhg klfjdhgjdfh jfdhgkfjdhg",
-    "catogery": "Code"
+    "catogery": "Code",
+    "point1": "sjdfhkjsdhfjd",
+    "point2": "sjdfhkjsdhfjd",
+    "point3": "sjdfhkjsdhfjd",
+    "point4": "",
+    "point5": "",
+    "point6": "",
+    "point7": ""
   },
   {
     "id": "C03",
@@ -22,7 +38,14 @@
     "taskName": "Web development project",
     "shortDescription": "Learn how to maintain a project yourself. Also learn web development",
     "description": "Web scraping is a very popular way of getting information frjhkjhdj kjfghl fjdh kfdjhg fkjdh gklfjdh jfdh gjfkh kjfh gfjdh gfjdh <a href='www.youtube.com'>fkdjhl dfjlkghfdiughreiuhg fjdhg kfjdh dijfghkfj ghuifdghi jdfhgfh jghdfughieurhglk jfhgiufh gidjfhg fdjhg hfdjhgkjdfhg djhfg ldjfhgdfjhg dffjhg klfjdhgjdfh jfdhgkfjdhg",
-    "catogery": "Code"
+    "catogery": "Code",
+    "point1": "sjdfhkjsdhfjd",
+    "point2": "",
+    "point3": "",
+    "point4": "",
+    "point5": "",
+    "point6": "",
+    "point7": ""
   },
   {
     "id": "D01",

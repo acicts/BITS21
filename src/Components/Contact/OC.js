@@ -9,7 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
 import catImg from '../../Img/cat.jpg'
-import { GitHub, Instagram } from '@material-ui/icons';
+import { GitHub, Instagram, Phone } from '@material-ui/icons';
 import theme from '../../theme'
 import OCdata from '../../Data/OC.json'
 
@@ -19,7 +19,7 @@ const useStyles = makeStyles(() => ({
     marginBottom: '50px',
     marginLeft: '50px',
     marginRight: '50px',
-    backgroundColor: '#183d5db0',
+    background: 'linear-gradient(144deg, #275d8ccf, #21466766)',
     backdropFilter: 'blur(10px)',
     color: theme.palette.primary.contrastText,
     borderRadius: '15px',
@@ -65,12 +65,16 @@ export default function OC() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing >
-        <IconButton className={classes.icons} aria-label="GitHub" href={member.github}>
+        { member.github !== "" && <IconButton className={classes.icons} aria-label="GitHub" href={member.github}>
           <GitHub />
-        </IconButton>
-        <IconButton className={classes.icons} aria-label="Instagram" href={member.insta}>
+        </IconButton>}
+        { member.insta !== "" &&  <IconButton className={classes.icons} aria-label="Instagram" href={member.insta}>
           <Instagram />
-        </IconButton>
+        </IconButton> }
+        { member.phone !== "" &&  <IconButton className={classes.icons} aria-label="Phone" >
+          <Phone />
+        </IconButton> }
+      
       </CardActions>
     </Card>
     ))}

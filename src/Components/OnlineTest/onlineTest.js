@@ -17,7 +17,8 @@ const useStyles = makeStyles(() => ({
     height: '230px',
     marginLeft: '100px',
     marginTop: '20px',
-    backgroundColor: '#183d5db0',
+    
+    background: 'linear-gradient(144deg, #275d8ccf, #21466766)',
     color: '#fff',
     borderRadius: '15px',
     backdropFilter: 'blur(10px)',
@@ -163,7 +164,7 @@ export default function TaskCard() {
         </CardContent>
         
         <div className={classes.controls}>
-        <Button variant="contained" href={tests.link} className={classes.button}>
+        <Button target="blank" variant="contained" href={tests.link} className={classes.button}>
           Start Test
         </Button>
         
