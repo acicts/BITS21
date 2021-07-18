@@ -12,7 +12,7 @@ body {
   background-color: #183d5d;
   background-image: url("./Img/bg.svg");
   color: #ffffff;
-  height: 100%;
+  height: max-content;
   margin: 0;
   font-family: 'Titillium Web', sans-serif;
   background-size: cover;
@@ -102,9 +102,11 @@ a:hover {
 footer {
   height: 260px;
   background-color: #06192e;
+  
   display: flex;
   box-sizing: border-box;
   padding: 15px 60px;
+
 }
 footer .content {
   display: block;

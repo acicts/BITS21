@@ -21,7 +21,7 @@ const StyledTableCell = withStyles((theme) => ({
   },
   papper: {
     width: '20%',
-
+    height: '1000px',
   }
 }))(TableCell);
 
@@ -68,7 +68,8 @@ const useStyles = makeStyles({
     zIndex: '1'
   },
   papper: {
-    marginTop: '100px'
+    marginTop: '100px',
+    height: '100vh',
   },
   tBody: {
     borderSpacing: '0px',
