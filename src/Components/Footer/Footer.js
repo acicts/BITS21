@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   const location = useLocation();
   return (
-    location.pathname !== ("/tasks", "/onlinetest") && (
+    location.pathname !== "/tasks" && location.pathname !== "/onlinetest" && (
       <footer>
         <div className="content">
           <div className="about">

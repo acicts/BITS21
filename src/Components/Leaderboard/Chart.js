@@ -8,6 +8,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import data from '../../Data/LeaderBoard.json'
 import theme from '../../theme';
+import { Typography } from '@material-ui/core';
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -42,7 +43,18 @@ const useStyles = makeStyles({
   table: {
     width: '80%',
     marginLeft: '10%',
-    marginTop: '5%',
+    
+    [theme.breakpoints.down('xs')]: {
+      position: 'relative',
+      width: '95%',
+      margin: 'auto',
+      marginTop: '50px',
+  },
+  },
+  update: {
+    width: '80%',
+    marginLeft: '10%',
+    marginTop: '50px',
     [theme.breakpoints.down('xs')]: {
       position: 'relative',
       width: '95%',
@@ -69,6 +81,7 @@ export default function CustomizedTables() {
 
   return (
     <TableContainer className={classes.papper}>
+      <Typography className={classes.update} variant='caption'>Leaderboard will be updated on 28.07.2021 12AM</Typography>
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow>
