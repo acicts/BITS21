@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect }  from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -12,10 +12,13 @@ import catImg from '../../Img/cat.jpg'
 import { GitHub, Instagram, Phone } from '@material-ui/icons';
 import theme from '../../theme'
 import OCdata from '../../Data/OC.json'
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 const useStyles = makeStyles(() => ({
   root: {
-    maxWidth: 345,
+    width: 345,
+    height: '200px',
     marginBottom: '50px',
     marginLeft: '50px',
     marginRight: '50px',
@@ -48,10 +51,14 @@ const useStyles = makeStyles(() => ({
 export default function OC() {
   const classes = useStyles();
 
+  useEffect(() => {
+    Aos.init({ duration:200 })
+  }, [])
+
   return (
     <Grid xl={12} md={12} lg={12} container direction="row" justify="space-around" alignItems="center" className={classes.OCContainer}>
     {OCdata.map((member, index) => (
-    <Card className={classes.root} elevation='6' key={index}>
+    <Card className={classes.root} elevation='6' key={index} data-aos="zoom-in-up">
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar} src={catImg}/>
@@ -71,7 +78,7 @@ export default function OC() {
         { member.insta !== "" &&  <IconButton className={classes.icons} aria-label="Instagram" href={member.insta}>
           <Instagram />
         </IconButton> }
-        { member.phone !== "" &&  <IconButton className={classes.icons} aria-label="Phone" >
+        { member.phone !== "" &&  <IconButton className={classes.icons} aria-label="Phone" href={member.phone}>
           <Phone />
         </IconButton> }
       

@@ -171,7 +171,7 @@ export default function TaskCard() {
 
   return (
     <div className='eee'>
-      <div className={classes.filter}  data-aos="fade-left">
+      <div className={classes.filter}  data-aos="fade-up-right">
       <FormControl component="fieldset">
       <FormLabel component="legend">Filter Tasks</FormLabel>
       <RadioGroup className={classes.filterOptions} aria-label="tasks" name="filter" value={value} onChange={handleChange}>

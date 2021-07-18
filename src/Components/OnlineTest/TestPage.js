@@ -25,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
   },
   background: {
       paddingTop: "50px",
-      marginTop: '50px'
+      marginTop: '50px',
+      marginBottom: '50px'
   },
   backToTop: {
     color: '#000'
@@ -85,9 +86,9 @@ function TaskPage(props) {
         <Container maxWidth="xl" className={classes.container} >
        <Toolbar id="back-to-top-anchor" />
         <div className={classes.background}>
-          <div>
+          
             <Test  />
-            </div>
+           
         </div>
         
       </Container>
