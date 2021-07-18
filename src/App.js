@@ -38,9 +38,9 @@ export default function App({ location }) {
           <ThemeProvider theme={Theme}>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/tasks" component={TaskPage} />
+              {/*<Route path="/tasks" component={TaskPage} />
               <Route path="/onlinetest" component={OnlineTest} />
-              <Route path="/leaderboard" component={LeaderBoard} />
+              <Route path="/leaderboard" component={LeaderBoard} />*/}
               <Route path="/contact" component={Contact} />
 
               <Route path="/task/:id" component={Task} />

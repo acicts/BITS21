@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '50px',
     marginLeft: '50px',
     marginRight: '50px',
+    
     background: 'linear-gradient(144deg, #275d8ccf, #21466766)',
     backdropFilter: 'blur(10px)',
     color: theme.palette.primary.contrastText,
@@ -35,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   OCContainer: {
-    marginTop: '30px',
+    marginTop: '150px',
     marginRight: '50px',
   },
   

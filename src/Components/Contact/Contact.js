@@ -6,8 +6,9 @@ export default function SimpleContainer() {
 
 return (
   <div>
+    <Groups />
       <OC />
-      <Groups />
+      
   </div>
   )
 }
