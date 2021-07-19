@@ -190,6 +190,19 @@ export default function Nav() {
           height: "200px",
         }}
       >
+
+<NavLink
+          className={menuButton}
+          to="#"
+         
+          style={{
+            fontWeight: "bold",
+            fontSize: "30px",
+            color: "#87eddc",
+          }}
+        >
+          TASKS ARE COMING SOON!
+        </NavLink>
         <NavLink
           className={mobileMenuButton}
           to="/"
@@ -201,6 +214,7 @@ export default function Nav() {
         >
           Home
         </NavLink>
+        
         {/*<NavLink
           className={mobileMenuButton}
           to="/tasks"
