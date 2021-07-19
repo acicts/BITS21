@@ -1,282 +1,124 @@
 [
     {
       "index": 0,
-      "name": "Chamindu Jayanath",
-      "description": "Programmer | UX/UI designer | Graphic Designer",
-      "github": "https://github.com/chamindujs",
-      "insta": "https://www.instagram.com/chamindujs/",
-      "phone": "tel:10923802199",
-      "img": ""
+      "name": "Thenula Perera"
+    },
+
+    {
+      "index": 1,
+      "name": "Dinura Thamuditha"
     },
     {
-        "index": 1,
-        "name": "Manula Thejan",
-        "description": "Graphic Designer | Documenter | VFX Designer",
-        "github": "https://github.com/manula2004",
-        "insta": "",
-        "phone": "10923802199",
-        "img": ""
-      },
-      {
-        "index": 2,
-        "name": "Chamuthu Edirisuriya",
-        "description": "Programmer | Graphic Designer",
-        "github": "https://github.com/chamindujs",
-        "insta": "https://www.instagram.com/chamindujs/",
-        "phone": "10923802199",
-        "img": ""
-      },
-      {
-        "index": 3,
-        "name": "Gothira",
-        "description": "Check out their website and codebase.",
-        "github": "https://github.com/chamindujs",
-        "insta": "https://www.instagram.com/chamindujs/",
-        "phone": "10923802199",
-        "img": ""
-      },
-      {
-        "index": 4,
-        "name": "Sarasitha Galagama",
-        "description": "Photoshop | Illustrator | Xd | Indesign Experience",
-        "github": "",
-        "insta": "https://www.instagram.com/sarasitha.galagama/",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 5,
-        "name": "Senuka Neththisinghe ",
-        "description": "Photo Editor ",
-        "github": "",
-        "insta": "www.instagram.com/tadashiii.i",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 6,
-        "name": "Nuwanaka Nadil",
-        "description": "Photoshop | Programmer | Video editor ",
-        "github": "https://github.com/nuwanakanadil",
-        "insta": "https://instagram.com/nuwanaka__nadil",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 7,
-        "name": "Nithika Senaweera ",
-        "description": "Programmer | VFX/Photo editor | Game Designing",
-        "github": "https://github.com/ns200310",
-        "insta": "https://instagram.com/nithikase__",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 8,
-        "name": "Binupa Nuransith",
-        "description": "Documenter",
-        "github": "",
-        "insta": "https://instagram.com/binupa_n_?utm_medium=copy_link",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 9,
-        "name": "Pasindu Yahampath",
-        "description": "Programmer | Graphic Designer | Audio Producer",
-        "github": "https://github.com/Pasindu2004",
-        "insta": "https://www.instagram.com/pasindu.y/",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 10,
-        "name": "Dulana Pitiwaduge",
-        "description": "Documenter | Video Editor",
-        "github": "",
-        "insta": "https://www.instagram.com/pitiya_17/",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 11,
-        "name": "Chanupa Gunasena ",
-        "description": "Graphic Designer",
-        "github": "",
-        "insta": "https://instagram.com/_gayya.___",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 12,
-        "name": "Chirag Gaganith",
-        "description": "Programmer",
-        "github": "",
-        "insta": "",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 13,
-        "name": "Sachin Kulathilaka ",
-        "description": "Hardware Enthusiast",
-        "github": "",
-        "insta": "https://www.instagram.com/invites/contact/?i=1ru9euctnu5ek&utm_content=3crdhxg",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 14,
-        "name": "Chamod Madushan",
-        "description": "Programmer",
-        "github": "",
-        "insta": "www.instagram.com/ch_madushan",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 15,
-        "name": "Rasindu Himasara",
-        "description": "Photo & VFX Editor",
-        "github": "",
-        "insta": "https://www.instagram.com/rasindu_himasara/",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 16,
-        "name": "Ishanka Tharushan ",
-        "description": "Documenter",
-        "github": "",
-        "insta": "https://instagram.com/_ishanka._liyanage_?utm_medium=copy_link",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 17,
-        "name": "Nadun Maleesha ",
-        "description": "Programmer",
-        "github": "",
-        "insta": "https://www.instagram.com/invites/contact/?i=1wbl1flpo3trk&utm_content=edwixxf",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 18,
-        "name": "Dinura Thamuditha ",
-        "description": "Video Editor",
-        "github": "",
-        "insta": "",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 19,
-        "name": "Akindu Wanigasuriya",
-        "description": "Graphic Designer",
-        "github": "",
-        "insta": "",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 20,
-        "name": "Gothira Mendis",
-        "description": "Graphic Designer | Programmer | 3D Designer",
-        "github": "https://github.com/gothira",
-        "insta": "https://www.instagram.com/mendi.iiii/",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 21,
-        "name": "Deshan Wijayasekara",
-        "description": "Graphic Designer",
-        "github": "",
-        "insta": "https://instagram.com/_desh_x?utm_medium=copy_link",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 22,
-        "name": "Kavintha Madushan",
-        "description": "Documenter",
-        "github": "",
-        "insta": "https://www.instagram.com/kavi_sam_03/",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 23,
-        "name": "Nimna Vishmitha",
-        "description": "Programmer",
-        "github": "",
-        "insta": "https://www.instagram.com/invites/contact/?i=1evbgg45dydij&utm_content=l8ors8w",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 24,
-        "name": "Hirun Kethmika",
-        "description": "Graphic Designer | Video Editor",
-        "github": "",
-        "insta": "https://www.instagram.com/hirunnnnnnn/",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 25,
-        "name": "Sachintha Abeyrathne",
-        "description": "Programmer | Graphic Designer | Blogger",
-        "github": "https://github.com/SachinthaAbeyrathne",
-        "insta": "https://www.instagram.com/sachintha._.official._/",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 26,
-        "name": "Harin udugama",
-        "description": "Web Designer",
-        "github": "",
-        "insta": "www.instagram.com/Harin_udugama ",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 27,
-        "name": "Thenula Jasinghe",
-        "description": "Graphic Designer | Documenter",
-        "github": "",
-        "insta": "",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 28,
-        "name": "Gasith Sanduwara ",
-        "description": "Programmer | Hardware Enthusiast",
-        "github": "",
-        "insta": "Https://www.instagram.com/g.a.x.i.t/",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 29,
-        "name": "Thenula Perera",
-        "description": "Graphic Designer | Video Editor",
-        "github": "",
-        "insta": "",
-        "phone": "",
-        "img": ""
-      },
-      {
-        "index": 30,
-        "name": "",
-        "description": "",
-        "github": "",
-        "insta": "",
-        "phone": "",
-        "img": ""
-      }
+      "index": 2,
+      "name": "Sarasitha Galagama"
+    },
+    {
+      "index": 3,
+      "name": "Gasith Sanduwara"
+    },
+    {
+      "index": 4,
+      "name": "Binupa Nuransith"
+    },
+    {
+      "index": 5,
+      "name": "Rasindu Himasara"
+    },
+    {
+      "index": 6,
+      "name": "Harin udugama"
+    },
+    {
+      "index": 7,
+      "name": "Gothira Mendis"
+    },
+    {
+      "index": 8,
+      "name": "Hasalu Botheju"
+    },
+    {
+      "index": 9,
+      "name": "Chirag Gaganith"
+    },
+    {
+      "index": 10,
+      "name": "Sachin Kulathilaka"
+    },
+    {
+      "index": 11,
+      "name": "Sahan Perera"
+    },
+    {
+      "index": 12,
+      "name": "Thenula Jasinghe"
+    },
+    {
+      "index": 13,
+      "name": "Nimna Vishmitha"
+    },
+    {
+      "index": 14,
+      "name": "Nadun Maleesha"
+    },
+    {
+      "index": 15,
+      "name": "Kavintha Madushan"
+    },
+    {
+      "index": 16,
+      "name": "Akindu Wanigasuriya"
+    },
+    {
+      "index": 17,
+      "name": "Sachintha Abeyrathne"
+    },
+    {
+      "index": 18,
+      "name": "Chanupa Gunasena"
+    },
+    {
+      "index": 19,
+      "name": "Senuka Neththisinghe"
+    },
+    {
+      "index": 20,
+      "name": "Deshan Wijayasekara"
+    },
+    {
+      "index": 21,
+      "name": "Chamod Madushan"
+    },
+    {
+      "index": 22,
+      "name": "Nithika Senaweera"
+    },
+    {
+      "index": 23,
+      "name": "Isuka Wickramasinghe"
+    },
+    {
+      "index": 24,
+      "name": "Nuwanaka Nadil"
+    },
+    {
+      "index": 25,
+      "name": "Pasindu Yahampath"
+    },
+    {
+      "index": 26,
+      "name": "Hirun Kethmika"
+    },
+    {
+      "index": 27,
+      "name": "Ishanka Tharushan"
+    },
+    {
+      "index": 28,
+      "name": "Dulana Pitiwaduge"
+    },
+    {
+      "index": 29,
+      "name": "Thimuth Mandila"
+    }
 ]
   

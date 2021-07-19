@@ -30,6 +30,23 @@ const useStyles = makeStyles(() => ({
       marginLeft: '10px',
     marginRight: '10px',
   },
+
+  },
+  OClistItem: {
+    width: 345,
+    height: '50px',
+    marginBottom: '10px',
+    marginLeft: '50px',
+    padding: '10px',
+    marginRight: '50px',
+    background: 'linear-gradient(144deg, #275d8ccf, #21466766)',
+    backdropFilter: 'blur(10px)',
+    color: theme.palette.primary.contrastText,
+    borderRadius: '10px',
+    [theme.breakpoints.down('xs')]: {
+      marginLeft: '10px',
+    marginRight: '10px',
+  },
   },
 
   avatar: {
@@ -44,6 +61,10 @@ const useStyles = makeStyles(() => ({
   },
   icons: {
     color: '#3ed1b8'
+  },
+
+  OClist: {
+    marginTop: '50px',
   }
   
 }));
@@ -56,33 +77,168 @@ export default function OC() {
   }, [])
 
   return (
+    <div>
     <Grid xl={12} md={12} lg={12} container direction="row" justify="space-around" alignItems="center" className={classes.OCContainer}>
-    {OCdata.map((member, index) => (
-    <Card className={classes.root} elevation='6' key={index} data-aos="zoom-in-up">
+      <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
       <CardHeader
        
-        title={member.name}
-        subheader="BITS OC"
+        title= "Chamindu Jayanath" 
+        subheader= "Task Review committee"
       />
       <CardContent>
         <Typography variant="body2"  component="p">
-        {member.description}
+        Programmer
         </Typography>
       </CardContent>
       <CardActions disableSpacing >
-        { member.github !== "" && <IconButton className={classes.icons} aria-label="GitHub" href={member.github}>
+       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
           <GitHub />
-        </IconButton>}
-        { member.insta !== "" &&  <IconButton className={classes.icons} aria-label="Instagram" href={member.insta}>
+        </IconButton>
+        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
           <Instagram />
-        </IconButton> }
-        { member.phone !== "" &&  <IconButton className={classes.icons} aria-label="Phone" href={member.phone}>
+        </IconButton> 
+        <IconButton className={classes.icons} aria-label="Phone" href="tel:39408-563">
           <Phone />
-        </IconButton> }
+        </IconButton> 
       
       </CardActions>
     </Card>
+
+    <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
+      <CardHeader
+       
+        title= "Chamindu Jayanath" 
+        subheader= "Task Review committee"
+      />
+      <CardContent>
+        <Typography variant="body2"  component="p">
+        Programmer
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing >
+       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
+          <GitHub />
+        </IconButton>
+        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
+          <Instagram />
+        </IconButton> 
+        <IconButton className={classes.icons} aria-label="Phone" href="tel:39408-563">
+          <Phone />
+        </IconButton> 
+      
+      </CardActions>
+    </Card>
+
+    <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
+      <CardHeader
+       
+        title= "Chamindu Jayanath" 
+        subheader= "Task Review committee"
+      />
+      <CardContent>
+        <Typography variant="body2"  component="p">
+        Programmer
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing >
+       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
+          <GitHub />
+        </IconButton>
+        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
+          <Instagram />
+        </IconButton> 
+        <IconButton className={classes.icons} aria-label="Phone" href="tel:39408-563">
+          <Phone />
+        </IconButton> 
+      
+      </CardActions>
+    </Card>
+
+    <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
+      <CardHeader
+       
+        title= "Chamindu Jayanath" 
+        subheader= "Task Review committee"
+      />
+      <CardContent>
+        <Typography variant="body2"  component="p">
+        Programmer
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing >
+       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
+          <GitHub />
+        </IconButton>
+        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
+          <Instagram />
+        </IconButton> 
+        <IconButton className={classes.icons} aria-label="Phone" href="tel:39408-563">
+          <Phone />
+        </IconButton> 
+      
+      </CardActions>
+    </Card>
+
+    <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
+      <CardHeader
+       
+        title= "Chamindu Jayanath" 
+        subheader= "Task Review committee"
+      />
+      <CardContent>
+        <Typography variant="body2"  component="p">
+        Programmer
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing >
+       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
+          <GitHub />
+        </IconButton>
+        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
+          <Instagram />
+        </IconButton> 
+        <IconButton className={classes.icons} aria-label="Phone" href="tel:39408-563">
+          <Phone />
+        </IconButton> 
+      
+      </CardActions>
+    </Card>
+
+    <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
+      <CardHeader
+       
+        title= "Chamindu Jayanath" 
+        subheader= "Task Review committee"
+      />
+      <CardContent>
+        <Typography variant="body2"  component="p">
+        Programmer
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing >
+       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
+          <GitHub />
+        </IconButton>
+        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
+          <Instagram />
+        </IconButton> 
+        <IconButton className={classes.icons} aria-label="Phone" href="tel:39408-563">
+          <Phone />
+        </IconButton> 
+      
+      </CardActions>
+    </Card>
+
+    </Grid>
+    <Typography variant="h4" style={{marginTop: '50px', marginLeft: '110px'}}>Organizing Committee</Typography>
+    <Grid  xl={12} md={12} lg={12} container direction="row" justify="space-around" alignItems="center" className={classes.OClist}>
+    {OCdata.map((member, index) => (
+      <Card className={classes.OClistItem} elevation='6' data-aos="zoom-in-up">
+        <Typography>{member.name}</Typography>
+      </Card>
     ))}
     </Grid>
+    </div>
+    
   );
 }
