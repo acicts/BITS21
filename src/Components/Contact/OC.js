@@ -60,9 +60,7 @@ export default function OC() {
     {OCdata.map((member, index) => (
     <Card className={classes.root} elevation='6' key={index} data-aos="zoom-in-up">
       <CardHeader
-        avatar={
-          <Avatar aria-label="recipe" className={classes.avatar} src={catImg}/>
-        }
+       
         title={member.name}
         subheader="BITS OC"
       />

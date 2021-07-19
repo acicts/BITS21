@@ -1,7 +1,7 @@
 [
     {
       "index": 0,
-      "name": "sfdf",
+      "name": "Chamindu Jayanath",
       "description": "Programmer | UX/UI designer | Graphic Designer",
       "github": "https://github.com/chamindujs",
       "insta": "https://www.instagram.com/chamindujs/",
@@ -11,16 +11,16 @@
     {
         "index": 1,
         "name": "Manula Thejan",
-        "description": "Check out their website",
+        "description": "Graphic Designer | Documenter | VFX Designer",
         "github": "https://github.com/manula2004",
-        "insta": "Graphic Designer | Documenter | VFX Designer",
+        "insta": "",
         "phone": "10923802199",
         "img": ""
       },
       {
         "index": 2,
         "name": "Chamuthu Edirisuriya",
-        "description": "Check out their website and codebase",
+        "description": "Programmer | Graphic Designer",
         "github": "https://github.com/chamindujs",
         "insta": "https://www.instagram.com/chamindujs/",
         "phone": "10923802199",
