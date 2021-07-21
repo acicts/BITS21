@@ -124,7 +124,7 @@ backgroundSize: 'cover',
       />
       <CardContent className={classes.subContent}>
         <Typography variant="h6" className={classes.subText}>
-        Code the shit out of your computer and build google, android, iOS and an electric car!!!
+        Dive into the world of ICT and explore the many things to write your ownn articles and blogs
         </Typography>
       </CardContent>
     </Card>

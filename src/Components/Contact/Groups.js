@@ -75,6 +75,8 @@ export default function OC() {
       <Button
         variant="contained"
         size="large"
+        target="_blank"
+        href="https://chat.whatsapp.com/KoMRnloMYitCcEodEbKklB"
         className={classes.button}
         startIcon={<WhatsAppIcon />}
       >
@@ -84,8 +86,8 @@ export default function OC() {
     </Card>
     <Card className={classes.root} elevation='6' >
       <CardHeader
-        title="BITS 2021 WhatsApp Group"
-        subheader="You can join the BITS 2021 WhatsApp group and chat with other participants and get help in if you need any"
+        title="BITS 2021 Discord Channel"
+        subheader="You can join the BITS 2021 Discord channel on the ACICTS server and chat with other participants and get help in if you need any"
       />
       <CardContent>
         <Typography variant="body2"  component="p">
@@ -97,6 +99,8 @@ export default function OC() {
       <Button
         variant="contained"
         size="large"
+        target="_blank"
+        href="https://discord.gg/CBvuJ4zJ2b"
         className={classes.button}
         startIcon={<i class="fab fa-discord"></i>}
       >

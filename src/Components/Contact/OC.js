@@ -18,7 +18,7 @@ import "aos/dist/aos.css"
 const useStyles = makeStyles(() => ({
   root: {
     width: 345,
-    height: '200px',
+    height: '150px',
     marginBottom: '50px',
     marginLeft: '50px',
     marginRight: '50px',
@@ -55,7 +55,7 @@ const useStyles = makeStyles(() => ({
   },
 
   OCContainer: {
-    marginTop: '150px',
+    marginTop: '50px',
     marginRight: '50px',
  
   },
@@ -83,13 +83,88 @@ export default function OC() {
       <CardHeader
        
         title= "Chamindu Jayanath" 
+        subheader= "Code Task Review Committee|Web Developer"
+      />
+      <CardActions disableSpacing >
+       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
+          <GitHub />
+        </IconButton>
+        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
+          <Instagram />
+        </IconButton> 
+        <IconButton className={classes.icons} aria-label="Phone" href="tel:39408-563">
+          <Phone />
+        </IconButton> 
+      
+      </CardActions>
+    </Card>
+
+    <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
+      <CardHeader
+       
+        title= "Manula Thejan" 
+        subheader= "Design & Explore Task Review Committee"
+      />
+      <CardActions disableSpacing >
+       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
+          <GitHub />
+        </IconButton>
+        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
+          <Instagram />
+        </IconButton> 
+        <IconButton className={classes.icons} aria-label="Phone" href="tel:39408-563">
+          <Phone />
+        </IconButton> 
+      
+      </CardActions>
+    </Card>
+
+    <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
+      <CardHeader
+       
+        title= "Chamuthu Edirisuriya" 
+        subheader= "Main Organizer"
+      />
+      <CardActions disableSpacing >
+       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
+          <GitHub />
+        </IconButton>
+        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
+          <Instagram />
+        </IconButton> 
+        <IconButton className={classes.icons} aria-label="Phone" href="tel:39408-563">
+          <Phone />
+        </IconButton> 
+      
+      </CardActions>
+    </Card>
+
+    <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
+      <CardHeader
+       
+        title= "Thithiesha Mahabaduge" 
+        subheader= "Leaderboard Update Committee"
+      />
+      <CardActions disableSpacing >
+       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
+          <GitHub />
+        </IconButton>
+        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
+          <Instagram />
+        </IconButton> 
+        <IconButton className={classes.icons} aria-label="Phone" href="tel:39408-563">
+          <Phone />
+        </IconButton> 
+      
+      </CardActions>
+    </Card>
+
+    <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
+      <CardHeader
+       
+        title= "Nithika Senaweera " 
         subheader= "Task Review committee"
       />
-      <CardContent>
-        <Typography variant="body2"  component="p">
-        Programmer
-        </Typography>
-      </CardContent>
       <CardActions disableSpacing >
        <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
           <GitHub />
@@ -110,111 +185,6 @@ export default function OC() {
         title= "Chamindu Jayanath" 
         subheader= "Task Review committee"
       />
-      <CardContent>
-        <Typography variant="body2"  component="p">
-        Programmer
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing >
-       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
-          <GitHub />
-        </IconButton>
-        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
-          <Instagram />
-        </IconButton> 
-        <IconButton className={classes.icons} aria-label="Phone" href="tel:39408-563">
-          <Phone />
-        </IconButton> 
-      
-      </CardActions>
-    </Card>
-
-    <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
-      <CardHeader
-       
-        title= "Chamindu Jayanath" 
-        subheader= "Task Review committee"
-      />
-      <CardContent>
-        <Typography variant="body2"  component="p">
-        Programmer
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing >
-       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
-          <GitHub />
-        </IconButton>
-        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
-          <Instagram />
-        </IconButton> 
-        <IconButton className={classes.icons} aria-label="Phone" href="tel:39408-563">
-          <Phone />
-        </IconButton> 
-      
-      </CardActions>
-    </Card>
-
-    <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
-      <CardHeader
-       
-        title= "Chamindu Jayanath" 
-        subheader= "Task Review committee"
-      />
-      <CardContent>
-        <Typography variant="body2"  component="p">
-        Programmer
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing >
-       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
-          <GitHub />
-        </IconButton>
-        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
-          <Instagram />
-        </IconButton> 
-        <IconButton className={classes.icons} aria-label="Phone" href="tel:39408-563">
-          <Phone />
-        </IconButton> 
-      
-      </CardActions>
-    </Card>
-
-    <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
-      <CardHeader
-       
-        title= "Chamindu Jayanath" 
-        subheader= "Task Review committee"
-      />
-      <CardContent>
-        <Typography variant="body2"  component="p">
-        Programmer
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing >
-       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
-          <GitHub />
-        </IconButton>
-        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
-          <Instagram />
-        </IconButton> 
-        <IconButton className={classes.icons} aria-label="Phone" href="tel:39408-563">
-          <Phone />
-        </IconButton> 
-      
-      </CardActions>
-    </Card>
-
-    <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
-      <CardHeader
-       
-        title= "Chamindu Jayanath" 
-        subheader= "Task Review committee"
-      />
-      <CardContent>
-        <Typography variant="body2"  component="p">
-        Programmer
-        </Typography>
-      </CardContent>
       <CardActions disableSpacing >
        <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
           <GitHub />
