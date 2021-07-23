@@ -54,7 +54,7 @@ const useStyles = makeStyles({
   update: {
     width: '80%',
     marginLeft: '10%',
-    marginTop: '50px',
+    marginTop: '150px',
     [theme.breakpoints.down('xs')]: {
       position: 'relative',
       width: '95%',
@@ -68,7 +68,7 @@ const useStyles = makeStyles({
     zIndex: '1'
   },
   papper: {
-    marginTop: '100px',
+    marginTop: '150px',
     height: '100vh',
   },
   tBody: {

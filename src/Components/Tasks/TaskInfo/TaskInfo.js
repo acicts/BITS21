@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '20px',
     width: '70%',
     padding: '0',
-    height: '500px',
+    height: 'min-content',
     margin: 'auto',
     marginTop: '20px',
     color: '#fff',
@@ -91,11 +91,15 @@ const useStyles = makeStyles((theme) => ({
   title: {
     width: '85%',
     margin: 'auto',
-    marginLeft: '90px',
     color: '#fff',
     fontStyle: 'bold',
     marginTop: '200px',
     maxWidth: '800px',
+    display: 'flex',
+    flexDirection: 'column',
+    [theme.breakpoints.down('xs')]: {
+      marginTop: '100px'
+    },
   },
 
   text: {
@@ -142,7 +146,7 @@ export default function FullWidthTabs() {
 
       <Container className="taskname" color="primary">
       
-        <Typography variant="h4" className={classes.title} color="#ffffff"><Button href="/tasks" color="secondary" variant='outlined' style={{marginRight: '50px'}}>Go Back</Button>{details.taskName}</Typography></Container>
+        <Typography variant="h4" className={classes.title} color="#ffffff"><Button href="/tasks" color="secondary" variant='outlined' style={{marginRight: '50px', width: '100px'}}>Go Back</Button>{details.taskName}</Typography></Container>
     
     <Container fixed className={classes.details}>
         

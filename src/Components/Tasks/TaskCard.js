@@ -24,7 +24,7 @@ import "aos/dist/aos.css"
 const useStyles = makeStyles(() => ({
   root: {
     display: 'flex',
-    width: '600px',
+    width: '570px',
     height: '230px',
     marginLeft: '100px',
     marginTop: '20px',
@@ -80,8 +80,7 @@ const useStyles = makeStyles(() => ({
     color: '#000',
     transition: '0.5s ease',
     '&:hover': {
-      backgroundColor: '#3ed1b8',
-      boxShadow: '0px 0px 11px 0px rgb(62 209 184), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)',
+      backgroundColor: '#3abda7',
   },
   
   },

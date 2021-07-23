@@ -1,18 +1,21 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import FooterContact from "./FooterContact";
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
+import "../../App.css";
 
-const Footer = () => {
+const Footer = ({}) => {
   const location = useLocation();
+  let { id } = useParams();
   return (
-    location.pathname !== "/tasks" && location.pathname !== "/onlinetest" && (
+    location.pathname !== "/tasks" && location.pathname !== "/onlinetest" && location.pathname !== "/task/:id" && (
       <footer>
         <div className="content">
           <div className="about">
             <p className="answer">
             BITS is The First-Ever Task-Based Intra-School ICT competition, organized by the Ananda College ICT Society to provide a platform for our school's students to polish and improve their ICT knowledge in many fields of ICT
             </p>
+            < FooterContact />
           </div>
           <div className="footer-nav">
           <NavLink
@@ -72,7 +75,6 @@ const Footer = () => {
           Contact
         </NavLink>
           </div>
-          <FooterContact />
           <span id="copyrights">copyright reserved. ACICT BITS © 2021 </span>
         </div>
       </footer>

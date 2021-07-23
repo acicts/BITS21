@@ -18,7 +18,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   padding: 0;
-  overflow-x: hidden;
+ 
 }
 
 iframe {
@@ -145,15 +145,6 @@ p.answer {
   color: #ffffff;
 }
 
-.footer-contact span {
-  font-size: 16px;
-  color: #ffffff;
-  margin: 9px 0;
-  /* white-space: nowrap; */
-  width: 100px;
-  display: inline-block;
-}
-
 span#copyrights {
   grid-column: 1/4;
   justify-self: center;
@@ -164,10 +155,17 @@ span#copyrights {
   margin-right: 9px;
 }
 
+.footer-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 @media screen and (max-width: 850px) {
   footer {
-    height: 650px;
+    height: min-content;
     margin: 0;
+    margin-top: 500px;
   }
 
   .footer-nav {
@@ -191,7 +189,9 @@ span#copyrights {
     grid-column: 1/2;
   }
   .footer-contact {
-    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   span#copyrights {
     margin-top: auto;
@@ -213,9 +213,7 @@ span#copyrights {
     margin-top: 120px;
     width: 95%;
   }
-  .footer-contact span {
-    min-width: 160px;
-  }
+
   .footer-nav {
     max-width: 300px;
     flex-wrap: wrap;
