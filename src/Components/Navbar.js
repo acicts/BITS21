@@ -163,6 +163,7 @@ export default function Nav() {
           <div className={drawerContainer}>
             <img
               src={logoGIF}
+              to="/"
               alt="logo"
               style={{
                 height: "100px",
@@ -260,7 +261,7 @@ export default function Nav() {
   };
 
   const femmecubatorLogo = (
-    <img src={logoGIF} alt="logo" style={{ height: "100px" }}></img>
+    <NavLink to="/"><img src={logoGIF} alt="logo" style={{ height: "100px" }}></img></NavLink> 
   );
 
   const getMenuButtons = () => {
