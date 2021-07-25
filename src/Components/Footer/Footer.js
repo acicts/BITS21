@@ -75,7 +75,16 @@ const Footer = ({}) => {
           Contact
         </NavLink>
           </div>
-          <span id="copyrights">copyright reserved. ACICT BITS © 2021 </span>
+           <div className="footer-nav">
+           <div className="footer-nav">
+            <a href="https://www.facebook.com/anandacharya.bits">BITS '18</a>
+            <a href="https://www.facebook.com/anandacharya.bits">BITS '19</a>
+            <a href="https://www.facebook.com/anandacharya.bits">BITS '20</a>
+            <a href="https://www.facebook.com/anandacharya.bits">BITS Recap</a>
+            <a href="https://www.facebook.com/anandacharya.bits">BITS ACICTS</a>
+          </div>
+     </div>
+          <span id="copyrights">Copyright Reserved. ACICTS© 2021 </span>
         </div>
       </footer>
     )
