@@ -26,7 +26,7 @@ function Quotes() {
             </div>
 
             <div className={classes.quoteContainer}>
-                <Typography align='left' variant='h4'> <span style={{color: '#3ed1b8', fontSize: '50px'}}>“</span> I Enthusiasm and commitment made me a winner. That victory was my turning point. I also invite you to be a winner too. <span style={{color: '#3ed1b8', fontSize: '50px'}}>”</span> </Typography>
+                <Typography align='left' variant='h4'> <span style={{color: '#3ed1b8', fontSize: '50px'}}>“</span>Enthusiasm and commitment made me a winner. That victory was my turning point. I also invite you to be a winner too. <span style={{color: '#3ed1b8', fontSize: '50px'}}>”</span> </Typography>
                 <Typography align='left' variant='h6' style={{marginRight: '30px'}}>~ Gothira Mendis
 </Typography>
                 <Typography align='left' variant='h6' style={{marginRight: '45px', color: '#ffffffb3'}}>BITS '18 Winner</Typography>
