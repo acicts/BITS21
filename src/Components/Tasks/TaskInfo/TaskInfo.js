@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '0',
     height: '100vh',
     color: '#fff',
-    marginBottom: '400px'
+    marginBottom: '600px'
   },
 
   details: {
