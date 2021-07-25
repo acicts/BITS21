@@ -49,6 +49,7 @@ function a11yProps(index) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    marginBottom: '400px'
   },
 
   ss: {
@@ -59,6 +60,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '0',
     height: '100vh',
     color: '#fff',
+    marginBottom: '400px'
   },
 
   details: {

@@ -77,11 +77,9 @@ const Footer = ({}) => {
           </div>
            <div className="footer-nav">
            <div className="footer-nav">
-            <a href="https://www.facebook.com/anandacharya.bits">BITS '18</a>
-            <a href="https://www.facebook.com/anandacharya.bits">BITS '19</a>
-            <a href="https://www.facebook.com/anandacharya.bits">BITS '20</a>
-            <a href="https://www.facebook.com/anandacharya.bits">BITS Recap</a>
-            <a href="https://www.facebook.com/anandacharya.bits">BITS ACICTS</a>
+            <a href="https://acicts.github.io/bits-official/">BITS '18</a>
+            <a href="https://acicts.github.io/BITS19/">BITS '19</a>
+            <a href="https://acicts.github.io/BITS20/index.html">BITS '20</a>
           </div>
      </div>
           <span id="copyrights">Copyright Reserved. ACICTS© 2021 </span>
