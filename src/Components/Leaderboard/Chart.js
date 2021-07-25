@@ -57,9 +57,10 @@ const useStyles = makeStyles({
     marginTop: '150px',
     [theme.breakpoints.down('xs')]: {
       position: 'relative',
-      width: '95%',
+      width: '100%',
       margin: 'auto',
       marginTop: '50px',
+      marginLeft: '20px'
   },
   },
   body: {
