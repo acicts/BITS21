@@ -30,7 +30,7 @@ const Footer = ({}) => {
         >
           Home
         </NavLink>
-        <NavLink
+        {/* <NavLink
           className="menuButton"
           to="/tasks"
           activeStyle={{
@@ -62,7 +62,7 @@ const Footer = ({}) => {
           }}
         >
           LeaderBoard
-        </NavLink>
+        </NavLink>*/}
         <NavLink
           className="menuButton"
           to="/contact"
@@ -73,7 +73,7 @@ const Footer = ({}) => {
           }}
         >
           Contact
-        </NavLink>
+        </NavLink> 
           </div>
            <div className="footer-nav">
            <div className="footer-nav">
