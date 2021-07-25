@@ -237,3 +237,16 @@ span#copyrights {
     font-size: 120px;
   }
 }
+
+.countdown {
+  margin-top: -20px;
+  margin-bottom: 40px;
+  font-size: 2em;
+  font-weight: bolder;
+  background: #10EBCE;
+background: -webkit-linear-gradient(to right, #10EBCE 0%, #18ABF5 100%);
+background: -moz-linear-gradient(to right, #10EBCE 0%, #18ABF5 100%);
+background: linear-gradient(to right, #10EBCE 0%, #18ABF5 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
