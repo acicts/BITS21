@@ -117,7 +117,7 @@ export default function OC() {
         subheader= "Main Organizer"
       />
       <CardActions disableSpacing >
-        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
+        <IconButton className={classes.icons} aria-label="Instagram" href="https://www.instagram.com/time_remnant_2.0/">
           <Instagram />
         </IconButton> 
         <IconButton className={classes.icons} aria-label="Phone" href="tel:0702914804">
@@ -134,7 +134,7 @@ export default function OC() {
         subheader= "Leaderboard Update Committee"
       />
       <CardActions disableSpacing >
-        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
+        <IconButton className={classes.icons} aria-label="Instagram" href="https://www.instagram.com/thithiesha/">
           <Instagram />
         </IconButton> 
         <IconButton className={classes.icons} aria-label="Phone" href="tel:0774028209">
@@ -151,10 +151,10 @@ export default function OC() {
         subheader= "Task Review committee"
       />
       <CardActions disableSpacing >
-       <IconButton className={classes.icons} aria-label="GitHub" href="dkhgkdfhgjk">
+       <IconButton className={classes.icons} aria-label="GitHub" href="https://github.com/ns200310">
           <GitHub />
         </IconButton>
-        <IconButton className={classes.icons} aria-label="Instagram" href="sdkhgfkdsh">
+        <IconButton className={classes.icons} aria-label="Instagram" href="https://www.instagram.com/nithikase__/">
           <Instagram />
         </IconButton> 
         <IconButton className={classes.icons} aria-label="Phone" href="tel:0772030426">
