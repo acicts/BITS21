@@ -86,10 +86,10 @@ export default function OC() {
         subheader= "Code Task Review Committee|Web Developer"
       />
       <CardActions disableSpacing >
-       <IconButton className={classes.icons} aria-label="GitHub" href="www.github.com/chamindujs">
+       <IconButton className={classes.icons} aria-label="GitHub" href="https://github.com/chamindujs" target="_blank">
           <GitHub />
         </IconButton>
-        <IconButton className={classes.icons} aria-label="Phone" href="tel:0711436311">
+        <IconButton className={classes.icons} aria-label="Phone" href="https://wa.link/1yweij" target="_blank">
           <Phone />
         </IconButton> 
       
@@ -103,7 +103,7 @@ export default function OC() {
         subheader= "Design & Explore Task Review Committee"
       />
       <CardActions disableSpacing >
-        <IconButton className={classes.icons} aria-label="Phone" href="tel:0779761567">
+        <IconButton className={classes.icons} aria-label="Phone" href="https://wa.link/hqa8o0" target="_blank">
           <Phone />
         </IconButton> 
       
@@ -117,10 +117,10 @@ export default function OC() {
         subheader= "Main Organizer"
       />
       <CardActions disableSpacing >
-        <IconButton className={classes.icons} aria-label="Instagram" href="https://www.instagram.com/time_remnant_2.0/">
+        <IconButton className={classes.icons} aria-label="Instagram" href="https://www.instagram.com/time_remnant_2.0/" target="_blank">
           <Instagram />
         </IconButton> 
-        <IconButton className={classes.icons} aria-label="Phone" href="tel:0702914804">
+        <IconButton className={classes.icons} aria-label="Phone" href="https://wa.link/buph6h" target="_blank">
           <Phone />
         </IconButton> 
       
@@ -134,10 +134,10 @@ export default function OC() {
         subheader= "Leaderboard Update Committee"
       />
       <CardActions disableSpacing >
-        <IconButton className={classes.icons} aria-label="Instagram" href="https://www.instagram.com/thithiesha/">
+        <IconButton className={classes.icons} aria-label="Instagram" href="https://www.instagram.com/thithiesha/" target="_blank">
           <Instagram />
         </IconButton> 
-        <IconButton className={classes.icons} aria-label="Phone" href="tel:0774028209">
+        <IconButton className={classes.icons} aria-label="Phone" href="https://wa.link/8zr3bq" target="_blank">
           <Phone />
         </IconButton> 
       
@@ -151,13 +151,13 @@ export default function OC() {
         subheader= "Task Review committee"
       />
       <CardActions disableSpacing >
-       <IconButton className={classes.icons} aria-label="GitHub" href="https://github.com/ns200310">
+       <IconButton className={classes.icons} aria-label="GitHub" href="https://github.com/ns200310" target="_blank">
           <GitHub />
         </IconButton>
-        <IconButton className={classes.icons} aria-label="Instagram" href="https://www.instagram.com/nithikase__/">
+        <IconButton className={classes.icons} aria-label="Instagram" href="https://www.instagram.com/nithikase__/" target="_blank">
           <Instagram />
         </IconButton> 
-        <IconButton className={classes.icons} aria-label="Phone" href="tel:0772030426">
+        <IconButton className={classes.icons} aria-label="Phone" href="https://wa.link/8h7ern" target="_blank">
           <Phone />
         </IconButton> 
       
@@ -171,10 +171,10 @@ export default function OC() {
         subheader= "Online Test Committee"
       />
       <CardActions disableSpacing >
-        <IconButton className={classes.icons} aria-label="Instagram" href="www.instagram.com/mendi.iiii">
+        <IconButton className={classes.icons} aria-label="Instagram" href="www.instagram.com/mendi.iiii" target="_blank">
           <Instagram />
         </IconButton> 
-        <IconButton className={classes.icons} aria-label="Phone" href="tel:0773611207">
+        <IconButton className={classes.icons} aria-label="Phone" href="https://wa.link/6uw5ab" target="_blank">
           <Phone />
         </IconButton> 
       
@@ -182,7 +182,7 @@ export default function OC() {
     </Card>
 
     </Grid>
-    <Typography variant="h4" style={{marginTop: '50px', marginLeft: '110px'}}>Organizing Committee</Typography>
+    <Typography variant="h4" style={{marginTop: '50px', marginLeft: '110px'}}>Organizing Committee and Contributers</Typography>
     <Grid  xl={12} md={12} lg={12} container direction="row" justify="space-around" alignItems="center" className={classes.OClist}>
     {OCdata.map((member, index) => (
       <Card className={classes.OClistItem} elevation='6' data-aos="zoom-in-up">
