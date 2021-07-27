@@ -75,7 +75,7 @@ export default function OC() {
         variant="contained"
         size="large"
         target="_blank"
-        href="https://chat.whatsapp.com/KoMRnloMYitCcEodEbKklB"
+        href="https://chat.whatsapp.com/H7mwjG6EMidKfu8fwuOnXN"
         className={classes.button}
         startIcon={<WhatsAppIcon />}
       >
