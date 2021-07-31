@@ -159,7 +159,7 @@ export default function TaskCard() {
             Complete this online test based on modern topics of ICT and gain marks
           </Typography>
           <hr color='#16548a'></hr>
-          <Typography variant='subtitle1' >The test will be available on 20.07.2021 12 AM</Typography>
+          <Typography variant='subtitle1' >The test will be available on 08.08.2021 12.00AM - 11.59PM</Typography>
   
         </CardContent>
         
@@ -182,7 +182,7 @@ export default function TaskCard() {
             Complete this online test based on modern topics of ICT and gain marks
           </Typography>
           <hr color='#16548a'></hr>
-          <Typography variant='subtitle1' >The test will be available on 20.07.2021 12 AM</Typography>
+          <Typography variant='subtitle1' >The test will be available on 15.08.2021 12.00AM - 11.59PM</Typography>
      
         </CardContent>
         
@@ -205,7 +205,7 @@ export default function TaskCard() {
             Complete this online test based on modern topics of ICT and gain marks
           </Typography>
           <hr color='#16548a'></hr>
-          <Typography variant='subtitle1' >The test will be available on 20.07.2021 12 AM</Typography>
+          <Typography variant='subtitle1' >The test will be available on 22.08.2021 12.00AM - 11.59PM</Typography>
   
         </CardContent>
         
@@ -228,7 +228,7 @@ export default function TaskCard() {
             Complete this online test based on modern topics of ICT and gain marks
           </Typography>
           <hr color='#16548a'></hr>
-          <Typography variant='subtitle1' >The test will be available on 20.07.2021 12 AM</Typography>
+          <Typography variant='subtitle1' >The test will be available on 29.08.2021 12.00AM - 11.59PM</Typography>
         </CardContent>
         
         <div className={classes.controls}>
