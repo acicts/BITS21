@@ -11,9 +11,9 @@ export default function Header() {
         headerContainer: {
             width: '95%',
             margin: 'auto',
-            marginTop: '10%',
+            marginTop: '8%',
             [theme.breakpoints.down('md')]: {
-                marginTop: '5%'
+                marginTop: '4%'
             },
             [theme.breakpoints.down('xs')]: {
                 marginTop: '0'
@@ -55,7 +55,10 @@ export default function Header() {
                 <Grid item  xl={6} lg={6} md={12} sm={12} xs={12} className={classes.hero}>
                     <Typography variant='h2' gutterBottom="true" align='left' style={{marginBottom: '50px', fontWeight: 'bold'}}>BITS 2021</Typography>
 
-                    <div className="countdown">Get Ready To Compete in <Countdown endDate={endDate} /> Hours </div>
+                    <div className="countdown">TASKS ARE BEING UPLOADED RIGHT NOW !
+                    <br></br>
+                    It's your time to shine
+                    </div>
 
                     <Typography variant='h5'  align='left' style={{marginBottom: '50px'}}><span style={{color: '#3ed1b8'}}>The First-Ever Task-Based Intra-School ICT competition,</span>  organized by the Ananda College ICT Society to provide a platform for our school's students to polish and improve their ICT knowledge in many fields of ICT</Typography>
 
