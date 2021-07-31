@@ -160,12 +160,12 @@ export default function TaskCard() {
           </Typography>
           <hr color='#16548a'></hr>
           <Typography variant='subtitle1' >The test will be available on 20.07.2021 12 AM</Typography>
-          <Typography variant='caption'>Marks: 20</Typography>
+  
         </CardContent>
         
         <div className={classes.controls}>
         <Button target="blank" variant="contained" href="#" className={classes.button}>
-          Start Test
+          Test is not available yet
         </Button>
         
         </div>
@@ -183,12 +183,12 @@ export default function TaskCard() {
           </Typography>
           <hr color='#16548a'></hr>
           <Typography variant='subtitle1' >The test will be available on 20.07.2021 12 AM</Typography>
-          <Typography variant='caption'>Marks: 20</Typography>
+     
         </CardContent>
         
         <div className={classes.controls}>
         <Button target="blank" variant="contained" href="#" className={classes.button}>
-          Start Test
+        Test is not available yet
         </Button>
         
         </div>
@@ -206,12 +206,34 @@ export default function TaskCard() {
           </Typography>
           <hr color='#16548a'></hr>
           <Typography variant='subtitle1' >The test will be available on 20.07.2021 12 AM</Typography>
-          <Typography variant='caption'>Marks: 20</Typography>
+  
         </CardContent>
         
         <div className={classes.controls}>
         <Button target="blank" variant="contained" href="#" className={classes.button}>
-          Start Test
+        Test is not available yet
+        </Button>
+        
+        </div>
+      </div>
+    </Card>
+
+    <Card className={classes.root} color="primary" data-aos="fade-right" >
+      <div className={classes.details}>
+        <CardContent className={classes.content}>
+          <Typography component="h5" variant="h5">
+            Final Test
+          </Typography>
+          <Typography variant="subtitle1"  color='textSecondary' className={classes.cat} >
+            Complete this online test based on modern topics of ICT and gain marks
+          </Typography>
+          <hr color='#16548a'></hr>
+          <Typography variant='subtitle1' >The test will be available on 20.07.2021 12 AM</Typography>
+        </CardContent>
+        
+        <div className={classes.controls}>
+        <Button target="blank" variant="contained" href="#" className={classes.button}>
+        Test is not available yet
         </Button>
         
         </div>

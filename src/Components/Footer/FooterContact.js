@@ -1,6 +1,5 @@
 import { GitHub, Instagram, YouTube, Facebook, Web } from "@material-ui/icons";
 import React from "react";
-import OCdata from "../../Data/OC.json";
 import "../../App.css";
 
 const FooterContact = () => {

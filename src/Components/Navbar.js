@@ -193,18 +193,6 @@ export default function Nav() {
         }}
       >
 
-<NavLink
-          className={menuButton}
-          to="#"
-         
-          style={{
-            fontWeight: "bold",
-            fontSize: "30px",
-            color: "#87eddc",
-          }}
-        >
-          TASKS ARE COMING SOON!
-        </NavLink>
         <NavLink
           className={mobileMenuButton}
           to="/"
@@ -217,7 +205,7 @@ export default function Nav() {
           Home
         </NavLink>
         
-        {/*<NavLink
+        <NavLink
           className={mobileMenuButton}
           to="/tasks"
           activeStyle={{
@@ -246,7 +234,7 @@ export default function Nav() {
           }}
         >
           LeaderBoard
-        </NavLink>*/}
+        </NavLink>
         <NavLink
           className={mobileMenuButton}
           to="/contact"
@@ -278,18 +266,6 @@ export default function Nav() {
       >
         <NavLink
           className={menuButton}
-          to="#"
-         
-          style={{
-            fontWeight: "bold",
-            fontSize: "30px",
-            color: "#87eddc",
-          }}
-        >
-          TASKS ARE COMING SOON!
-        </NavLink>
-        <NavLink
-          className={menuButton}
           to="/"
           exact
           activeStyle={{
@@ -300,7 +276,7 @@ export default function Nav() {
         >
           Home
         </NavLink>
-        {/*<NavLink
+        <NavLink
           className={menuButton}
           to="/tasks"
           activeStyle={{
@@ -310,7 +286,7 @@ export default function Nav() {
           }}
         >
           Tasks
-        </NavLink>}
+        </NavLink>
         <NavLink
           className={menuButton}
           to="/onlinetest"
@@ -332,7 +308,7 @@ export default function Nav() {
           }}
         >
           LeaderBoard
-        </NavLink>*/}
+        </NavLink>
         <NavLink
           className={menuButton}
           to="/contact"

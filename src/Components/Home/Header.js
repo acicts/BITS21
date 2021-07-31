@@ -55,7 +55,7 @@ export default function Header() {
                 <Grid item  xl={6} lg={6} md={12} sm={12} xs={12} className={classes.hero}>
                     <Typography variant='h2' gutterBottom="true" align='left' style={{marginBottom: '50px', fontWeight: 'bold'}}>BITS 2021</Typography>
 
-                    <div className="countdown">TASKS ARE BEING UPLOADED RIGHT NOW !
+                    <div className="countdown">TASKS ARE NOW AVAILABLE !
                     <br></br>
                     It's your time to shine
                     </div>

@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import '../../../App.css'
 import { Container } from '@material-ui/core';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import taskDetails from '../../../Data/tasks.json'
 import { Group } from '@material-ui/icons';
 
@@ -115,9 +115,10 @@ const useStyles = makeStyles((theme) => ({
     width: '70%',
   },
   form: {
-    position: 'relative',
-    width: '98%',
-    height: '600px',
+    borderRadius: '10px',
+    width: "80%",
+    marginLeft: '10%',
+    marginBottom: '50px',
   }
 }));
 
@@ -140,6 +141,8 @@ export default function FullWidthTabs() {
     return obj.id === id
   })
   const details = result[0]
+
+  console.log(details.submit)
 
   return (
     <Container className={classes.container}>
@@ -188,13 +191,24 @@ export default function FullWidthTabs() {
         </TabPanel>
        
         <TabPanel value={value} index={1} dir={theme.direction}> <Typography  className={classes.text}>
-        Find the task in the tasks page and click the “Submit task” button. Then you will be redirected t a Form which you can attach your work files or send the link of your work. Complete the form
-and hit the “SUBMIT” button and your task will be reviewed by the mentors in around 24 hours
-and you will get a confirmation email.</Typography>
+        Complete the below form and hit the “SUBMIT” button and your task will be reviewed by the mentors in around 48 hours
+and you will get a confirmation email. DO NOT QUESTION ABOUT YOUR SUBMITTIONS UNTIL 48 HOURS ARE PASSED.
+    <ul>
+      <li> <b>Plagiarism is strictly prohibited. If you cheat by using other people's work your task submission will be disqualified. This is the one and only warning!</b> </li>
+      <li>If you have any problems feel free to <Link to="/cotact">contact us</Link></li>
+      <li>You can use both Sinhala and English languages.</li>
+      <li>Students with the highest marks for the competition will be the winners.</li>
+      <li>Not only completing the task will add you points, but also quality of the task, final
+production, how you work with your mentors and lowest number of tasks rejections will add you more points.</li>
+      <li>Google is only a reference, do not copy other products and send us.</li>
+      <li>Do not spam in Discord channel, WhatsApp group or via emails. We will
+ban you from the competition.</li>
+    </ul>
+</Typography>
 <br></br>
 <br></br>
 
-      <iframe src={details.submit} className={classes.form} backgroundColor="#000">Loading…</iframe>
+      <Button href={details.submit} className={classes.form} color="secondary" target="_blank" variant="contained">Submit Task</Button>
         </TabPanel>
       </SwipeableViews>
 

@@ -25,7 +25,7 @@ const useStyles = makeStyles(() => ({
   root: {
     display: 'flex',
     width: '570px',
-    height: '230px',
+    minHeight: '230px',
     marginLeft: '100px',
     marginTop: '20px',
     background: 'linear-gradient(144deg, #275d8ccf, #21466766)',
