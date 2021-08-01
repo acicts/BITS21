@@ -48,20 +48,26 @@ const useStyles = makeStyles({
       position: 'relative',
       width: '95%',
       margin: 'auto',
-      marginTop: '50px',
+      marginTop: '0px',
   },
   },
   update: {
     width: '80%',
     marginLeft: '10%',
-    marginTop: '150px',
+    marginTop: '10px',
     [theme.breakpoints.down('xs')]: {
       position: 'relative',
       width: '100%',
       margin: 'auto',
-      marginTop: '50px',
+   
       marginLeft: '20px'
   },
+  },
+  updateContainer: {
+    marginTop: '0px',
+    display: 'flex',
+    height: 'min-content',
+    flexDirection: 'column',
   },
   body: {
     color: '#fff',
@@ -83,7 +89,12 @@ export default function CustomizedTables() {
 
   return (
     <TableContainer className={classes.papper}>
-      <Typography className={classes.update} variant='caption'>Leaderboard will be updated on 28.07.2021 12AM</Typography>
+      <div className={classes.updateContainer}>
+        <Typography className={classes.update} variant='caption'>Leaderboard will be updated on 04.08.2021 12AM</Typography>
+      <Typography className={classes.update} variant='caption'>Last updated: Never</Typography>
+      </div>
+      
+      <br></br>
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow>
