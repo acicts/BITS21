@@ -123,7 +123,7 @@
       "index":7,
       "taskName": "Create a program to calculate the circumference of a circle",
       "shortDescription": "Use any programming language to create a simple program to calculate the circumference of a circle",
-      "description": "If you are somewhat good at a programming language like Python or C++, then this task is going to be easy for you. You have to create a script to calculate the circumferance of a circle when the value for pie is 3.14 and radius (R) is a user input.",
+      "description": "If you are somewhat good at a programming language like Python or C++, then this task is going to be easy for you. You have to create a script to calculate the circumferance of a circle when the value for pi is 3.14 and radius (R) is a user input.",
       "catogery": "Code",
       "submit": "https://forms.gle/Yf7JohcWkDLh5GS5A",
       "point1":"Circumferance = 2*pi*r",
