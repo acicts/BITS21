@@ -192,7 +192,7 @@ export default function FullWidthTabs() {
        
         <TabPanel value={value} index={1} dir={theme.direction}> <Typography  className={classes.text}>
         Complete the below form and hit the “SUBMIT” button and your task will be reviewed by the mentors in around 48 hours
-and you will get a confirmation email. DO NOT QUESTION ABOUT YOUR SUBMITTIONS UNTIL 48 HOURS ARE PASSED.
+and you will get a confirmation email. DO NOT QUESTION ABOUT YOUR SUBMITTIONS UNTIL 48 HOURS HAVE PASSED.
     <ul>
       <li> <b>Plagiarism is strictly prohibited. If you cheat by using other people's work your task submission will be disqualified. This is the one and only warning!</b> </li>
       <li>If you have any problems feel free to <Link to="/cotact">contact us</Link></li>
