@@ -77,7 +77,7 @@
       { "id": "C06",
       "index":5,
       "taskName": "Build and AI model to identify a water bottle with teachablemachine.com",
-      "shortDescription": "Create a Artificial Intelligence model to identify an water bottle",
+      "shortDescription": "Create a Artificial Intelligence model to identify a water bottle",
       "description": "Artificial Intelligence / Machine learning is a very popular topic in the tech industry. Teachable Machine is a web tool that makes it fast and easy to create machine learning models and it helps us to get a better understanding in the subject.",
       "catogery": "Code",
       "submit": "https://forms.gle/fNHKhEAc1Y9DAM2R9",
