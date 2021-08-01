@@ -43,13 +43,13 @@ const useStyles = makeStyles({
   table: {
     width: '80%',
     marginLeft: '10%',
-    
     [theme.breakpoints.down('xs')]: {
       position: 'relative',
       width: '95%',
       margin: 'auto',
       marginTop: '0px',
   },
+
   },
   update: {
     width: '80%',
