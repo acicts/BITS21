@@ -93,7 +93,7 @@
       "index":6,
       "taskName": "Create a script to turn off your computer",
       "shortDescription": "Create a automated script to shutdown your computer",
-      "description": "Automation is a key part of today's technology. In this task, you have to write a script that turns off your computer after 5 minutes the script runs.",
+      "description": "Automation is a key part of today's technology. In this task, you have to write a script that turns off your computer after 15 seconds the script runs.",
       "catogery": "Code",
       "submit": "https://forms.gle/1AhsWQBY7xDkPzgC7",
       "point1":"The task must be done with a script written by you, and not any other software.",
