@@ -195,7 +195,7 @@ export default function FullWidthTabs() {
 and you will get a confirmation email. DO NOT QUESTION ABOUT YOUR SUBMITTIONS UNTIL 48 HOURS HAVE PASSED.
     <ul>
       <li> <b>Plagiarism is strictly prohibited. If you cheat by using other people's work your task submission will be disqualified. This is the one and only warning!</b> </li>
-      <li>If you have any problems feel free to <Link to="/cotact">contact us</Link></li>
+      <li>If you have any problems feel free to <Link to="/contact">contact us</Link></li>
       <li>You can use both Sinhala and English languages.</li>
       <li>Students with the highest marks for the competition will be the winners.</li>
       <li>Not only completing the task will add you points, but also quality of the task, final
