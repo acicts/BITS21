@@ -171,7 +171,7 @@ export default function OC() {
         subheader= "Online Test Committee"
       />
       <CardActions disableSpacing >
-        <IconButton className={classes.icons} aria-label="Instagram" href="www.instagram.com/mendi.iiii" target="_blank">
+        <IconButton className={classes.icons} aria-label="Instagram" href="https://www.instagram.com/mendi.iiii/" target="_blank">
           <Instagram />
         </IconButton> 
         <IconButton className={classes.icons} aria-label="Phone" href="https://wa.link/6uw5ab" target="_blank">
