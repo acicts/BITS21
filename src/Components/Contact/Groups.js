@@ -85,7 +85,7 @@ export default function OC() {
     </Card>
     <Card className={classes.root} elevation='6' >
       <CardHeader
-        title="BITS 2021 Discord Channel"
+        title="BITS 2021 Discord Server"
         subheader="You can join the BITS 2021 Discord channel on the ACICTS server and chat with other participants and get help in if you need any"
       />
       <CardContent>
