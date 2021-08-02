@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.75167500.chunk.css",
-    "main.js": "/static/js/main.da03e1d8.chunk.js",
-    "main.js.map": "/static/js/main.da03e1d8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.daf7ca2e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.daf7ca2e.js.map",
-    "static/css/2.7fc9bc2b.chunk.css": "/static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.e9be9853.chunk.js": "/static/js/2.e9be9853.chunk.js",
-    "static/js/2.e9be9853.chunk.js.map": "/static/js/2.e9be9853.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.7fc9bc2b.chunk.css.map": "/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/main.75167500.chunk.css.map": "/static/css/main.75167500.chunk.css.map",
-    "static/js/2.e9be9853.chunk.js.LICENSE.txt": "/static/js/2.e9be9853.chunk.js.LICENSE.txt",
-    "static/media/BITS-logo-w.d090c285.gif": "/static/media/BITS-logo-w.d090c285.gif",
-    "static/media/App.css": "/static/media/bg.9e4a8d90.svg",
-    "static/media/hero.f7966a2d.svg": "/static/media/hero.f7966a2d.svg"
+    "main.css": "/BITS21-1/static/css/main.4d84b9a4.chunk.css",
+    "main.js": "/BITS21-1/static/js/main.da03e1d8.chunk.js",
+    "main.js.map": "/BITS21-1/static/js/main.da03e1d8.chunk.js.map",
+    "runtime-main.js": "/BITS21-1/static/js/runtime-main.7d123a01.js",
+    "runtime-main.js.map": "/BITS21-1/static/js/runtime-main.7d123a01.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/BITS21-1/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.e9be9853.chunk.js": "/BITS21-1/static/js/2.e9be9853.chunk.js",
+    "static/js/2.e9be9853.chunk.js.map": "/BITS21-1/static/js/2.e9be9853.chunk.js.map",
+    "index.html": "/BITS21-1/index.html",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/BITS21-1/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/css/main.4d84b9a4.chunk.css.map": "/BITS21-1/static/css/main.4d84b9a4.chunk.css.map",
+    "static/js/2.e9be9853.chunk.js.LICENSE.txt": "/BITS21-1/static/js/2.e9be9853.chunk.js.LICENSE.txt",
+    "static/media/BITS-logo-w.d090c285.gif": "/BITS21-1/static/media/BITS-logo-w.d090c285.gif",
+    "static/media/App.css": "/BITS21-1/static/media/bg.9e4a8d90.svg",
+    "static/media/hero.f7966a2d.svg": "/BITS21-1/static/media/hero.f7966a2d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.daf7ca2e.js",
+    "static/js/runtime-main.7d123a01.js",
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.e9be9853.chunk.js",
-    "static/css/main.75167500.chunk.css",
+    "static/css/main.4d84b9a4.chunk.css",
     "static/js/main.da03e1d8.chunk.js"
   ]
 }
