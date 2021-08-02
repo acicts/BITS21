@@ -2,6 +2,7 @@
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Hyperx837.github.io/bits21",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
@@ -14,6 +15,7 @@
     "chart.js": "^3.3.2",
     "firebase": "^8.7.0",
     "framer-motion": "^4.1.17",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.1",
     "react-chartjs-2": "^3.0.3",
     "react-countdown": "^2.3.2",
@@ -32,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
