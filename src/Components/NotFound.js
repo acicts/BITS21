@@ -1,4 +1,5 @@
 import React from 'react'
+import  { Link } from 'react-router-dom'
 
 function NotFound() {
     return (
@@ -10,7 +11,7 @@ function NotFound() {
                     <div className="err2">4</div>
                 </div>
         
-             <div className="msg">Looks like you entered a wrong URL buddy, Please check it again<p>Let's go to the <a href="/">home page</a>  and try from there </p></div>
+             <div className="msg">Looks like you entered a wrong URL buddy, Please check it again<p>Let's go to the <Link to="/">home page</Link>  and try from there </p></div>
             </div>
     
     )
