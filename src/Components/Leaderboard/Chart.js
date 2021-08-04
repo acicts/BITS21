@@ -91,7 +91,7 @@ export default function CustomizedTables() {
     <TableContainer className={classes.papper}>
       <div className={classes.updateContainer}>
         <Typography className={classes.update} variant='caption'>Leaderboard will be updated on 10.08.2021 12AM</Typography>
-      <Typography className={classes.update} variant='caption'>Last updated: 05.08.12AM</Typography>
+      <Typography className={classes.update} variant='caption'>Last updated: 05.08.2021 12AM</Typography>
       </div>
       
       <br></br>
