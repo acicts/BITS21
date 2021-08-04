@@ -65,7 +65,7 @@ const useStyles = makeStyles({
   },
   },
   updateContainer: {
-    marginTop: '0px',
+    marginTop: '110px',
     display: 'flex',
     height: 'min-content',
     flexDirection: 'column',
