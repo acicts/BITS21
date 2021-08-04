@@ -87,7 +87,6 @@ const useStyles = makeStyles({
 
 export default function CustomizedTables() {
   const classes = useStyles();
-  console.log(data)
   return (
     <TableContainer className={classes.papper}>
       <div className={classes.updateContainer}>
