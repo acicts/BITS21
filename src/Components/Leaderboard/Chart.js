@@ -43,6 +43,7 @@ const useStyles = makeStyles({
   table: {
     width: '80%',
     marginLeft: '10%',
+    marginBottom: '100px',
     [theme.breakpoints.down('xs')]: {
       position: 'relative',
       width: '95%',
@@ -76,7 +77,7 @@ const useStyles = makeStyles({
   },
   papper: {
     marginTop: '150px',
-    height: '100vh',
+    marginTop: '50px',
   },
   tBody: {
     borderSpacing: '0px',
@@ -86,12 +87,12 @@ const useStyles = makeStyles({
 
 export default function CustomizedTables() {
   const classes = useStyles();
-
+  console.log(data)
   return (
     <TableContainer className={classes.papper}>
       <div className={classes.updateContainer}>
-        <Typography className={classes.update} variant='caption'>Leaderboard will be updated on 04.08.2021 12AM</Typography>
-      <Typography className={classes.update} variant='caption'>Last updated: Never</Typography>
+        <Typography className={classes.update} variant='caption'>Leaderboard will be updated on 10.08.2021 12AM</Typography>
+      <Typography className={classes.update} variant='caption'>Last updated: 05.08.12AM</Typography>
       </div>
       
       <br></br>
@@ -99,7 +100,7 @@ export default function CustomizedTables() {
         <TableHead>
           <TableRow>
             <StyledTableCell style={{color: '#3ed1b8'}}>Rank</StyledTableCell>
-            <StyledTableCell align="center">Name</StyledTableCell>
+            <StyledTableCell align="center">Nickname</StyledTableCell>
             <StyledTableCell align="center">Class</StyledTableCell>
             <StyledTableCell align="center">No. Of Tasks Accepted</StyledTableCell>
             <StyledTableCell align="center">Points</StyledTableCell>
@@ -109,7 +110,7 @@ export default function CustomizedTables() {
           {data.map((list, index) => (
             <StyledTableRow key={index} >
               <StyledTableCell component="th" scope="row" style={{color: '#3ed1b8', fontWeight: 'bold'}} className={classes.body}>
-                {list.index + 1}
+                {list.index}
               </StyledTableCell>
               <StyledTableCell  className={classes.body} align="center">{list.name}</StyledTableCell>
               <StyledTableCell  className={classes.body} align="center">{list.class}</StyledTableCell>
