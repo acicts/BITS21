@@ -16,19 +16,25 @@ Before making any contributions, go to the [Issues](https://github.com/acicts/BI
 
 3. You have to clone your forked repository to your local computer. For that, you have to install [Git](https://git-scm.com/downloads). Use the below command to clone the repository to your computer using the below command.
 
-	`git clone https://github.com/[YOUR_USERNAME]/BITS21.git`
+```bash
+git clone https://github.com/[YOUR_USERNAME]/BITS21.git
+```
 
 4. Then navigate to root folder of the project and run the below command.
 
-	`npm install`
+```bash
+npm install
+```
 	
-	This will install all the dependencies you need to run the app in the developer mode.
+This will install all the dependencies you need to run the app in the developer mode.
 
 5. Then to run the app, use command below
 
-	`npm start`
+```bash
+npm start
+```
 
-	This will start a live server on the url [localhost:8000](http://localhost:8000/)
+This will start a live server on the url [localhost:3000](http://localhost:3000/)
 	
 6. Then you can do changes to the codebase on your local machine. If you are doing some changes to the code, just change the parts that you have to change and don’t touch any other files.
 
