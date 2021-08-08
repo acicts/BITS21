@@ -40,7 +40,7 @@ This will start a live server on the url [localhost:3000](http://localhost:3000/
 
 7. After you finish doing your changes, commit them and push them to your repository. If you don't know how to do that, you can read [this article](https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/).
 
-8. Then you can make a [Pull Request](https://github.com/acicts/BITS21/pulls) to the `div` branch of the main repository. When you are making the pull request.
+8. Then you can make a [Pull Request](https://github.com/acicts/BITS21/pulls) to the `main` branch of the origin repository. When you are making the pull request follow the PR template exactly.
 
 
 ## Technologies Used
@@ -61,6 +61,7 @@ This will start a live server on the url [localhost:3000](http://localhost:3000/
 
  - [Anupama Dissanayake](https://github.com/Hyperx837)
  - [Pasindu Dushan](https://github.com/PasinduDushan)
+ - [Janiru Semitha](https://github.com/Janiru)
 
     
 
