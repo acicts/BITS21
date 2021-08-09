@@ -276,7 +276,7 @@
         "point4": "If you are doing some changes to the code, just change the parts that you have to change and don’t touch any other files.",
         "point5": "We recommend using Git for this task because it makes your life easier and Git is one of the most crucial skills a developer should have.",
         "point6": "If your contribution does get accepted, your name will be displayed on the website in a new section called “Contributors”.",
-        "point7": "When submitting, submit the link to the Pull Request you made."
+        "point7": "When submitting, submit the link of the Pull Request you made."
       },
       {
         "id": "D01",
