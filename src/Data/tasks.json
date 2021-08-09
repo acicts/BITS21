@@ -519,7 +519,7 @@
         "point2": "Using other people’s code or code snippets from online tutorials to complete this task is strictly prohibited.",
         "point3": "You can scrape data from any website of your choice.",
         "point4": "Scraped data should be output to the command line in a readable manner.",
-        "point5": "When submitting, upload the script file of your code.",
+        "point5": "When submitting, upload the script file of your code and screen recorded video of the working scraper.",
         "point6": "",
         "point7": ""
       },
