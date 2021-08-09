@@ -146,7 +146,7 @@ export default function TaskCard() {
 
 
   return (
-      <div>
+      <div className="padding-bottom-100">
       
 
     <Card className={classes.root} color="primary" data-aos="fade-right" >
