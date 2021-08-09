@@ -30,6 +30,10 @@ iframe {
   padding-bottom: 200px;
 }
 
+.padding-bottom-100{
+ padding-bottom: 100px; 
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   background: #154b86;
