@@ -172,7 +172,7 @@ export default function TaskCard() {
     <div className='eee'>
       <div className={classes.filter}>
       <FormControl component="fieldset">
-      <FormLabel component="legend">Filter Tasks</FormLabel>
+      <FormLabel component="legend" style={{ color: 'white' }}>Filter Tasks</FormLabel>
       <RadioGroup className={classes.filterOptions} aria-label="tasks" name="filter" value={value} onChange={handleChange}>
         <FormControlLabel value="All" control={<Radio color='secondary' />} label="All Tasks" />
         <FormControlLabel value="Code" control={<Radio color='secondary'/>} label="Coding" />
