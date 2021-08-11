@@ -77,7 +77,7 @@ export default function OC() {
   }, [])
 
   return (
-    <div>
+    <div className="padding-bottom-100">
     <Grid xl={12} md={12} lg={12} container direction="row" justify="space-around" alignItems="center" className={classes.OCContainer}>
       <Card className={classes.root} elevation='6' data-aos="zoom-in-up">
       <CardHeader
