@@ -78,7 +78,7 @@ export default function OC() {
 
   return (
     <div>
-    <Typography variant="h4" style={{marginTop: '50px', marginLeft: '110px'}}>Contributors</Typography>
+    <Typography variant="h4" style={{marginTop: '50px', marginLeft: '110px'}}>Competitors Who Contributed</Typography>
     <Grid  xl={12} md={12} lg={12} container direction="row" justify="space-around" alignItems="center" className={classes.OClist}>
     {OCdata.map((member, index) => (
       <Card className={classes.OClistItem} elevation='6' data-aos="zoom-in-up">
