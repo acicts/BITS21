@@ -146,7 +146,7 @@ export default function TaskCard() {
 
 
   return (
-      <div>
+      <div className="padding-bottom-100">
       
 
     <Card className={classes.root} color="primary" data-aos="fade-right" >
@@ -165,7 +165,7 @@ export default function TaskCard() {
         
         <div className={classes.controls}>
         <Button target="blank" variant="contained" className={classes.button}>
-          The test has been ended
+          The test has ended
         </Button>
         
         </div>
