@@ -1,4 +1,8 @@
 [
+  {
+    "index": 25,
+    "name": "Pasindu Yahampath"
+  },
     {
       "index": 0,
       "name": "Thimuth Mandila"
@@ -89,10 +93,6 @@
       "name": "Chamod Madushan"
     },
     {
-      "index": 22,
-      "name": "Anupama Dissanayake"
-    },
-    {
       "index": 23,
       "name": "Isuka Wickramasinghe"
     },
@@ -100,10 +100,7 @@
       "index": 24,
       "name": "Nuwanaka Nadil"
     },
-    {
-      "index": 25,
-      "name": "Pasindu Yahampath"
-    },
+
     {
       "index": 26,
       "name": "Hirun Kethmika"
