@@ -187,8 +187,11 @@ export default function TaskCard() {
         </CardContent>
         
         <div className={classes.controls}>
-        <Button target="blank" variant="contained" href="#" className={classes.button}>
-        Test is not available yet
+        <Button target="blank" variant="contained" href="https://quilgo.com/form/lZ4Coz3xZP45i6dt" className={classes.button}>
+        Grade 06 - 09
+        </Button>
+        <Button target="blank" variant="contained" href="https://quilgo.com/form/sHRHsQeFNvTXQYbh" className={classes.button}>
+        Grade 10 - Post O/L
         </Button>
         
         </div>
