@@ -338,7 +338,7 @@
         "description": "Every modern web browser includes a powerful suite of developer tools. These tools do a range of things, from inspecting currently-loaded HTML, CSS and JavaScript to showing which assets the page has requested and how long they took to load. Learning how to use these developer tools in your browser will make you more efficient. It also helps to debug frontend code very easily. In this task, your objective is to customize the Google home page (https://www.google.com/) with the developer tools and make it look more modern with a dark theme.",
         "catogery": "Code",
         "submit": "https://forms.gle/ZLNr3ANHeH8XGJC98",
-        "point1": "You can edit the CSS styles to give it a modern dark theme.",
+        "point1": "You can edit the CSS styles to give it a modern dark theme and your custom theme must be different from the dark theme that Google already has.",
         "point2": "You can use any browser that has developer tools (Chrome, Firefox, Edge).",
         "point3": "After you finish your redesign, instead of the ‘ I’m feeling lucky ’ button, modify its inner text to be your name.",
         "point4": "When submitting, submit a screenshot of the modified page.",
