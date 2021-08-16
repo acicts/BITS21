@@ -431,8 +431,22 @@
         "point6": "",
         "point7": ""
       },
-
-
+      {
+        "id": "C28",
+        "index": 63,
+        "taskName": "Inch Convert to cm",
+        "shortDescription": "Inch convert to cm",
+        "description": "In this task you must convert inches to cm",
+        "catogery": "Code",
+        "submit": "https://docs.google.com/forms/d/e/1FAIpQLSeXxY2fjTUGwUmvByNFHgNv1Ewk0MQllg8LVKEJZvs9JpAn7Q/viewform?usp=sf_link",
+        "point1": "You can use any programme lanuage to complete this task",
+        "point2": "When the code is finshed send us a screen record of it.",
+        "point3": "Using other people’s code or code snippets from online tutorials to complete this task is strictly prohibited.",
+        "point4": "",
+        "point5": "",
+        "point6": "",
+        "point7": ""
+      },
       {
         "id": "D01",
         "index": 9,
