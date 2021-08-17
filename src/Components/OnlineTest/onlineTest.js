@@ -187,8 +187,8 @@ export default function TaskCard() {
         </CardContent>
         
         <div className={classes.controls}>
-        <Button target="blank" variant="contained" href="#" className={classes.button}>
-        Test is not available yet
+        <Button target="blank" variant="contained" className={classes.button}>
+          The test has ended
         </Button>
         
         </div>
