@@ -8,7 +8,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import data from '../../Data/LeaderBoard.json'
 import theme from '../../theme';
-import { Typography } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -82,7 +82,21 @@ const useStyles = makeStyles({
   tBody: {
     borderSpacing: '0px',
     borderCollapse: 'separate',
-  }
+  },
+
+  sheetButton: {
+    color: '#171717',
+    fontWeight: 'bold',
+    float: 'right',
+    marginRight: '10%',
+    marginTop: '-50px',
+    [theme.breakpoints.down('xs')]: {
+      float: 'left',
+      marginTop: '20px',
+      marginLeft: '20px',
+      marginBottom: '20px',
+  },
+  },
 });
 
 export default function CustomizedTables() {
@@ -93,6 +107,8 @@ export default function CustomizedTables() {
         <Typography className={classes.update} variant='caption'>Leaderboard will be updated on 20.08.2021 12AM</Typography>
       <Typography className={classes.update} variant='caption'>Last updated: 15.08.2021 05PM</Typography>
       </div>
+
+      <Button className={classes.sheetButton} variant="contained" color="secondary" href="https://docs.google.com/spreadsheets/d/1mQ_ihizTFQtyNQzBdMqdHY0XqYEgjPymfYJY9Kf2lUU/edit?usp=sharing" target="_blank">Leaderboard Spreadsheet</Button>
       
       <br></br>
       <Table className={classes.table} aria-label="customized table">
