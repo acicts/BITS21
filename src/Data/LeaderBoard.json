@@ -2,562 +2,586 @@
 	"index": 1,
 	"name": "Janiru Semitha",
 	"class": "10-05",
-	"tasks": "42",
-	"points": "423.5"
+	"tasks": "53",
+	"points": "552.5"
 }, {
 	"index": 2,
-	"name": "Pasindu Dushan",
-	"class": "10-07",
-	"tasks": "26",
-	"points": "293.5"
-}, {
-	"index": 3,
 	"name": "Yasas",
 	"class": "09-02",
-	"tasks": "22",
-	"points": "223.5"
+	"tasks": "46",
+	"points": "420"
+}, {
+	"index": 3,
+	"name": "Pasindu Dushan",
+	"class": "11-07",
+	"tasks": "29",
+	"points": "362"
 }, {
 	"index": 4,
-	"name": "Sakul",
-	"class": "08-07",
-	"tasks": "23",
-	"points": "213"
+	"name": "Nisandu Athsara",
+	"class": "09-07",
+	"tasks": "32",
+	"points": "330"
 }, {
 	"index": 5,
 	"name": "Lithira Mendis",
 	"class": "09-10",
-	"tasks": "15",
-	"points": "208"
+	"tasks": "22",
+	"points": "311"
 }, {
 	"index": 6,
-	"name": "vinuka",
-	"class": "09-09",
-	"tasks": "17",
-	"points": "204.5"
-}, {
-	"index": 7,
-	"name": "Nisandu Athsara",
-	"class": "09-07",
-	"tasks": "19",
-	"points": "200.5"
-}, {
-	"index": 8,
 	"name": "Harshana",
 	"class": "11-03",
-	"tasks": "14",
-	"points": "200"
+	"tasks": "22",
+	"points": "300.5"
+}, {
+	"index": 7,
+	"name": "Sakul",
+	"class": "08-07",
+	"tasks": "28",
+	"points": "284"
 }, {
 	"index": 8,
-	"name": "Sandanu123",
-	"class": "10-10",
-	"tasks": "15",
-	"points": "200"
-}, {
-	"index": 10,
-	"name": "Senura Ratnayake",
-	"class": "09-11",
-	"tasks": "13",
-	"points": "184"
-}, {
-	"index": 11,
 	"name": "Dinath",
 	"class": "09-11",
-	"tasks": "17",
-	"points": "176.5"
+	"tasks": "25",
+	"points": "275.5"
 }, {
-	"index": 12,
-	"name": "Vihas Senmitha",
-	"class": "09-07",
-	"tasks": "16",
-	"points": "168"
+	"index": 9,
+	"name": "Sandanu123",
+	"class": "10-10",
+	"tasks": "20",
+	"points": "272.5"
+}, {
+	"index": 10,
+	"name": "vinuka",
+	"class": "09-09",
+	"tasks": "20",
+	"points": "267.5"
+}, {
+	"index": 11,
+	"name": "Senura Ratnayake",
+	"class": "09-11",
+	"tasks": "14",
+	"points": "238"
+}, {
+	"index": 11,
+	"name": "Sadeesha Amarasekara",
+	"class": "08-01",
+	"tasks": "19",
+	"points": "238"
 }, {
 	"index": 13,
-	"name": "Thusal06",
-	"class": "10-10",
-	"tasks": "10",
-	"points": "166"
+	"name": "Vihas Senmitha",
+	"class": "09-07",
+	"tasks": "22",
+	"points": "234.5"
 }, {
 	"index": 14,
-	"name": "Gaviru Fernando",
-	"class": "08-03",
-	"tasks": "16",
-	"points": "162"
+	"name": "Raaid",
+	"class": "09-05",
+	"tasks": "18",
+	"points": "223.5"
 }, {
 	"index": 15,
 	"name": "ChaliduRanasinghe",
 	"class": "09-01",
-	"tasks": "10",
-	"points": "160"
+	"tasks": "13",
+	"points": "223"
 }, {
 	"index": 16,
+	"name": "Banuja",
+	"class": "11-04",
+	"tasks": "14",
+	"points": "220.5"
+}, {
+	"index": 17,
+	"name": "Thusal06",
+	"class": "10-10",
+	"tasks": "11",
+	"points": "216.5"
+}, {
+	"index": 18,
+	"name": "Gaviru Fernando",
+	"class": "08-03",
+	"tasks": "17",
+	"points": "212"
+}, {
+	"index": 19,
+	"name": "Pahan",
+	"class": "09-04",
+	"tasks": "17",
+	"points": "206"
+}, {
+	"index": 20,
+	"name": "Ultron",
+	"class": "11-04",
+	"tasks": "10",
+	"points": "202.5"
+}, {
+	"index": 21,
 	"name": "Inuka Batawala",
 	"class": "10-01",
 	"tasks": "8",
-	"points": "157"
-}, {
-	"index": 17,
-	"name": "Sadeesha Amarasekara",
-	"class": "08-01",
-	"tasks": "12",
-	"points": "155"
-}, {
-	"index": 18,
-	"name": "Raaid",
-	"class": "09-05",
-	"tasks": "12",
-	"points": "146"
-}, {
-	"index": 19,
-	"name": "Ultron",
-	"class": "11-04",
-	"tasks": "9",
-	"points": "145"
-}, {
-	"index": 20,
-	"name": "Kusal",
-	"class": "09-01",
-	"tasks": "10",
-	"points": "144"
-}, {
-	"index": 21,
-	"name": "Banuja",
-	"class": "11-04",
-	"tasks": "9",
-	"points": "142"
+	"points": "198.5"
 }, {
 	"index": 22,
+	"name": "Kusal",
+	"class": "09-01",
+	"tasks": "11",
+	"points": "195"
+}, {
+	"index": 23,
 	"name": "Delta RC-1207",
 	"class": "10-05",
 	"tasks": "6",
-	"points": "137"
-}, {
-	"index": 22,
-	"name": "Pahan",
-	"class": "09-04",
-	"tasks": "13",
-	"points": "137"
+	"points": "187"
 }, {
 	"index": 24,
-	"name": "Induwara",
-	"class": "09-08",
-	"tasks": "10",
-	"points": "125"
-}, {
-	"index": 25,
 	"name": "Senura",
 	"class": "08-04",
-	"tasks": "11",
-	"points": "118"
+	"tasks": "14",
+	"points": "179"
+}, {
+	"index": 25,
+	"name": "Hivin",
+	"class": "09-04",
+	"tasks": "6",
+	"points": "166.5"
 }, {
 	"index": 26,
 	"name": "Lithika Senavirathne",
 	"class": "09-07",
 	"tasks": "4",
-	"points": "117"
+	"points": "164.5"
 }, {
 	"index": 27,
-	"name": "DVK",
-	"class": "09-04",
-	"tasks": "7",
-	"points": "116"
+	"name": "Induwara",
+	"class": "09-08",
+	"tasks": "10",
+	"points": "162.5"
 }, {
 	"index": 28,
-	"name": "VidulHB",
-	"class": "08-08",
-	"tasks": "13",
-	"points": "109.5"
-}, {
-	"index": 29,
 	"name": "NirmaAbhay",
 	"class": "11-04",
 	"tasks": "3",
-	"points": "109"
+	"points": "159"
 }, {
-	"index": 30,
-	"name": "Minada",
-	"class": "09-03",
-	"tasks": "3",
-	"points": "108"
-}, {
-	"index": 31,
-	"name": "Deadline",
-	"class": "08-04",
-	"tasks": "6",
-	"points": "107"
-}, {
-	"index": 32,
-	"name": "Hivin",
-	"class": "09-04",
-	"tasks": "4",
-	"points": "100"
-}, {
-	"index": 33,
-	"name": "Pulitha",
-	"class": "09-11",
-	"tasks": "5",
-	"points": "95"
-}, {
-	"index": 33,
-	"name": "Sonal Ranmitha",
-	"class": "10-10",
-	"tasks": "3",
-	"points": "95"
-}, {
-	"index": 35,
-	"name": "Tharuk Damsilu",
-	"class": "08-08",
-	"tasks": "7",
-	"points": "92"
-}, {
-	"index": 36,
+	"index": 29,
 	"name": "Tadeesha",
 	"class": "09-05",
-	"tasks": "4",
-	"points": "91"
+	"tasks": "7",
+	"points": "157.5"
 }, {
-	"index": 37,
+	"index": 30,
+	"name": "Sonal Ranmitha",
+	"class": "10-10",
+	"tasks": "5",
+	"points": "155.5"
+}, {
+	"index": 31,
+	"name": "Pulitha",
+	"class": "09-11",
+	"tasks": "7",
+	"points": "154.5"
+}, {
+	"index": 32,
+	"name": "yugeeth",
+	"class": "09-09",
+	"tasks": "12",
+	"points": "151.5"
+}, {
+	"index": 33,
+	"name": "Deadline",
+	"class": "08-04",
+	"tasks": "8",
+	"points": "150.5"
+}, {
+	"index": 34,
+	"name": "Tharuk Damsilu",
+	"class": "08-08",
+	"tasks": "9",
+	"points": "148.5"
+}, {
+	"index": 35,
 	"name": "Yesith",
 	"class": "08-04",
-	"tasks": "5",
-	"points": "90"
+	"tasks": "9",
+	"points": "141.5"
+}, {
+	"index": 36,
+	"name": "VidulHB",
+	"class": "08-08",
+	"tasks": "13",
+	"points": "139.5"
+}, {
+	"index": 37,
+	"name": "Arashi",
+	"class": "After O/L",
+	"tasks": "12",
+	"points": "137"
 }, {
 	"index": 38,
 	"name": "Mahima ",
 	"class": "08-08",
-	"tasks": "2",
-	"points": "82"
+	"tasks": "3",
+	"points": "132"
 }, {
 	"index": 39,
-	"name": "Bihandu",
-	"class": "08-05",
-	"tasks": "3",
-	"points": "81"
+	"name": "Sathija",
+	"class": "08-10",
+	"tasks": "6",
+	"points": "128"
 }, {
 	"index": 40,
 	"name": "Inura",
 	"class": "06-01",
 	"tasks": "0",
-	"points": "80"
+	"points": "127.5"
 }, {
 	"index": 41,
-	"name": "yugeeth",
-	"class": "09-09",
-	"tasks": "6",
-	"points": "79"
+	"name": "Anjana Umayanga9",
+	"class": "09-02",
+	"tasks": "0",
+	"points": "122.5"
 }, {
 	"index": 42,
-	"name": "Menath",
-	"class": "11-04",
-	"tasks": "13",
-	"points": "77"
+	"name": "DVK",
+	"class": "09-04",
+	"tasks": "7",
+	"points": "116"
 }, {
 	"index": 43,
+	"name": "Janith ",
+	"class": "09-03",
+	"tasks": "0",
+	"points": "115"
+}, {
+	"index": 44,
+	"name": "Menath",
+	"class": "11-04",
+	"tasks": "18",
+	"points": "111"
+}, {
+	"index": 45,
+	"name": "Minada",
+	"class": "09-03",
+	"tasks": "3",
+	"points": "108"
+}, {
+	"index": 46,
+	"name": "Dasindu",
+	"class": "06-07",
+	"tasks": "9",
+	"points": "102"
+}, {
+	"index": 47,
+	"name": "Sachila Pathirana",
+	"class": "After O/L",
+	"tasks": "8",
+	"points": "97"
+}, {
+	"index": 48,
+	"name": "Sanuka Methyuga",
+	"class": "09-08",
+	"tasks": "7",
+	"points": "94.5"
+}, {
+	"index": 49,
+	"name": "Anuja",
+	"class": "08-04",
+	"tasks": "3",
+	"points": "93.5"
+}, {
+	"index": 50,
+	"name": "Thimindu",
+	"class": "09-05",
+	"tasks": "3",
+	"points": "91.5"
+}, {
+	"index": 51,
+	"name": "Dinath",
+	"class": "09-10",
+	"tasks": "6",
+	"points": "88"
+}, {
+	"index": 52,
+	"name": "Sanka J",
+	"class": "10-05",
+	"tasks": "8",
+	"points": "86.5"
+}, {
+	"index": 53,
+	"name": "Bihandu",
+	"class": "08-05",
+	"tasks": "3",
+	"points": "81"
+}, {
+	"index": 54,
+	"name": "Gavesh Bulathsinhala ",
+	"class": "09-07",
+	"tasks": "1",
+	"points": "78"
+}, {
+	"index": 55,
 	"name": "Sadeepa Bandara",
 	"class": "09-04",
 	"tasks": "2",
 	"points": "76"
 }, {
-	"index": 44,
-	"name": "Sathija",
-	"class": "08-10",
-	"tasks": "5",
-	"points": "75.5"
-}, {
-	"index": 45,
-	"name": "Anjana Umayanga9",
-	"class": "09-02",
+	"index": 56,
+	"name": "Wishwa ",
+	"class": "09-06",
 	"tasks": "0",
-	"points": "75"
+	"points": "70"
 }, {
-	"index": 46,
-	"name": "Anuja",
-	"class": "08-04",
-	"tasks": "3",
-	"points": "71"
-}, {
-	"index": 47,
-	"name": "Dasindu",
-	"class": "06-07",
-	"tasks": "8",
-	"points": "69"
-}, {
-	"index": 48,
-	"name": "Janith ",
-	"class": "09-03",
-	"tasks": "0",
-	"points": "65"
-}, {
-	"index": 48,
+	"index": 57,
 	"name": "Yesith Bimsara",
 	"class": "10-11",
 	"tasks": "3",
 	"points": "65"
 }, {
-	"index": 50,
-	"name": "Sachila Pathirana",
-	"class": "After O/L",
-	"tasks": "8",
-	"points": "62"
+	"index": 58,
+	"name": "Saviru",
+	"class": "06-03",
+	"tasks": "3",
+	"points": "64.5"
 }, {
-	"index": 51,
+	"index": 59,
+	"name": "sanux1000",
+	"class": "10-11",
+	"tasks": "7",
+	"points": "64"
+}, {
+	"index": 60,
+	"name": "Geshan Sachindra",
+	"class": "09-02",
+	"tasks": "3",
+	"points": "63.5"
+}, {
+	"index": 61,
+	"name": "Rusiru",
+	"class": "10-06",
+	"tasks": "3",
+	"points": "62.5"
+}, {
+	"index": 62,
 	"name": "Lucario",
 	"class": "08-03",
 	"tasks": "4",
 	"points": "60"
 }, {
-	"index": 51,
-	"name": "Arashi",
-	"class": "After O/L",
-	"tasks": "7",
-	"points": "60"
+	"index": 63,
+	"name": "Migara Bhanu",
+	"class": "09-10",
+	"tasks": "8",
+	"points": "59"
 }, {
-	"index": 53,
-	"name": "sanux1000",
-	"class": "10-11",
-	"tasks": "6",
+	"index": 64,
+	"name": "Kavindu Dilshan",
+	"class": "11-02",
+	"tasks": "3",
 	"points": "57"
 }, {
-	"index": 54,
-	"name": "Sanka J",
-	"class": "10-05",
-	"tasks": "7",
-	"points": "56"
-}, {
-	"index": 55,
-	"name": "Thimindu",
-	"class": "09-05",
-	"tasks": "3",
-	"points": "54"
-}, {
-	"index": 56,
-	"name": "Sanuka Methyuga",
-	"class": "09-08",
-	"tasks": "7",
-	"points": "52"
-}, {
-	"index": 56,
+	"index": 65,
 	"name": "ANIMATIONBOT",
 	"class": "11-02",
 	"tasks": "7",
 	"points": "52"
 }, {
-	"index": 56,
-	"name": "Gavesh Bulathsinhala ",
-	"class": "09-07",
-	"tasks": "1",
-	"points": "52"
-}, {
-	"index": 59,
+	"index": 66,
 	"name": "Sanmeth",
 	"class": "10-07",
 	"tasks": "0",
 	"points": "50"
 }, {
-	"index": 59,
-	"name": "Kavindu Dilshan",
-	"class": "11-02",
-	"tasks": "2",
-	"points": "50"
+	"index": 67,
+	"name": "Amiru Wijayasiriwardhane",
+	"class": "06-08",
+	"tasks": "0",
+	"points": "47.5"
 }, {
-	"index": 61,
-	"name": "Saviru",
-	"class": "06-03",
-	"tasks": "3",
-	"points": "47"
+	"index": 67,
+	"name": "Virula",
+	"class": "07-11",
+	"tasks": "0",
+	"points": "47.5"
 }, {
-	"index": 62,
-	"name": "Wishwa ",
-	"class": "09-06",
+	"index": 69,
+	"name": "CHANAKYA",
+	"class": "10-05",
+	"tasks": "5",
+	"points": "45"
+}, {
+	"index": 69,
+	"name": "Ramiru Wijayasiriwardhane",
+	"class": "07-05",
 	"tasks": "0",
 	"points": "45"
 }, {
-	"index": 63,
+	"index": 71,
 	"name": "Shenal",
 	"class": "08-08",
 	"tasks": "5",
 	"points": "40"
 }, {
-	"index": 64,
-	"name": "Migara Bhanu",
-	"class": "09-10",
-	"tasks": "5",
-	"points": "35"
+	"index": 72,
+	"name": "A.C.JANINDU",
+	"class": "07-02",
+	"tasks": "1",
+	"points": "37.5"
 }, {
-	"index": 64,
-	"name": "CHANAKYA",
-	"class": "10-05",
-	"tasks": "4",
-	"points": "35"
-}, {
-	"index": 64,
+	"index": 73,
 	"name": "Ishara Lakshan",
 	"class": "08-01",
 	"tasks": "0",
 	"points": "35"
 }, {
-	"index": 64,
+	"index": 73,
 	"name": "Thisu",
 	"class": "10-03",
 	"tasks": "0",
 	"points": "35"
 }, {
-	"index": 68,
+	"index": 75,
 	"name": "R.M.L.Minruka",
 	"class": "09-04",
 	"tasks": "6",
 	"points": "31"
 }, {
-	"index": 69,
+	"index": 76,
+	"name": "Lithum Adhikari",
+	"class": "09-11",
+	"tasks": "6",
+	"points": "29"
+}, {
+	"index": 77,
 	"name": "Nethula Peiris",
 	"class": "10-05",
 	"tasks": "3",
 	"points": "27"
 }, {
-	"index": 70,
-	"name": "Lithum Adhikari",
-	"class": "09-11",
-	"tasks": "5",
-	"points": "22"
-}, {
-	"index": 71,
-	"name": "Geshan Sachindra",
-	"class": "09-07",
-	"tasks": "3",
-	"points": "21"
-}, {
-	"index": 72,
-	"name": "Rusiru",
-	"class": "10-06",
-	"tasks": "3",
-	"points": "20"
-}, {
-	"index": 72,
+	"index": 77,
 	"name": "Chanidu",
 	"class": "06-06",
-	"tasks": "3",
-	"points": "20"
+	"tasks": "4",
+	"points": "27"
 }, {
-	"index": 74,
+	"index": 79,
+	"name": "OVINDU-53985",
+	"class": "07-06",
+	"tasks": "1",
+	"points": "21"
+}, {
+	"index": 80,
 	"name": "Geemeth",
 	"class": "10-02",
 	"tasks": "2",
 	"points": "19"
 }, {
-	"index": 74,
-	"name": "Dinath",
-	"class": "09-10",
-	"tasks": "3",
-	"points": "19"
-}, {
-	"index": 76,
+	"index": 81,
 	"name": "Pathum",
 	"class": "10-04",
 	"tasks": "2",
 	"points": "18"
 }, {
-	"index": 77,
+	"index": 82,
+	"name": "Gayanuka Sadith Fernando ",
+	"class": "07-09",
+	"tasks": "3",
+	"points": "17"
+}, {
+	"index": 83,
 	"name": "Winter Fire",
 	"class": "08-11",
 	"tasks": "3",
 	"points": "16"
 }, {
-	"index": 78,
+	"index": 83,
+	"name": "Defalt'221",
+	"class": "11-04",
+	"tasks": "2",
+	"points": "16"
+}, {
+	"index": 85,
 	"name": "DaanTS",
 	"class": "07-09",
 	"tasks": "2",
 	"points": "14"
 }, {
-	"index": 79,
+	"index": 86,
 	"name": "Dr.Watson",
 	"class": "06-03",
 	"tasks": "2",
 	"points": "13"
 }, {
-	"index": 79,
-	"name": "Gayanuka Sadith Fernando ",
-	"class": "07-09",
+	"index": 86,
+	"name": "Bevin",
+	"class": "After O/L",
 	"tasks": "2",
 	"points": "13"
 }, {
-	"index": 81,
+	"index": 88,
 	"name": "Onija",
 	"class": "10-10",
 	"tasks": "1",
 	"points": "10"
 }, {
-	"index": 81,
+	"index": 88,
 	"name": "Sihan",
 	"class": "09-03",
 	"tasks": "0",
 	"points": "10"
 }, {
-	"index": 83,
+	"index": 88,
+	"name": "Seiyaa",
+	"class": "After O/L",
+	"tasks": "1",
+	"points": "10"
+}, {
+	"index": 91,
 	"name": "Sasindu Damsara",
 	"class": "06-01",
 	"tasks": "2",
 	"points": "9"
 }, {
-	"index": 83,
-	"name": "Defalt'221",
-	"class": "11-04",
-	"tasks": "1",
-	"points": "9"
-}, {
-	"index": 85,
+	"index": 92,
 	"name": "Aloka",
 	"class": "09-05",
 	"tasks": "1",
 	"points": "8"
 }, {
-	"index": 86,
+	"index": 93,
 	"name": "Chelaka Dasun",
 	"class": "09-09",
 	"tasks": "1",
 	"points": "7"
 }, {
-	"index": 87,
-	"name": "Bevin",
-	"class": "After O/L",
-	"tasks": "1",
-	"points": "6"
-}, {
-	"index": 87,
-	"name": "OVINDU-53985",
-	"class": "07-06",
-	"tasks": "1",
-	"points": "6"
-}, {
-	"index": 89,
+	"index": 94,
 	"name": "Dinith",
 	"class": "08-10",
 	"tasks": "1",
 	"points": "5"
 }, {
-	"index": 89,
+	"index": 94,
 	"name": "Sinura",
 	"class": "07-09",
 	"tasks": "1",
 	"points": "5"
 }, {
-	"index": 89,
+	"index": 94,
 	"name": "Sanuka ",
 	"class": "07-01",
 	"tasks": "1",
 	"points": "5"
 }, {
-	"index": 89,
-	"name": "A.C.JANINDU",
-	"class": "07-02",
-	"tasks": "1",
-	"points": "5"
-}, {
-	"index": 93,
+	"index": 97,
 	"name": "ALOKA2010",
 	"class": "06-02",
 	"tasks": "1",
 	"points": "4"
 }, {
-	"index": 94,
+	"index": 98,
 	"name": "Sanuk",
 	"class": "06-03",
 	"tasks": "1",
