@@ -1,8 +1,8 @@
 [
     { "id": "CA01",
       "index": 82,
-      "taskName": "Clone a website",
-      "shortDescription": "Create a replica of a popular website or app",
+      "taskName": "Clone a Website",
+      "shortDescription": "Create a replica of a popular website or an app",
       "description": "When you are a programmer, you have to work on various types of projects. Some of the time those projects are huge and have millions of users. As an avid programmer, you should know how to control these situations and work with a team of developers. Just think that you are a software engineer at Facebook, Apple. There,  you have to develop the FaceBook website/app using various technologies. You also have to collaborate with other developers to reach the end goal of making an app/website that everybody loves. In this task, your objective is to code the user interface of the Home Page on one of your favorite big websites/apps (FaceBook, Netflix, GitHub, Spotify) from scratch. Adding additional dynamic functionalities/responsive design will gain you more marks.  Not only that, you have to upload your project to GitHub and collaborate with other programmers or friends. You can access the marking scheme for this project from https://drive.google.com/file/d/1TCBKhElJNIwdYVpFX4liRMv8f_HN7zWb/view?usp=sharing",
       "catogery": "Code",
       "submit": "https://forms.gle/4TW1uqq21E3iJmak8",
@@ -17,7 +17,7 @@
 
   { "id": "CA02",
     "index": 83,
-    "taskName": "Into the world of FOSS",
+    "taskName": "Into the World of FOSS",
     "shortDescription": "Contribute to 10 open-source projects",
     "description": "Open source products/projects include permission to use the source code, design, documents, or content of the product. It most commonly refers to the open-source model in which open-source software or other products are released under an open-source license as part of the open-source software movement. Use of the term originated with the software but has expanded beyond the software sector to cover other open content and forms of open Collaboration. GitHub is the best place that you can find FOSS projects that you can contribute to. In this task your objective is to do at least one contribution to the 10 repositories that are listed below. You can access the marking scheme for this project from https://drive.google.com/file/d/1SHAs2uqFb3H4wARjJYs6RJtubEInmo4L/view?usp=sharing",
     "catogery": "Code",
@@ -33,8 +33,8 @@
 
   { "id": "CA03",
     "index": 84,
-    "taskName": "Make your app idea a reality",
-    "shortDescription": "Start your own innovative startup and maintain it.",
+    "taskName": "Make Your App Idea a Reality",
+    "shortDescription": "Start your own innovative startup and maintain it",
     "description": "A startup or start-up is a company or project undertaken by an entrepreneur to seek, develop, and validate a scalable business model. If a startup wants to be successful, it should have a solid plan, the right people and a great network. Even though you have a great idea, if you don’t know how to make it a reality then that idea is worthless. So in other words, you have to know how to make your idea a reality. In this task, your objective is to create your own startup with an app, service or website idea that is related to ICT. You can access the marking scheme for this project from https://drive.google.com/file/d/1goaSYMurvX7a__vWHRggKgd1xcBWaJue/view?usp=sharing",
     "catogery": "Code",
     "submit": "https://forms.gle/xqkEB7vMQSwEuuhs7",
@@ -67,8 +67,8 @@
   {
     "id": "DA02",
     "index": 86,
-    "taskName": "Promotianal Campain",
-    "shortDescription": "Create Promotianal content for an event",
+    "taskName": "Promotional Campaign",
+    "shortDescription": "Create Promotional content for an event",
     "description": "Imagine that you are the media coordinator of a musical event. You have to make 2 trailers and 5 posts for the event. The posts should have a consistent theme. But they Cannot be the same design over and over again. Examples for posts are:- coming soon post, post announcing the date, 3 days and 2 days remaining posts, etc. You can access the marking scheme for this project from https://drive.google.com/file/d/1fQH6q03Oi0yRNGJseS7ec9AaaKteV9pg/view?usp=sharing",
     "catogery": "Design",
     "submit": "https://forms.gle/2F3DXb13SSTHBnxX9",
@@ -99,11 +99,11 @@
   },
 
   {
-    "id": "AE01",
+    "id": "EA01",
     "index": 88,
-    "taskName": "Pitch a meeting",
-    "shortDescription": "Present an Innovative App idea to the mentors through an online meeting",
-    "description": "In this task, you have to Come up with an idea for a mobile app and create a presentation demonstrating it. Then you have to Pitch that idea along with the presentation in the meeting we arrange. The Meeting will be held on 31st of August. The time will be Noticed later on. You can access the marking scheme for this project from https://drive.google.com/file/d/1D9gA4ZoGBP6-b-qughPbxeG4YtodSxi0/view?usp=sharing",
+    "taskName": "Pitch an App Idea",
+    "shortDescription": "Present an innovative App idea to the mentors through an online meeting",
+    "description": "In this task, you have to come up with an idea for a mobile app and create a presentation demonstrating it. Then you have to Pitch that idea along with the presentation in the meeting we arrange. The Meeting will be held on 31st of August. The time will be Noticed later on. You can access the marking scheme for this project from https://drive.google.com/file/d/1D9gA4ZoGBP6-b-qughPbxeG4YtodSxi0/view?usp=sharing",
     "catogery": "Explore",
     "submit": "https://forms.gle/W8SWhRL1Eqqg5aix8",
     "point1": "When you're submitting, submit your presentation.",
@@ -116,9 +116,9 @@
   },
 
   {
-    "id": "AE02",
+    "id": "EA02",
     "index": 89,
-    "taskName": "Data analysis",
+    "taskName": "Data Analysis",
     "shortDescription": "Collect data through a survey and generate a report from it",
     "description": " In this task, you have to create a survey about a topic of your choice with a Google form. Then you have to make a report that includes things such as a summary of the data, breakthroughs, and  a conclusion.  You can access the marking scheme for this project from https://drive.google.com/file/d/1l02nlkRKfdvUX8Ip_w3ASB7gXGmowe9f/view?usp=sharing",
     "catogery": "Explore",
@@ -133,9 +133,9 @@
   },
 
   {
-    "id": "AE03",
+    "id": "EA03",
     "index": 90,
-    "taskName": "Analyse the Work From Home situation",
+    "taskName": "Analyse the Work from Home Situation",
     "shortDescription": "Research on a critical analysis of Online Learning and Work from home(WFH)",
     "description": "In this task you have to analyze the pros and cons of Online Learning and Work from home(WFH), compare and contrast it with their physical counterparts. Discuss about the incentives provided by various external sources. Then you have to provide us with an critical analysis in depth on it. You will have to write the whole thing by yourself. If you are copying something from another source (you can only do this for research purposes) , you have to cite your sources. You can access the marking scheme for this project from https://drive.google.com/file/d/1TNycwlaoBXOTunzzMypPtILQH3MoWmHS/view?usp=sharing",
     "catogery": "Explore",
