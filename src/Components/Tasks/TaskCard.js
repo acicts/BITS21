@@ -47,6 +47,33 @@ const useStyles = makeStyles(() => ({
     },
 
   },
+
+  roott: {
+    display: 'flex',
+    width: '570px',
+    minHeight: '230px',
+    marginLeft: '100px',
+    marginTop: '20px',
+    background: 'linear-gradient(144deg, #276eabcf, #295f9066)',
+    color: '#fff',
+    border: '2px solid #3c9687',
+    borderRadius: '15px',
+    backdropFilter: 'blur(10px)',
+    [theme.breakpoints.down('sm')]: {
+      position: 'relative',
+      width: '600px',
+      margin: 'auto',
+      marginTop: '20px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      position: 'relative',
+      width: '90%',
+      margin: 'auto',
+      marginTop: '20px',
+      height: 'max-content'
+    },
+
+  },
   details: {
     display: 'flex',
     flexDirection: 'column',
@@ -183,7 +210,7 @@ export default function TaskCard() {
     </div>
       {data.map((tasks, index) => (
 
-    <Card className={classes.root} color="primary"  key={index}>
+    <Card className={ tasks.index > 81 ? classes.roott : classes.root} color="primary"  key={index}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
