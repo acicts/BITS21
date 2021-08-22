@@ -11,6 +11,7 @@ import { Link, useParams } from "react-router-dom";
 import SwipeableViews from "react-swipeable-views";
 import "../../../App.css";
 import taskDetails from "../../../Data/tasks.json";
+import Linkify from "react-linkify";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -132,6 +133,12 @@ export default function FullWidthTabs() {
     setValue(index);
   };
 
+  const hrefDecorator = (href, text, key) => (
+    <a href={href} key={key} target="_blank" className="urlDecor">
+      {text}
+    </a>
+  );
+
   let { id } = useParams();
 
   var result = taskDetails.filter((obj) => {
@@ -186,6 +193,7 @@ export default function FullWidthTabs() {
             onChangeIndex={handleChangeIndex}
           >
             <TabPanel value={value} index={0} dir={theme.direction}>
+            <Linkify componentDecorator={hrefDecorator}>
               <Typography className={classes.text}>
                 {details.description}
               </Typography>
@@ -199,8 +207,8 @@ export default function FullWidthTabs() {
                 {details.point7 !== "" && <li>{details.point7}</li>}
               </ul>
               <br></br>
+            </Linkify>
             </TabPanel>
-
             <TabPanel value={value} index={1} dir={theme.direction}>
               {" "}
               <Typography className={classes.text}>
