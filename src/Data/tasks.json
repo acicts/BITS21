@@ -22,7 +22,7 @@
     "description": "Open source products/projects include permission to use the source code, design, documents, or content of the product. It most commonly refers to the open-source model in which open-source software or other products are released under an open-source license as part of the open-source software movement. Use of the term originated with the software but has expanded beyond the software sector to cover other open content and forms of open Collaboration. GitHub is the best place that you can find FOSS projects that you can contribute to. In this task your objective is to do at least one contribution to the 10 repositories that are listed below. You can access the marking scheme for this project from https://drive.google.com/file/d/1SHAs2uqFb3H4wARjJYs6RJtubEInmo4L/view?usp=sharing",
     "catogery": "Code",
     "submit": "https://forms.gle/5vU2Q3G6pDPss7fb8",
-    "point1":"Here is the link to the repository list you need to contribute.",
+    "point1":"Link to the repository list you need to contribute: https://drive.google.com/file/d/1XDGh_veUUhhgO3R_c_HLgwVlUhNLPPjP/view?usp=sharing",
     "point2":"Choose an issue that is listed under the Open section and read the description about the issue and get a good understanding about it.",
     "point3":"Try to solve the issue and after solving it, make a Pull Request to the Origin Repository.",
     "point4":"You can solve issues like Bugs in the code, changing icons/logo, Grammatical errors, lack of documentation, etc.",
