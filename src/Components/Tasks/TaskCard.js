@@ -24,6 +24,7 @@ import "aos/dist/aos.css"
 const useStyles = makeStyles(() => ({
   root: {
     display: 'flex',
+    transition: 'all 0.3s ease',
     width: '570px',
     minHeight: '230px',
     marginLeft: '100px',
@@ -45,11 +46,15 @@ const useStyles = makeStyles(() => ({
       marginTop: '20px',
       height: 'max-content'
     },
+    '&:hover': {
+      transform: 'scale(1.05)',
+    },
 
   },
 
   roott: {
     display: 'flex',
+    transition: 'all 0.3s ease',
     width: '570px',
     minHeight: '230px',
     marginLeft: '100px',
@@ -71,6 +76,9 @@ const useStyles = makeStyles(() => ({
       margin: 'auto',
       marginTop: '20px',
       height: 'max-content'
+    },
+    '&:hover': {
+      transform: 'scale(1.05)',
     },
 
   },
