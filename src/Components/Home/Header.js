@@ -55,14 +55,14 @@ export default function Header() {
                 <Grid item  xl={6} lg={6} md={12} sm={12} xs={12} className={classes.hero}>
                     <Typography variant='h2' gutterBottom="true" align='left' style={{marginBottom: '50px', fontWeight: 'bold'}}>BITS 2021</Typography>
 
-                    <div className="countdown">TASKS ARE NOW AVAILABLE !
+                    <div className="countdown">The Glory Awaits You At The Finish Line
                     <br></br>
-                    It's your time to shine
+                    Winners announcing soon
                     </div>
 
                     <Typography variant='h5'  align='left' style={{marginBottom: '50px'}}><span style={{color: '#3ed1b8'}}>The First-Ever Task-Based Intra-School ICT competition,</span>  organized by the Ananda College ICT Society to provide a platform for our school's students to polish and improve their ICT knowledge in many fields of ICT</Typography>
 
-                    <Button variant='outlined' target="_blank" color='secondary' href='https://docs.google.com/forms/d/e/1FAIpQLSfJIXV6-3WYIpqv92mHcVcDfZpBnWPEizbTOJ18g61oOSL8gA/viewform'>Register Now</Button>
+                    <Button variant='outlined' target="_blank" color='secondary' href=''>Registrations Closed</Button>
                     <Button variant='contained' href='#catt' color='secondary' style={{color: '#000', marginLeft: '20px'}}>More Info</Button>
                 </Grid>
                 <Grid item xl={6} lg={6} md={12} sm={12} xs={12} className={classes.svg}>
