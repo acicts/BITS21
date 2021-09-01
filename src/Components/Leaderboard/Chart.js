@@ -105,7 +105,7 @@ export default function CustomizedTables() {
     <TableContainer className={classes.papper}>
       <div className={classes.updateContainer}>
        
-      <Typography className={classes.update} variant='caption'>Last updated: 24.08.2021 03.30AM</Typography>
+      <Typography className={classes.update} variant='caption'>Last updated: 01.09.2021 10.15PM</Typography>
       </div>
 
       <Button className={classes.sheetButton} variant="contained" color="secondary" href="https://docs.google.com/spreadsheets/d/1mQ_ihizTFQtyNQzBdMqdHY0XqYEgjPymfYJY9Kf2lUU/edit?usp=sharing" target="_blank">Leaderboard Spreadsheet</Button>
