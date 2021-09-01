@@ -94,7 +94,7 @@ backgroundSize: 'cover',
       />
       <CardContent className={classes.subContent}>
         <Typography variant="h6" className={classes.subText}>
-        Learn to talk to you computer and make amazing websites, games, apps and many more that everyone can use by the power of programming
+        Learn to talk to your computer and make amazing websites, games, apps and many more that everyone can use by the power of programming
         </Typography>
       </CardContent>
     </Card>
