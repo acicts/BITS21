@@ -89,7 +89,7 @@ const useStyles = makeStyles(() => ({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    width: "300px",
+    width: "100%",
     height: "100%",
     [theme.breakpoints.down("xs")]: {
       position: "relative",
