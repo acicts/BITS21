@@ -116,7 +116,7 @@ export default function CustomizedTables() {
           className={classes.sheetButton}
           variant="contained"
           color="secondary"
-          href="https://docs.google.com/spreadsheets/d/1mQ_ihizTFQtyNQzBdMqdHY0XqYEgjPymfYJY9Kf2lUU/edit?usp=sharing"
+          href="https://docs.google.com/spreadsheets/d/1ZmjWh1Obuz5bYRQDhHlelxqaDzE-JfGqK2ieToJkmvM/edit?usp=sharing"
           target="_blank"
         >
           Leaderboard Spreadsheet
