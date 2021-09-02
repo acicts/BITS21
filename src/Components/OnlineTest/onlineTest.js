@@ -208,17 +208,13 @@ export default function TaskCard() {
           <Typography variant='subtitle1' >The test will be available on 22.08.2021 12.00AM - 11.59PM</Typography>
   
         </CardContent>
-        
         <div className={classes.controls}>
-        <Button target="blank" variant="contained" href="https://quilgo.com/form/F4rG4ejxH2SEsTg3" className={classes.button}>
-        Grade 06 - 09
-        </Button>
-
-        <Button target="blank" variant="contained" href="https://quilgo.com/form/bJZlSFBtUBMFnpuE" className={classes.button}>
-        Grade 10 - Post O/L
+        <Button target="blank" variant="contained" className={classes.button}>
+          The test has ended
         </Button>
         
         </div>
+        
       </div>
     </Card>
 
@@ -236,8 +232,8 @@ export default function TaskCard() {
         </CardContent>
         
         <div className={classes.controls}>
-        <Button target="blank" variant="contained" href="#" className={classes.button}>
-        Test is not available yet
+        <Button target="blank" variant="contained" className={classes.button}>
+          The test has ended
         </Button>
         
         </div>
