@@ -7,6 +7,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import data from '../../Data/LeaderBoard.json'
+import Winners from './Winners'
 import theme from '../../theme';
 import { Button, Typography } from '@material-ui/core';
 
@@ -102,39 +103,68 @@ const useStyles = makeStyles({
 export default function CustomizedTables() {
   const classes = useStyles();
   return (
-    <TableContainer className={classes.papper}>
-      <div className={classes.updateContainer}>
-       
-      <Typography className={classes.update} variant='caption'>Last updated: 01.09.2021 10.15PM</Typography>
-      </div>
+    <div>
+      <Winners />
+      <TableContainer className={classes.papper}>
+        <div className={classes.updateContainer}>
+          <Typography className={classes.update} variant="caption">
+            Last updated: 01.09.2021 10.15PM
+          </Typography>
+        </div>
 
-      <Button className={classes.sheetButton} variant="contained" color="secondary" href="https://docs.google.com/spreadsheets/d/1mQ_ihizTFQtyNQzBdMqdHY0XqYEgjPymfYJY9Kf2lUU/edit?usp=sharing" target="_blank">Leaderboard Spreadsheet</Button>
-      
-      <br></br>
-      <Table className={classes.table} aria-label="customized table">
-        <TableHead>
-          <TableRow>
-            <StyledTableCell style={{color: '#3ed1b8'}}>Rank</StyledTableCell>
-            <StyledTableCell align="center">Nickname</StyledTableCell>
-            <StyledTableCell align="center">Class</StyledTableCell>
-            <StyledTableCell align="center">No. Of Tasks Accepted</StyledTableCell>
-            <StyledTableCell align="center">Points</StyledTableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody className={classes.tBody}>
-          {data.map((list, index) => (
-            <StyledTableRow key={index} >
-              <StyledTableCell component="th" scope="row" style={{color: '#3ed1b8', fontWeight: 'bold'}} className={classes.body}>
-                {list.index}
+        <Button
+          className={classes.sheetButton}
+          variant="contained"
+          color="secondary"
+          href="https://docs.google.com/spreadsheets/d/1mQ_ihizTFQtyNQzBdMqdHY0XqYEgjPymfYJY9Kf2lUU/edit?usp=sharing"
+          target="_blank"
+        >
+          Leaderboard Spreadsheet
+        </Button>
+
+        <br></br>
+        <Table className={classes.table} aria-label="customized table">
+          <TableHead>
+            <TableRow>
+              <StyledTableCell style={{ color: "#3ed1b8" }}>
+                Rank
               </StyledTableCell>
-              <StyledTableCell  className={classes.body} align="center">{list.name}</StyledTableCell>
-              <StyledTableCell  className={classes.body} align="center">{list.class}</StyledTableCell>
-              <StyledTableCell  className={classes.body} align="center">{list.tasks}</StyledTableCell>
-              <StyledTableCell  className={classes.body} align="center">{list.points}</StyledTableCell>
-            </StyledTableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+              <StyledTableCell align="center">Nickname</StyledTableCell>
+              <StyledTableCell align="center">Class</StyledTableCell>
+              <StyledTableCell align="center">
+                No. Of Tasks Accepted
+              </StyledTableCell>
+              <StyledTableCell align="center">Points</StyledTableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody className={classes.tBody}>
+            {data.map((list, index) => (
+              <StyledTableRow key={index}>
+                <StyledTableCell
+                  component="th"
+                  scope="row"
+                  style={{ color: "#3ed1b8", fontWeight: "bold" }}
+                  className={classes.body}
+                >
+                  {list.index}
+                </StyledTableCell>
+                <StyledTableCell className={classes.body} align="center">
+                  {list.name}
+                </StyledTableCell>
+                <StyledTableCell className={classes.body} align="center">
+                  {list.class}
+                </StyledTableCell>
+                <StyledTableCell className={classes.body} align="center">
+                  {list.tasks}
+                </StyledTableCell>
+                <StyledTableCell className={classes.body} align="center">
+                  {list.points}
+                </StyledTableCell>
+              </StyledTableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </div>
   );
 }
