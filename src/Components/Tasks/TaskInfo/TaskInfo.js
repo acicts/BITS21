@@ -153,7 +153,7 @@ export default function FullWidthTabs() {
       <div className={classes.ss}>
         <Container className="taskname" color="primary">
           <Typography variant="h4" className={classes.title} color="#ffffff">
-            <Link to="/tasks">
+            <Link to="/tasks" style={{ width: "100px" }}>
               <Button
                 color="secondary"
                 variant="outlined"
@@ -182,8 +182,6 @@ export default function FullWidthTabs() {
               aria-label="full width tabs example"
             >
               <Tab label="Details" {...a11yProps(0)} />
-
-
             </Tabs>
           </AppBar>
 
@@ -193,25 +191,24 @@ export default function FullWidthTabs() {
             onChangeIndex={handleChangeIndex}
           >
             <TabPanel value={value} index={0} dir={theme.direction}>
-            <Linkify componentDecorator={hrefDecorator}>
-              <Typography className={classes.text}>
-                {details.description}
-              </Typography>
-              <ul style={{ color: "#fefefe", marrginTop: "90px" }}>
-                {details.point1 !== "" && <li>{details.point1}</li>}
-                {details.point2 !== "" && <li>{details.point2}</li>}
-                {details.point3 !== "" && <li>{details.point3}</li>}
-                {details.point4 !== "" && <li>{details.point4}</li>}
-                {details.point5 !== "" && <li>{details.point5}</li>}
-                {details.point6 !== "" && <li>{details.point6}</li>}
-                {details.point7 !== "" && <li>{details.point7}</li>}
-              </ul>
-              <br></br>
-            </Linkify>
+              <Linkify componentDecorator={hrefDecorator}>
+                <Typography className={classes.text}>
+                  {details.description}
+                </Typography>
+                <ul style={{ color: "#fefefe", marrginTop: "90px" }}>
+                  {details.point1 !== "" && <li>{details.point1}</li>}
+                  {details.point2 !== "" && <li>{details.point2}</li>}
+                  {details.point3 !== "" && <li>{details.point3}</li>}
+                  {details.point4 !== "" && <li>{details.point4}</li>}
+                  {details.point5 !== "" && <li>{details.point5}</li>}
+                  {details.point6 !== "" && <li>{details.point6}</li>}
+                  {details.point7 !== "" && <li>{details.point7}</li>}
+                </ul>
+                <br></br>
+              </Linkify>
             </TabPanel>
             <TabPanel value={value} index={1} dir={theme.direction}>
               {" "}
-              
               <br></br>
               <br></br>
               <Button
