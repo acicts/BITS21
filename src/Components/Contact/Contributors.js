@@ -77,7 +77,7 @@ export default function OC() {
   }, [])
 
   return (
-    <div>
+    <div style={{paddingBottom: '110px'}}>
     <Typography variant="h4" style={{marginTop: '50px', marginLeft: '110px'}}>Competitors Who Contributed</Typography>
     <Grid  xl={12} md={12} lg={12} container direction="row" justify="space-around" alignItems="center" className={classes.OClist}>
     {OCdata.map((member, index) => (
@@ -87,6 +87,5 @@ export default function OC() {
     ))}
     </Grid>
     </div>
-    
   );
 }
