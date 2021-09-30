@@ -13,7 +13,7 @@ const Footer = ({}) => {
         <div className="content">
           <div className="about">
             <p className="answer">
-            BITS is The First-Ever Task-Based Intra-School ICT competition, organized by the Ananda College ICT Society to provide a platform for our school's students to polish and improve their ICT knowledge in many fields of ICT
+            BITS is the First-Ever Task-Based Intraschool ICT competition, organized by the Ananda College ICT Society to provide a platform for our school's students to polish and improve their ICT knowledge in many fields of ICT
             </p>
             < FooterContact />
           </div>
