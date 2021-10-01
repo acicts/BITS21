@@ -9,7 +9,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { NavLink } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import logoGIF from "../Img/BITS-logo-w.gif";
-import Countdown from 'react-countdown';
+import Countdown from "react-countdown";
 
 const useStyles = makeStyles(() => ({
   header: {
@@ -41,7 +41,7 @@ const useStyles = makeStyles(() => ({
   mobileMenuButton: {
     fontFamily: "Titillium Web, sans-serif",
     fontWeight: 700,
-    size: "18px",
+    size: "26px",
     marginLeft: "38px",
     textDecoration: "none",
     color: "#fff",
@@ -190,9 +190,9 @@ export default function Nav() {
           flexDirection: "column",
           justifyContent: "space-between",
           height: "200px",
+          marginBottom: "95px",
         }}
       >
-
         <NavLink
           className={mobileMenuButton}
           to="/"
@@ -200,18 +200,22 @@ export default function Nav() {
           activeStyle={{
             fontWeight: "bold",
             color: "#3ed1b8",
+            fontSize: "25px",
           }}
+          style={{ fontSize: "21px", marginBottom: "15px" }}
         >
           Home
         </NavLink>
-        
+
         <NavLink
           className={mobileMenuButton}
           to="/tasks"
           activeStyle={{
             fontWeight: "bold",
             color: "#3ed1b8",
+            fontSize: "25px",
           }}
+          style={{ fontSize: "21px", marginBottom: "15px" }}
         >
           Tasks
         </NavLink>
@@ -221,7 +225,9 @@ export default function Nav() {
           activeStyle={{
             fontWeight: "bold",
             color: "#3ed1b8",
+            fontSize: "25px",
           }}
+          style={{ fontSize: "21px", marginBottom: "15px" }}
         >
           Online Tests
         </NavLink>
@@ -231,7 +237,9 @@ export default function Nav() {
           activeStyle={{
             fontWeight: "bold",
             color: "#3ed1b8",
+            fontSize: "25px",
           }}
+          style={{ fontSize: "21px", marginBottom: "15px" }}
         >
           LeaderBoard
         </NavLink>
@@ -242,6 +250,7 @@ export default function Nav() {
             fontWeight: "bold",
             color: "#3ed1b8",
           }}
+          style={{ fontSize: "24px" }}
         >
           Contact
         </NavLink>
@@ -250,7 +259,9 @@ export default function Nav() {
   };
 
   const femmecubatorLogo = (
-    <NavLink to="/"><img src={logoGIF} alt="logo" style={{ height: "100px" }}></img></NavLink> 
+    <NavLink to="/">
+      <img src={logoGIF} alt="logo" style={{ height: "100px" }}></img>
+    </NavLink>
   );
 
   const getMenuButtons = () => {
