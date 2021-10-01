@@ -1045,6 +1045,22 @@
     "point6": "",
     "point7": ""
   },
+  {
+    "id": "D28",
+    "index": 43,
+    "taskName": "Satisfying 3D Animation",
+    "shortDescription": " Make a ball bounce animation",
+    "description": "Make a simple ball bouncing animation using any 3D software of your choice add materials and textures to make it look better",
+    "catogery": "Design",
+    "submit": "https://forms.gle/mM2CyKn7d1HTxnjB8",
+    "point1": "Send your rendered project in .mp4 or .avi format along with the project file",
+    "point2": "Don't copy designs or use project files from the internet. If you get caught copying designs, you won't receive any points",
+    "point3": "Sound design is not necessary, but appreciated",
+    "point4": "Choosing matching colors will gain you more points",
+    "point5": "Tip: If you are using blender try changing the intapolation to Bounce",
+    "point6": "",
+    "point7": ""
+  },
 
   {
     "id": "E01",
