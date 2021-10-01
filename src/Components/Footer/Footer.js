@@ -8,7 +8,7 @@ const Footer = ({}) => {
   const location = useLocation();
   let { id } = useParams();
   return (
-    location.pathname !== "/tasks" && location.pathname !== "/onlinetest" && location.pathname !== "/task/:id" && (
+    location.pathname !== "/tasks" && location.pathname !== "/task/:id" && (
       <footer>
         <div className="content">
           <div className="about">
