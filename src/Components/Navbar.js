@@ -41,7 +41,7 @@ const useStyles = makeStyles(() => ({
   mobileMenuButton: {
     fontFamily: "Titillium Web, sans-serif",
     fontWeight: 700,
-    size: "26px",
+    size: "28px",
     marginLeft: "38px",
     textDecoration: "none",
     color: "#fff",
@@ -190,7 +190,7 @@ export default function Nav() {
           flexDirection: "column",
           justifyContent: "space-between",
           height: "200px",
-          marginBottom: "95px",
+          marginBottom: "96px",
         }}
       >
         <NavLink
@@ -200,9 +200,9 @@ export default function Nav() {
           activeStyle={{
             fontWeight: "bold",
             color: "#3ed1b8",
-            fontSize: "25px",
+            fontSize: "26px",
           }}
-          style={{ fontSize: "21px", marginBottom: "15px" }}
+          style={{ fontSize: "22px", marginBottom: "16px" }}
         >
           Home
         </NavLink>
@@ -250,7 +250,7 @@ export default function Nav() {
             fontWeight: "bold",
             color: "#3ed1b8",
           }}
-          style={{ fontSize: "24px" }}
+          style={{ fontSize: "25px" }}
         >
           Contact
         </NavLink>
@@ -260,7 +260,7 @@ export default function Nav() {
 
   const femmecubatorLogo = (
     <NavLink to="/">
-      <img src={logoGIF} alt="logo" style={{ height: "100px" }}></img>
+      <img src={logoGIF} alt="logo" style={{ height: "102px" }}></img>
     </NavLink>
   );
 
